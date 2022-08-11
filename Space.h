@@ -122,7 +122,7 @@ namespace TextureID
 {
 	enum TextureID
 	{
-		Character, Orb, Background, Laser, Laserbeam, Enemy, Bomb, Crab, Comet, None, BombAnimation, EnergyPowerup, RegenerationPowerup, Light, Foreground, Coin, EnemyLaser
+		Character, Orb, Background, Laser, Laserbeam, Enemy, Bomb, Crab, Comet, None, BombAnimation, EnergyPowerup, RegenerationPowerup, Light, Foreground, Coin, EnemyLaser, Block
 	};
 };
 //extern Texture* tCharacterTexture, * tOrbTexture, * tBackground, * tLaserTexture, * tLaserBeamTexture, * tEnemyTexture, * tBombTexture, * tCrabTexture;

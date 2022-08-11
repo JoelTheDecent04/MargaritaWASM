@@ -38,7 +38,7 @@
 using namespace Game;
 
 
-Texture* textures[17];
+Texture* textures[18];
 
 std::shared_ptr<SpaceGame> SpaceGame::game = nullptr;
 
@@ -93,6 +93,7 @@ void SpaceGame::LoadResources()
 	textures[TextureID::Foreground] =		new Texture("foreground.png", 8192, 204, 5120, 127.33f);
 	textures[TextureID::Coin] =				new Texture("coin.png", 96, 96, 32.f, 32.f);
 	textures[TextureID::EnemyLaser] = 		new Texture("enemy_laser.png", 100, 48, 48.f, 24.f);
+	textures[TextureID::Block] = 			new Texture("blocks.png", 32, 32, 32.f, 32.f);
 }
 void SpaceGame::Render()
 {

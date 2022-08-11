@@ -2,7 +2,7 @@
 #include "Space.h"
 
 Block::Block(float x, float y)
-	: Entity(TextureID::None, x, y)
+	: Entity(TextureID::Block, x, y)
 {
 	bAffectedByGravity = false;
 	nType = Entity::Type::Structure;
