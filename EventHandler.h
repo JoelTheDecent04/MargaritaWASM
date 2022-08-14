@@ -54,6 +54,7 @@ public:
 	}
 public:
 	static std::unique_ptr<Objective> Make();
+	virtual ~Objective() {}
 };
 
 class EventHandler

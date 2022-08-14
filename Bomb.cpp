@@ -24,7 +24,7 @@ bool Bomb::Collide(Entity* entity)
 
 void Bomb::Explode()
 {
-	SpaceGame::Instance().AddBackgroundObject(std::make_shared<BombAnimation>(this));
+	SpaceGame::Instance().AddBackgroundObject(new BombAnimation(this));
 	for (auto* entity : SpaceGame::Instance().Entities())
 	{
 		if (entity == this || entity->bIsBullet) continue;

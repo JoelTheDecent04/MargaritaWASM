@@ -136,7 +136,7 @@ Entity::Status Entity::Update(float deltatime)
 
 void Entity::ChangeHealth(float fChange, Entity* e)
 {
-	SpaceGame::Instance().AddBackgroundObject(std::make_shared<EntityHealthChangeText>(this, fChange));
+	SpaceGame::Instance().AddBackgroundObject(new EntityHealthChangeText(this, fChange));
 	fHealth += fChange;
 	if (fHealth <= 0.0f)
 	{

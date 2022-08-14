@@ -232,10 +232,12 @@ void SpaceGame::Update(float deltatime)
 	//Background / Scenery updates
 	for (size_t i = 0; i < vBackgroundObjects.size(); i++)
 	{
-		auto& object = *vBackgroundObjects[i];
+		auto* object = vBackgroundObjects[i];
 		//Remove if 'Update' returns false
-		if (!object.Update(deltatime))
+		if (!object->Update(deltatime)) {
+			delete object;
 			vBackgroundObjects.erase(vBackgroundObjects.begin() + (i--));
+		}
 	}
 
 	//Enemy spawning
@@ -280,7 +282,7 @@ void SpaceGame::Update(float deltatime)
 	fSecondsUntilNextComet -= deltatime;
 	if (fSecondsUntilNextComet < 0.0f)
 	{
-		vBackgroundObjects.push_back(std::make_shared<Comet>());
+		AddBackgroundObject(new Comet());
 		fSecondsUntilNextComet = 40 + randomf() * 40;
 	}
 
@@ -349,6 +351,8 @@ void SpaceGame::KeyDown(int key)
 		break;
 	case Control::Action::ShowHideMap:
 		bShowMap = !bShowMap;
+		break;
+	default:
 		break;
 	}
 

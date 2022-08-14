@@ -30,4 +30,5 @@ public:
 	Entity* GetOwner() {
 		return owner;
 	}
+	virtual ~Item() {}
 };

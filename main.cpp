@@ -13,7 +13,19 @@
 #include <Windows.h>
 #endif
 
+#ifdef __EMSCRIPTEN__
+#include <emscripten.h>
+#endif
+
 using namespace Game;
+
+EM_JS(int, canvas_get_width, (), {
+  return canvas.width;
+});
+
+EM_JS(int, canvas_get_height, (), {
+  return canvas.height;
+});
 
 extern "C" int main(int argc, char** argv)
 {

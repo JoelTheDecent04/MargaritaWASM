@@ -22,7 +22,7 @@ private:
 	int nCurrentItem = 0;
 	std::vector<Item*> vItems;
 
-	std::vector<std::shared_ptr<BackgroundObject>> vBackgroundObjects;
+	std::vector<BackgroundObject*> vBackgroundObjects;
 
 	Player* plPlayer;
 
@@ -74,8 +74,8 @@ public:
 	void AddItem(Item* entity) { vItems.push_back(entity); }
 	Item* GetItem(const char* name);
 
-	const std::vector<std::shared_ptr<BackgroundObject>>& BackgroundObjects() { return vBackgroundObjects; }
-	void AddBackgroundObject(const std::shared_ptr<BackgroundObject>& background_object) { vBackgroundObjects.push_back(background_object); }
+	const std::vector<BackgroundObject*>& BackgroundObjects() { return vBackgroundObjects; }
+	void AddBackgroundObject(BackgroundObject* background_object) { vBackgroundObjects.push_back(background_object); }
 
 	EventHandler& EventHandler() { return m_EventHandler; };
 

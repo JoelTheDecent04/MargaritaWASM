@@ -16,7 +16,7 @@ float distance(float ax, float ay, float bx, float by)
 float randomf()
 {
 	static std::mt19937 r = std::mt19937(time(0));
-	return (float)r() / r.max();
+	return (float)r() / (float)r.max();
 }
 
 float random_off_screen()
