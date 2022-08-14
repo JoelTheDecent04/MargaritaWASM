@@ -16,7 +16,7 @@ public:
 	void SetWeapon(const std::shared_ptr<Weapon>& weapon) {
 		this->weapon = weapon;
 	}
-	bool Update(float deltatime) override;
+	Status Update(float deltatime) override;
 };
 
 class TurretPlacer : public Item

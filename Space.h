@@ -20,7 +20,7 @@ class SpaceGame : public Level
 private:
 	std::vector<Entity*> vEntities;
 	int nCurrentItem = 0;
-	std::vector<std::shared_ptr<Item>> vItems;
+	std::vector<Item*> vItems;
 
 	std::vector<std::shared_ptr<BackgroundObject>> vBackgroundObjects;
 
@@ -70,8 +70,8 @@ public:
 	const std::vector<Entity*>& Entities() { return vEntities; }
 	void AddEntity(Entity* entity) { vEntities.push_back(entity); }
 	
-	const std::vector<std::shared_ptr<Item>>& Items() { return vItems; }
-	void AddItem(const std::shared_ptr<Item>& entity) { vItems.push_back(entity); }
+	const std::vector<Item*>& Items() { return vItems; }
+	void AddItem(Item* entity) { vItems.push_back(entity); }
 	Item* GetItem(const char* name);
 
 	const std::vector<std::shared_ptr<BackgroundObject>>& BackgroundObjects() { return vBackgroundObjects; }
@@ -134,3 +134,4 @@ static const float fPlayerMaxSpeed = 150.0f;
 static const float fGravity = 250.0f;
 static const float fPlayerMoveDownSpeed = 500.0f;
 static const float fFriction = 100.0f;
+

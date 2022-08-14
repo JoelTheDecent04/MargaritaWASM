@@ -20,7 +20,7 @@ public:
 	float fHealthRegeneration;
 	float fMaxHealthRegeneration;
 	Player(float fX, float fY);
-	bool Update(float deltatime) override;
+	Status Update(float deltatime) override;
 	void OnDestroy() override;
 
 	std::vector<std::unique_ptr<PlayerUpgrade>> GetPossibleUpgrades();

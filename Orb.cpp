@@ -15,14 +15,14 @@ Orb::Orb(float fX, float fY, float fSpeedX, float fSpeedY)
 	nType = Type::Orb;
 }
 
-bool Orb::Update(float deltatime)
+Entity::Status Orb::Update(float deltatime)
 {
 	fAge += deltatime;
 	if (fAge >= 1.0f && Distance(SpaceGame::Instance().GetPlayer()) < 40.0f)
 	{
 		OnDestroy();
 		SpaceGame::Instance().GetItem("Orb")->nCount++;
-		return false;
+		return Status::REMOVE;
 	}
 
 	bCanCollide = (fSpeedX != 0.0f || fSpeedY != 0.0f);
@@ -34,7 +34,7 @@ bool Orb::Update(float deltatime)
 	else if (fX > 5120.0f)
 		fX = 5120.0f;
 
-	return true;
+	return Status::KEEPALIVE;
 }
 
 bool Orb::Collide(Entity* entity)

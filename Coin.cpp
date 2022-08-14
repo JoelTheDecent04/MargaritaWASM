@@ -13,11 +13,11 @@ CoinReward::CoinReward(float fX, float fY)
     fSpeedY = -275.0f;
 }
 
-bool CoinReward::Update(float delta)
+Entity::Status CoinReward::Update(float delta)
 {
     if (Distance(SpaceGame::Instance().GetPlayer()) < 40.0f) {
         SpaceGame::Instance().GetPlayer()->fMoney += 50.0f;
-        return false;  
+        return Status::REMOVE;  
     }
 
     if (fSpeedY < 0)
@@ -37,20 +37,20 @@ CoinPickup::CoinPickup(float fX, float fY)
     bCanCollideWithPlayer = false;
     bAffectedByGravity = false;
 }
-bool CoinPickup::Update(float deltatime)
+Entity::Status CoinPickup::Update(float deltatime)
 {
     fTimeInSpin += deltatime;
     fTimeInSpin = fmod(fTimeInSpin, 1.0f);
 
     if (SpaceGame::Instance().WaveSecondsLeft() == 0.0f)
-        return false;
+        return Status::REMOVE;
 
     if (Distance(SpaceGame::Instance().GetPlayer()) < 40.0f) {
         SpaceGame::Instance().GetPlayer()->fMoney += 100.0f;
         OnDestroy();
-        return false;  
+        return Status::REMOVE;  
     }
-    return true;
+    return Status::KEEPALIVE;
 }
 void CoinPickup::Draw()
 {

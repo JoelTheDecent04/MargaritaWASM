@@ -36,12 +36,12 @@ void Entity::Draw()
 	textures[nTexture]->Draw(nFrame, (fX - SpaceGame::RenderPosition() - (textures[nTexture]->fTextureDrawnWidth / 2)), fY - textures[nTexture]->fTextureDrawnHeight / 2);
 }
 
-bool Entity::Update(float deltatime)
+Entity::Status Entity::Update(float deltatime)
 {
 	if (fHealth == 0.0f)
 	{
 		OnDestroy();
-		return false;
+		return Status::REMOVE;
 	}
 
 	if (bAffectedByGravity) fSpeedY += fCustomGravity * deltatime; //Gravity force
@@ -59,7 +59,7 @@ bool Entity::Update(float deltatime)
 			if (entity->WillOverlap(this, fX, fNewY) && this->ShouldHit(entity))
 			{
 				if (Collide(entity) == false)
-					return false;
+					return Status::REMOVE;
 				
 				bCollidedVertically = true;
 				break;
@@ -80,7 +80,7 @@ bool Entity::Update(float deltatime)
 			if (entity->WillOverlap(this, fNewX, fY) && this->ShouldHit(entity))
 			{
 				if (Collide(entity) == false)
-					return false;
+					return Status::REMOVE;
 
 				bCollidedHorizontally = true;
 				break;
@@ -127,13 +127,11 @@ bool Entity::Update(float deltatime)
 	}
 
 	if (fX < 0.0f || fX > 5120.0f || fY < -250.0f)
-	{ 
-		return false; 
-	}
+		return Status::REMOVE; 
 
 	if (fSpeedX < 5.0f && fSpeedX > -5.0f) fSpeedX = 0.0f; //If speed is low set to 0
 
-	return true;
+	return Status::KEEPALIVE;
 }
 
 void Entity::ChangeHealth(float fChange, Entity* e)

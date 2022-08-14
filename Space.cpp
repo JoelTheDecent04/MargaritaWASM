@@ -50,8 +50,8 @@ SpaceGame::SpaceGame()
 	vEntities.push_back(plPlayer);
 	nPlayers++;
 
-	vItems.push_back(std::make_shared<LaserWeapon>(plPlayer, LaserWeapon::LaserLevel::Normal));
-	vItems.push_back(std::make_shared<OrbWeapon>(plPlayer));
+	vItems.push_back(new LaserWeapon(plPlayer, LaserWeapon::LaserLevel::Normal));
+	vItems.push_back(new OrbWeapon(plPlayer));
 	//vItems.push_back(std::make_shared<AirStrikeItem>(plPlayer));
 	//vItems.push_back(std::make_shared<BlockItem>(plPlayer));
 	//vItems.push_back(std::make_shared<TurretPlacer>(plPlayer));
@@ -216,7 +216,7 @@ void SpaceGame::Update(float deltatime)
 		auto* entity = vEntities[i];
 		
 		//Remove entity if 'Update' returns false
-		if (entity->Update(deltatime) == false) {
+		if (entity->Update(deltatime) == Entity::Status::REMOVE) {
 			delete entity;
 			vEntities.erase(vEntities.begin() + (i--));
 		}
@@ -326,6 +326,7 @@ void SpaceGame::LeftClick()
 	//Delete item if asked to
 	if (vItems[nCurrentItem]->Use(plPlayer->fX, plPlayer->fY, fAngle) == false)
 	{
+		delete vItems[nCurrentItem];
 		vItems.erase(vItems.begin() + nCurrentItem);
 		if (nCurrentItem >= (int)vItems.size())
 			nCurrentItem = vItems.size() - 1;
@@ -386,8 +387,8 @@ void SpaceGame::KeyDown(int key)
 		nScreenHeight = 900;
 	}
 	else if (key == SDL_SCANCODE_U) {
-		AddItem(std::make_shared<BlockItem>(plPlayer));
-		AddItem(std::make_shared<TurretPlacer>(plPlayer));
+		AddItem(new BlockItem(plPlayer));
+		AddItem(new TurretPlacer(plPlayer));
 	}
 	else if (key == SDL_SCANCODE_N) {
 		plPlayer->fMoney += 200.0f;
@@ -426,9 +427,9 @@ void SpaceGame::NextWave()
 
 //Find player item
 Item* SpaceGame::GetItem(const char* name) {
-	for (const auto& item : vItems) {
+	for (Item* item : vItems) {
 		if (strcmp(item->Name(), name) == 0)
-			return item.get();
+			return item;
 	}
 
 	return nullptr;

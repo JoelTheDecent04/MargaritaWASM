@@ -9,7 +9,7 @@ class Enemy : public Entity
 public:
 	bool bLegalPosition;
 	Enemy(float fX, float fY);
-	bool Update(float deltatime) override;
+	Status Update(float deltatime) override;
 	void OnDestroy() override;
 	bool IsEnemy() override { return true; }
 };

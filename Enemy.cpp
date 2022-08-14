@@ -31,11 +31,11 @@ Enemy::Enemy(float fX, float fY)
 	if (bShoot) nFrame = 1;
 }
 
-bool Enemy::Update(float deltatime)
+Entity::Status Enemy::Update(float deltatime)
 {
 	if (fHealth == 0.0f) {
 		OnDestroy();
-		return false;
+		return Status::REMOVE;
 	}
 
 	float dist_to_player = Distance(SpaceGame::Instance().GetPlayer());

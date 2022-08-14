@@ -10,7 +10,7 @@ class Crab : public Entity
 public:
 	bool bLegalPosition;
 	Crab(float fX);
-	bool Update(float deltatime) override;
+	Status Update(float deltatime) override;
 	void OnDestroy() override;
 	bool IsEnemy() override { return true; }
 };

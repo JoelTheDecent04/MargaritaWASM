@@ -4,7 +4,7 @@
 #include <memory>
 #include <functional>
 #include <any>
-
+/*
 class CallbackBase
 {
 public:
@@ -32,7 +32,7 @@ public:
 	void Run() {
 		fn();
 	}
-};
+};*/
 
 enum class EventType
 {
@@ -60,7 +60,7 @@ class EventHandler
 {
 	std::unique_ptr<Objective> objective;
 	
-	std::vector<std::unique_ptr<CallbackBase>> vCallbacks;
+	//std::vector<std::unique_ptr<CallbackBase>> vCallbacks;
 
 	struct DelayedFunction {
 		void (*fn)(void*);
@@ -83,7 +83,7 @@ public:
 	void Event(EventType nType, int nCount, Entity* a, Entity* b);
 	void Update(float deltatime);
 	
-	void RegisterCallback(CallbackBase* callback, int ms);
+	//void RegisterCallback(CallbackBase* callback, int ms);
 
 	void DelayedFunctionInvoke(void fn(void*), float ms, void* ptr = nullptr) {
 		vDelayedFunctions.push_back({fn, ms / 1000.f, ptr});

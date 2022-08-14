@@ -14,6 +14,6 @@ class AirStrike : public Entity
 public:
 	AirStrike(float fX, float fY, float fSpeedX, float fSpeedY);
 
-	bool Update(float deltatime) override;
+	Status Update(float deltatime) override;
 	void LandOnGround() override;
 };

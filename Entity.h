@@ -12,6 +12,12 @@ public:
 	{
 		None, Player, Bomb, Crab, Enemy, Laser, Orb, Light, Structure
 	};
+
+	enum Status
+	{
+		KEEPALIVE,
+		REMOVE
+	};
 	
 protected:
 	Type nType;
@@ -34,7 +40,7 @@ public:
 	
 
 	Entity(int nTexture, float fX, float fY);
-	virtual bool Update(float deltatime);
+	virtual Status Update(float deltatime);
 	virtual void ChangeHealth(float fChange, Entity* e);
 	virtual bool Collide(Entity* entity) { return true; };
 	virtual bool ShouldHit(Entity* entity) { return true; };

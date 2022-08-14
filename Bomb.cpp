@@ -38,16 +38,16 @@ void Bomb::Explode()
 }
 
 
-bool Bomb::Update(float deltatime)
+Entity::Status Bomb::Update(float deltatime)
 {
-	if (Entity::Update(deltatime) == false) return false;
+	if (Entity::Update(deltatime) == Status::REMOVE) return Status::REMOVE;
 	fAge += deltatime;
 	if (fAge >= 0.75f + 0.25f * nLevel)
 	{
 		Explode();
-		return false;
+		return Status::REMOVE;
 	}
-	return true;
+	return Status::KEEPALIVE;
 }
 
 BombWeapon::BombWeapon(Entity* owner, int nLevel)

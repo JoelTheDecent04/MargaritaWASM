@@ -41,6 +41,6 @@ public:
 
 	LaserBeam(float fX, float fY, float fSpeedX, float fSpeedY, LaserType nLaserType = LaserType::DamageEnemies);
 	bool Collide(Entity* entity) override;
-	bool Update(float deltatime) override;
+	Status Update(float deltatime) override;
 	void Draw() override;
 };

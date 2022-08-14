@@ -26,7 +26,7 @@ Turret::Turret(float x, float y)
 	bAffectedByGravity = true;
 }
 
-bool Turret::Update(float deltatime)
+Entity::Status Turret::Update(float deltatime)
 {
 	time_until_next_fire -= deltatime;
 	if (time_until_next_fire <= 0.0f) {

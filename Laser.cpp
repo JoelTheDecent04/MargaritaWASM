@@ -45,7 +45,7 @@ void LaserBeam::Draw()
 	textures[nTexture]->Draw(nFrame, (fX - SpaceGame::RenderPosition() - (textures[nTexture]->fTextureDrawnWidth / 2)), fY - textures[nTexture]->fTextureDrawnHeight / 2, false, fAngle);
 }
 
-bool LaserBeam::Update(float deltatime)
+Entity::Status LaserBeam::Update(float deltatime)
 {
 	float fBulletX = fX + cos(PI * fAngle / 180.0f) * 16.0f; //Get new position
 	float fBulletY = fY + sin(PI * fAngle / 180.0f) * 16.0f;
@@ -61,7 +61,7 @@ bool LaserBeam::Update(float deltatime)
 		{
 			bCollided = true;
 			if (Collide(entity) == false)
-				return false;
+				return Status::REMOVE;
 		}
 	}
 
@@ -78,7 +78,7 @@ bool LaserBeam::Update(float deltatime)
 		bSpeedChanged = true;
 	}
 
-	if (fX < 0.0f || fX > 5120.0f) { OnDestroy(); return false; }
+	if (fX < 0.0f || fX > 5120.0f) { OnDestroy(); return Status::REMOVE; }
 
 	if (bSpeedChanged)
 	{
@@ -89,11 +89,9 @@ bool LaserBeam::Update(float deltatime)
 	}
 
 	if (fX < 0.0f || fX > 5120.0f || fY < -250.0f)
-	{
-		return false;
-	}
+		return Status::REMOVE;
 	
-	return true;
+	return Status::KEEPALIVE;
 }
 
 LaserWeapon::LaserWeapon(Entity* owner, LaserLevel nLaserLevel)
@@ -128,9 +126,10 @@ bool LaserWeapon::Use(float fX, float fY, float fAngle)
 		{
 			//auto* callback = new Callback(std::static_pointer_cast<LaserWeapon>(shared_from_this()), &LaserWeapon::Fire,  owner, fAngle );
 			//SpaceGame::Instance().EventHandler().RegisterCallback(callback, 100);
-			SpaceGame::Instance().EventHandler().DelayedFunctionInvoke([] (void* angle) {
+			SpaceGame::Instance().EventHandler().DelayedFunctionInvoke([] (void* ptr) {
+				float* angle = (float*)ptr;
 				auto* player = SpaceGame::Instance().GetPlayer();
-				SpaceGame::Instance().AddEntity(new LaserBeam(player->fX, player->fY, 1000.0f * cos(*(float*)angle), 1000.0f * sin(*(float*)angle)));
+				SpaceGame::Instance().AddEntity(new LaserBeam(player->fX, player->fY, 1000.0f * cos(*angle), 1000.0f * sin(*angle)));
 				delete angle;
 			}, 100.f, new float(fAngle));
 			

@@ -146,7 +146,7 @@ void ShopScreen::Update(float deltatime)
 
 	button_energy_powerup->SetClickable(SpaceGame::Instance().GetPlayer()->fMoney >= 200.0f);
 	button_regen_powerup->SetClickable(SpaceGame::Instance().GetPlayer()->fMoney >= 250.0f);
-	button_laser->SetClickable(SpaceGame::Instance().GetPlayer()->fMoney >= 400.0f && (((LaserWeapon*)SpaceGame::Instance().Items()[0].get())->nLaserLevel != LaserWeapon::LaserLevel::DoubleShot));
+	button_laser->SetClickable(SpaceGame::Instance().GetPlayer()->fMoney >= 400.0f && (((LaserWeapon*)SpaceGame::Instance().Items()[0])->nLaserLevel != LaserWeapon::LaserLevel::DoubleShot));
 	button_bomb->SetClickable(SpaceGame::Instance().GetPlayer()->fMoney >= 500.0f);
 }
 
@@ -221,7 +221,7 @@ void ShopScreen::BuyEnergyPowerup()
 	if (SpaceGame::Instance().GetPlayer()->fMoney >= 200.0f)
 	{
 		SpaceGame::Instance().GetPlayer()->fMoney -= 200.0f;
-		SpaceGame::Instance().AddItem(std::make_shared<EnergyPowerupItem>(SpaceGame::Instance().GetPlayer()));
+		SpaceGame::Instance().AddItem(new EnergyPowerupItem(SpaceGame::Instance().GetPlayer()));
 	}
 }
 
@@ -230,13 +230,13 @@ void ShopScreen::BuyRegenerationPowerup()
 	if (SpaceGame::Instance().GetPlayer()->fMoney >= 250.0f)
 	{
 		SpaceGame::Instance().GetPlayer()->fMoney -= 250.0f;
-		SpaceGame::Instance().AddItem(std::make_shared<RegenerationPowerupItem>(SpaceGame::Instance().GetPlayer()));
+		SpaceGame::Instance().AddItem(new RegenerationPowerupItem(SpaceGame::Instance().GetPlayer()));
 	}
 }
 
 void ShopScreen::BuyLaserUpgrade()
 {
-	if (SpaceGame::Instance().GetPlayer()->fMoney >= 400.0f && ((LaserWeapon*)SpaceGame::Instance().Items()[0].get())->nLaserLevel != LaserWeapon::LaserLevel::DoubleShot)
+	if (SpaceGame::Instance().GetPlayer()->fMoney >= 400.0f && ((LaserWeapon*)SpaceGame::Instance().Items()[0])->nLaserLevel != LaserWeapon::LaserLevel::DoubleShot)
 	{
 		SpaceGame::Instance().GetPlayer()->fMoney -= 400.0f;
 		((LaserWeapon*)SpaceGame::Instance().GetItem("Laser"))->SetLevel(LaserWeapon::LaserLevel::DoubleShot);

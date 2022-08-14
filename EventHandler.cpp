@@ -24,6 +24,7 @@ void EventHandler::Event(EventType nType, int nCount, Entity* a, Entity* b)
 
 void EventHandler::Update(float deltatime)
 {
+	/*
 	for (size_t i = 0; i < vCallbacks.size(); i++) {
 		auto& callback = *vCallbacks[i];
 		callback.time_left -= deltatime;
@@ -31,7 +32,7 @@ void EventHandler::Update(float deltatime)
 			callback.Run();
 			vCallbacks.erase(vCallbacks.begin() + (i--));
 		}
-	}
+	}*/
 
 	for (size_t i = 0; i < vDelayedFunctions.size(); i++) {
 		auto& func = vDelayedFunctions[i];
@@ -43,16 +44,16 @@ void EventHandler::Update(float deltatime)
 		}
 	}
 }
-
+/*
 void EventHandler::RegisterCallback(CallbackBase* callback, int ms)
 {
 	callback->time_left = (float)ms / 1000.0f;
 	vCallbacks.push_back(std::unique_ptr<CallbackBase>(callback));
 }
-
+*/
 void EventHandler::Reset()
 {
-	vCallbacks.clear();
+	//vCallbacks.clear();
 	vDelayedFunctions.clear();
 }
 

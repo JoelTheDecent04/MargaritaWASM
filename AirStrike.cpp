@@ -37,10 +37,10 @@ AirStrike::AirStrike(float fX, float fY, float fSpeedX, float fSpeedY)
 	bIsBullet = true;
 }
 
-bool AirStrike::Update(float deltatime)
+Entity::Status AirStrike::Update(float deltatime)
 {
 	if (launched)
-		return false;
+		return Status::REMOVE;
 
 	return Entity::Update(deltatime);
 }

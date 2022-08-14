@@ -26,7 +26,7 @@ public:
 	Entity* Owner() {
 		return owner;
 	}
-	const char* Name() { return strName; }
+	const char* Name() const { return strName; }
 	Entity* GetOwner() {
 		return owner;
 	}

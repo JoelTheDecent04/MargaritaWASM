@@ -10,7 +10,7 @@ public:
 	Bomb(float fX, float fY, float fSpeedX, float fSpeedY, int nLevel);
 	bool Collide(Entity* entity) override;
 	void Explode();
-	bool Update(float deltatime) override;
+	Status Update(float deltatime) override;
 
 };
 

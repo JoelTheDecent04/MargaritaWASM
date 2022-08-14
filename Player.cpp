@@ -37,12 +37,12 @@ Player::Player(float fX, float fY)
 	nType = Type::Player;
 }
 
-bool Player::Update(float deltatime)
+Entity::Status Player::Update(float deltatime)
 {
 	if (fHealth <= 0.0f)
 	{
 		OnDestroy();
-		return false; 
+		return Status::REMOVE; 
 	}
 	
 	static const auto& move_left = ControlManager::Instance().GetControlFromAction(Control::Action::Left);
@@ -154,7 +154,7 @@ bool Player::Update(float deltatime)
 	if (fHealth > fMaxHealth) fHealth = fMaxHealth;
 
 	if (fMoney >= 150.0f && SpaceGame::Instance().GetItem("Bomb") == nullptr)
-		SpaceGame::Instance().AddItem(std::make_shared<BombWeapon>(this, 1));
+		SpaceGame::Instance().AddItem(new BombWeapon(this, 1));
 
 	if (puCurrentPowerup)
 	{
@@ -164,7 +164,7 @@ bool Player::Update(float deltatime)
 	else
 		nFrame = 0;
 
-	return true;
+	return Status::KEEPALIVE;
 }
 
 void Player::OnDestroy()

@@ -26,7 +26,7 @@ Crab::Crab(float fX)
 
 	nType = Type::Crab;
 }
-bool Crab::Update(float deltatime)
+Entity::Status Crab::Update(float deltatime)
 {
 	if (abs(SpaceGame::Instance().GetPlayer()->fX - fX) > 80.0f)
 		fSpeedX = SpaceGame::Instance().GetPlayer()->fX > fX ? 100.0f + SpaceGame::Instance().Difficulty() / 60.0f : -100.0f - SpaceGame::Instance().Difficulty() / 60.0f;
@@ -44,15 +44,15 @@ bool Crab::Update(float deltatime)
 
 	animation.Update(deltatime);
 	
- 	if (Entity::Update(deltatime) == false) 
-		return false;
+ 	if (Entity::Update(deltatime) == Status::REMOVE) 
+		return Status::REMOVE;
 
 	if (abs(fSpeedX) > 0.0f)
 		animation.Start();
 	else
 		animation.Stop();
 
-	return true;
+	return Status::KEEPALIVE;
 }
 
 void Crab::OnDestroy()
