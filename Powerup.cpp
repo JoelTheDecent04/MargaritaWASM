@@ -4,5 +4,5 @@
 
 void Powerup::Remove()
 {
-	SpaceGame::Instance().Player()->puCurrentPowerup = nullptr;
+	SpaceGame::Instance().GetPlayer()->puCurrentPowerup = nullptr;
 }

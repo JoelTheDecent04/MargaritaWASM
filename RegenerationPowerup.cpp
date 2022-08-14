@@ -17,12 +17,12 @@ void RegenerationPowerup::Update(float deltatime)
 		return;
 	}
 
-	SpaceGame::Instance().Player()->fHealth += 25 * deltatime;
-	if (SpaceGame::Instance().Player()->fHealth > SpaceGame::Instance().Player()->fMaxHealth)
-		SpaceGame::Instance().Player()->fHealth = SpaceGame::Instance().Player()->fMaxHealth;
+	SpaceGame::Instance().GetPlayer()->fHealth += 25 * deltatime;
+	if (SpaceGame::Instance().GetPlayer()->fHealth > SpaceGame::Instance().GetPlayer()->fMaxHealth)
+		SpaceGame::Instance().GetPlayer()->fHealth = SpaceGame::Instance().GetPlayer()->fMaxHealth;
 }
 
-RegenerationPowerupItem::RegenerationPowerupItem(const std::shared_ptr<Entity>& owner)
+RegenerationPowerupItem::RegenerationPowerupItem(Entity* owner)
 	: Item(owner)
 {
 	nTexture = TextureID::RegenerationPowerup;
@@ -33,10 +33,10 @@ RegenerationPowerupItem::RegenerationPowerupItem(const std::shared_ptr<Entity>& 
 
 bool RegenerationPowerupItem::Use(float fX, float fY, float fAngle)
 {
-	if (SpaceGame::Instance().Player()->puCurrentPowerup == nullptr)
+	if (SpaceGame::Instance().GetPlayer()->puCurrentPowerup == nullptr)
 	{
 		nCount--;
-		SpaceGame::Instance().Player()->puCurrentPowerup = std::make_shared<RegenerationPowerup>();
+		SpaceGame::Instance().GetPlayer()->puCurrentPowerup = std::make_shared<RegenerationPowerup>();
 	}
 	return false;
 }

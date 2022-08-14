@@ -13,6 +13,6 @@ public:
 class RegenerationPowerupItem : public Item
 {
 public:
-	RegenerationPowerupItem(const std::shared_ptr<Entity>& owner);
+	RegenerationPowerupItem(Entity* owner);
 	bool Use(float fX, float fY, float fAngle) override;
 };

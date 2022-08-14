@@ -16,6 +16,6 @@ public:
 class OrbWeapon : public Weapon
 {
 public:
-	OrbWeapon(const std::shared_ptr<Entity>& owner);
+	OrbWeapon(Entity* owner);
 	bool Use(float fX, float fY, float fAngle) override;
 };

@@ -6,6 +6,6 @@
 class Weapon : public Item
 {
 public:
-	Weapon(const std::shared_ptr<Entity>& owner)
+	Weapon(Entity* owner)
 		:Item(owner) {}
 };

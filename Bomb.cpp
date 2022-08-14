@@ -25,10 +25,10 @@ bool Bomb::Collide(Entity* entity)
 void Bomb::Explode()
 {
 	SpaceGame::Instance().AddBackgroundObject(std::make_shared<BombAnimation>(this));
-	for (auto& entity : SpaceGame::Instance().Entities())
+	for (auto* entity : SpaceGame::Instance().Entities())
 	{
-		if (entity.get() == this || entity->bIsBullet) continue;
-		float fDistance = Distance(entity.get());
+		if (entity == this || entity->bIsBullet) continue;
+		float fDistance = Distance(entity);
 		float fDamageDistance = 75.0f + 25.0f * nLevel;
 		if (fDistance < fDamageDistance)
 			entity->ChangeHealth((-250.0f - 20.0f * nLevel) * ((fDamageDistance - fDistance) / fDamageDistance), this);
@@ -50,7 +50,7 @@ bool Bomb::Update(float deltatime)
 	return true;
 }
 
-BombWeapon::BombWeapon(const std::shared_ptr<Entity>& owner, int nLevel)
+BombWeapon::BombWeapon(Entity* owner, int nLevel)
 	: Weapon(owner)
 {
 	this->nLevel = nLevel;
@@ -62,10 +62,10 @@ BombWeapon::BombWeapon(const std::shared_ptr<Entity>& owner, int nLevel)
 
 bool BombWeapon::Use(float fX, float fY, float fAngle)
 {
-	if (SpaceGame::Instance().Player()->nEnergy >= 8.0f + 3.0f * nLevel)
+	if (SpaceGame::Instance().GetPlayer()->nEnergy >= 8.0f + 3.0f * nLevel)
 	{
-		SpaceGame::Instance().AddEntity(std::make_shared<Bomb>(fX, fY, 300.0f * cos(fAngle), 300.0f * sin(fAngle), nLevel));
-		SpaceGame::Instance().Player()->nEnergy -= 8.0f + 3.0f * nLevel;
+		SpaceGame::Instance().AddEntity(new Bomb(fX, fY, 300.0f * cos(fAngle), 300.0f * sin(fAngle), nLevel));
+		SpaceGame::Instance().GetPlayer()->nEnergy -= 8.0f + 3.0f * nLevel;
 	}
 	return true;
 }

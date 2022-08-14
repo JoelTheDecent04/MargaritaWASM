@@ -36,7 +36,7 @@ void Particle::CreateParticles(float fX, float fY, SDL_Color colour)
 		float fAngle = randomf() * 2 * M_PI;
 		float fCos = cos(fAngle);
 		float fSin = sin(fAngle);
-		SpaceGame::Instance().AddEntity(std::make_shared<Particle>(5.0f + randomf() * 10.0f, colour, fX + 10.0f * fCos, fY + 10.0f * fSin, fCos * 80.0f, fSin * 120.0f));
+		SpaceGame::Instance().AddEntity(new Particle(5.0f + randomf() * 10.0f, colour, fX + 10.0f * fCos, fY + 10.0f * fSin, fCos * 80.0f, fSin * 120.0f));
 	}
 }
 

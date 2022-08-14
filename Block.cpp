@@ -10,7 +10,7 @@ Block::Block(float x, float y)
 	bCanCollide = true;
 }
 
-BlockItem::BlockItem(const std::shared_ptr<Entity>& owner)
+BlockItem::BlockItem(Entity* owner)
 	: Item(owner)
 {
 	nTexture = TextureID::None;
@@ -22,7 +22,7 @@ BlockItem::BlockItem(const std::shared_ptr<Entity>& owner)
 
 bool BlockItem::Use(float fX, float fY, float fAngle)
 {
-	SpaceGame::Instance().AddEntity(std::make_shared<Block>(world_x, world_y));
+	SpaceGame::Instance().AddEntity(new Block(world_x, world_y));
 	return true;
 }
 

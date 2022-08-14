@@ -18,13 +18,13 @@ class SpaceGame : public Level
 	WidgetGroup gui;
 
 private:
-	std::vector<std::shared_ptr<Entity>> vEntities;
+	std::vector<Entity*> vEntities;
 	int nCurrentItem = 0;
 	std::vector<std::shared_ptr<Item>> vItems;
 
 	std::vector<std::shared_ptr<BackgroundObject>> vBackgroundObjects;
 
-	std::shared_ptr<Player> plPlayer;
+	Player* plPlayer;
 
 	//Multiplayer
 	std::shared_ptr<WidgetGroup> widgetMultiplayerInfo;
@@ -67,8 +67,8 @@ public:
 	void NetworkPacket(const EmscriptenWebSocketMessageEvent* event, void* data);
 	#endif
 
-	const std::vector<std::shared_ptr<Entity>>& Entities() { return vEntities; }
-	void AddEntity(const std::shared_ptr<Entity>& entity) { vEntities.push_back(entity); }
+	const std::vector<Entity*>& Entities() { return vEntities; }
+	void AddEntity(Entity* entity) { vEntities.push_back(entity); }
 	
 	const std::vector<std::shared_ptr<Item>>& Items() { return vItems; }
 	void AddItem(const std::shared_ptr<Item>& entity) { vItems.push_back(entity); }
@@ -79,7 +79,7 @@ public:
 
 	EventHandler& EventHandler() { return m_EventHandler; };
 
-	std::shared_ptr<Player> Player() {
+	Player* GetPlayer() {
 		return plPlayer;
 	}
 

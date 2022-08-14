@@ -16,12 +16,12 @@ void EnergyPowerup::Update(float deltatime)
 		Remove();
 		return;
 	}
-	SpaceGame::Instance().Player()->nEnergy += 15 * deltatime;
-	if (SpaceGame::Instance().Player()->nEnergy > SpaceGame::Instance().Player()->nMaxEnergy)
-		SpaceGame::Instance().Player()->nEnergy = SpaceGame::Instance().Player()->nMaxEnergy;
+	SpaceGame::Instance().GetPlayer()->nEnergy += 15 * deltatime;
+	if (SpaceGame::Instance().GetPlayer()->nEnergy > SpaceGame::Instance().GetPlayer()->nMaxEnergy)
+		SpaceGame::Instance().GetPlayer()->nEnergy = SpaceGame::Instance().GetPlayer()->nMaxEnergy;
 }
 
-EnergyPowerupItem::EnergyPowerupItem(const std::shared_ptr<Entity>& owner)
+EnergyPowerupItem::EnergyPowerupItem(Entity* owner)
 	: Item(owner)
 {
 	nTexture = TextureID::EnergyPowerup;
@@ -32,10 +32,10 @@ EnergyPowerupItem::EnergyPowerupItem(const std::shared_ptr<Entity>& owner)
 
 bool EnergyPowerupItem::Use(float fX, float fY, float fAngle)
 {
-	if (SpaceGame::Instance().Player()->puCurrentPowerup == nullptr)
+	if (SpaceGame::Instance().GetPlayer()->puCurrentPowerup == nullptr)
 	{
 		nCount--;
-		SpaceGame::Instance().Player()->puCurrentPowerup = std::make_shared<EnergyPowerup>();
+		SpaceGame::Instance().GetPlayer()->puCurrentPowerup = std::make_shared<EnergyPowerup>();
 	}
 	return false;
 }

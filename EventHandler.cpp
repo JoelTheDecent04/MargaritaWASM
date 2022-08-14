@@ -32,12 +32,28 @@ void EventHandler::Update(float deltatime)
 			vCallbacks.erase(vCallbacks.begin() + (i--));
 		}
 	}
+
+	for (size_t i = 0; i < vDelayedFunctions.size(); i++) {
+		auto& func = vDelayedFunctions[i];
+		func.time_left -= deltatime;
+
+		if (func.time_left <= 0.0f) {
+			func.fn(func.data);
+			vDelayedFunctions.erase(vDelayedFunctions.begin() + (i--));
+		}
+	}
 }
 
 void EventHandler::RegisterCallback(CallbackBase* callback, int ms)
 {
 	callback->time_left = (float)ms / 1000.0f;
 	vCallbacks.push_back(std::unique_ptr<CallbackBase>(callback));
+}
+
+void EventHandler::Reset()
+{
+	vCallbacks.clear();
+	vDelayedFunctions.clear();
 }
 
 class EnemyKillWithWeaponObjective : public Objective
@@ -68,8 +84,8 @@ public:
 				enemies_left--;
 				if (enemies_left == 0)
 				{
-					SpaceGame::Instance().Player()->fMoney += 120.0f;
-					SpaceGame::Instance().Player()->ChangeHealth(100.0f, nullptr);
+					SpaceGame::Instance().GetPlayer()->fMoney += 120.0f;
+					SpaceGame::Instance().GetPlayer()->ChangeHealth(100.0f, nullptr);
 					completed = true;
 				}
 			}

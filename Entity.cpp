@@ -52,13 +52,13 @@ bool Entity::Update(float deltatime)
 	if (bCanCollide || bCanCollideWithPlayer) //If this entity can collide
 	{
  		bool bCollidedVertically = false;
-		for (auto& entity : SpaceGame::Instance().Entities()) //Check if it can move vertically
+		for (auto* entity : SpaceGame::Instance().Entities()) //Check if it can move vertically
 		{
-			if (entity.get() == this || !entity->bCanCollide) continue;
+			if (entity == this || !entity->bCanCollide) continue;
 			if ((entity->GetType() == Type::Player && !bCanCollideWithPlayer) || (entity->GetType() != Type::Player && !bCanCollide)) continue;
-			if (entity->WillOverlap(this, fX, fNewY) && this->ShouldHit(entity.get()))
+			if (entity->WillOverlap(this, fX, fNewY) && this->ShouldHit(entity))
 			{
-				if (Collide(entity.get()) == false)
+				if (Collide(entity) == false)
 					return false;
 				
 				bCollidedVertically = true;
@@ -73,13 +73,13 @@ bool Entity::Update(float deltatime)
 
 
 		bool bCollidedHorizontally = false;
-		for (auto entity : SpaceGame::Instance().Entities()) //Check if it can move horizontally
+		for (auto* entity : SpaceGame::Instance().Entities()) //Check if it can move horizontally
 		{
-			if (entity.get() == this || !entity->bCanCollide) continue;
+			if (entity == this || !entity->bCanCollide) continue;
 			if ((entity->GetType() == Type::Player && !bCanCollideWithPlayer) || (entity->GetType() != Type::Player && !bCanCollide)) continue;
-			if (entity->WillOverlap(this, fNewX, fY) && this->ShouldHit(entity.get()))
+			if (entity->WillOverlap(this, fNewX, fY) && this->ShouldHit(entity))
 			{
-				if (Collide(entity.get()) == false)
+				if (Collide(entity) == false)
 					return false;
 
 				bCollidedHorizontally = true;

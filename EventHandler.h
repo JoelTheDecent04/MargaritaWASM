@@ -3,6 +3,7 @@
 #include <vector>
 #include <memory>
 #include <functional>
+#include <any>
 
 class CallbackBase
 {
@@ -61,6 +62,15 @@ class EventHandler
 	
 	std::vector<std::unique_ptr<CallbackBase>> vCallbacks;
 
+	struct DelayedFunction {
+		void (*fn)(void*);
+		float time_left;
+		void* data;
+	};
+	std::vector<DelayedFunction> vDelayedFunctions;
+
+
+
 public:
 	EventHandler();
 	
@@ -74,6 +84,12 @@ public:
 	void Update(float deltatime);
 	
 	void RegisterCallback(CallbackBase* callback, int ms);
+
+	void DelayedFunctionInvoke(void fn(void*), float ms, void* ptr = nullptr) {
+		vDelayedFunctions.push_back({fn, ms / 1000.f, ptr});
+	}
+
+	void Reset();
 
 	const Objective& Objective() { return *objective; }
 };

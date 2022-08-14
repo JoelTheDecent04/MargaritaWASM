@@ -7,7 +7,7 @@
 class Item : public std::enable_shared_from_this<Item>
 {
 protected:
-	std::weak_ptr<Entity> owner;
+	Entity* owner;
 
 public:
 	enum class Type { None, Bomb, Laser, Orb, EnergyPowerup, RegenerationPowerup, TurretPlacer, Block };
@@ -22,16 +22,12 @@ public:
 	virtual bool Use(float fX, float fY, float fAngle) = 0;
 	virtual void HoldUpdate() {};
 	virtual void HoldRender() {};
-	Item(const std::shared_ptr<Entity>& owner);
-	std::weak_ptr<Entity> Owner() {
+	Item(Entity* owner);
+	Entity* Owner() {
 		return owner;
 	}
 	const char* Name() { return strName; }
 	Entity* GetOwner() {
-		std::shared_ptr<Entity> the_owner = owner.lock();
-		if (the_owner)
-			return the_owner.get();
-		else
-			return nullptr;
+		return owner;
 	}
 };

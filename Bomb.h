@@ -18,7 +18,7 @@ class BombWeapon : public Weapon
 {
 public:
 	int nLevel;
-	BombWeapon(const std::shared_ptr<Entity>& owner, int nLevel);
+	BombWeapon(Entity* owner, int nLevel);
 	bool Use(float fX, float fY, float fAngle) override;
 	std::vector<std::unique_ptr<ItemUpgrade>> GetPossibleUpgrades() override;
 	void Upgrade() {

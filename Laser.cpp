@@ -54,13 +54,13 @@ bool LaserBeam::Update(float deltatime)
 	float fNewY = fY + fSpeedY * deltatime;
 
 	bool bCollided = false;
-	for (auto& entity : SpaceGame::Instance().Entities()) //Check for collisions
+	for (auto* entity : SpaceGame::Instance().Entities()) //Check for collisions
 	{
-		if (entity.get() == this || !entity->bCanCollide) continue;
+		if (entity == this || !entity->bCanCollide) continue;
 		if (entity->WillOverlap(this, fBulletX, fBulletY))
 		{
 			bCollided = true;
-			if (Collide(entity.get()) == false)
+			if (Collide(entity) == false)
 				return false;
 		}
 	}
@@ -96,7 +96,7 @@ bool LaserBeam::Update(float deltatime)
 	return true;
 }
 
-LaserWeapon::LaserWeapon(const std::shared_ptr<Entity>& owner, LaserLevel nLaserLevel)
+LaserWeapon::LaserWeapon(Entity* owner, LaserLevel nLaserLevel)
 	: Weapon(owner)
 {
 	nTexture = TextureID::Laser;
@@ -117,7 +117,7 @@ bool LaserWeapon::Use(float fX, float fY, float fAngle)
 		
 		if (!player || player->nEnergy >= 4)
 		{
-			SpaceGame::Instance().AddEntity(std::make_shared<LaserBeam>(fX, fY, 1000.0f * cos(fAngle), 1000.0f * sin(fAngle)));
+			SpaceGame::Instance().AddEntity(new LaserBeam(fX, fY, 1000.0f * cos(fAngle), 1000.0f * sin(fAngle)));
 
 			if (player)
 			player->nEnergy -= 4;
@@ -126,10 +126,15 @@ bool LaserWeapon::Use(float fX, float fY, float fAngle)
 	case LaserLevel::DoubleShot:
 		if (!player || player->nEnergy >= 6)
 		{
-			auto* callback = new Callback(std::static_pointer_cast<LaserWeapon>(shared_from_this()), &LaserWeapon::Fire,  owner, fAngle );
-			SpaceGame::Instance().EventHandler().RegisterCallback(callback, 100);
+			//auto* callback = new Callback(std::static_pointer_cast<LaserWeapon>(shared_from_this()), &LaserWeapon::Fire,  owner, fAngle );
+			//SpaceGame::Instance().EventHandler().RegisterCallback(callback, 100);
+			SpaceGame::Instance().EventHandler().DelayedFunctionInvoke([] (void* angle) {
+				auto* player = SpaceGame::Instance().GetPlayer();
+				SpaceGame::Instance().AddEntity(new LaserBeam(player->fX, player->fY, 1000.0f * cos(*(float*)angle), 1000.0f * sin(*(float*)angle)));
+				delete angle;
+			}, 100.f, new float(fAngle));
 			
-			SpaceGame::Instance().AddEntity(std::make_shared<LaserBeam>(fX, fY, 1000.0f * cos(fAngle), 1000.0f * sin(fAngle)));
+			SpaceGame::Instance().AddEntity(new LaserBeam(fX, fY, 1000.0f * cos(fAngle), 1000.0f * sin(fAngle)));
 			if (player)
 				player->nEnergy -= 6;
 		}
@@ -160,6 +165,6 @@ void LaserWeapon::Fire(std::weak_ptr<Entity> owner, float fAngle)
 {
 	auto ptr = owner.lock();
 	if (ptr)
-		SpaceGame::Instance().AddEntity(std::make_shared<LaserBeam>(ptr->fX, ptr->fY, 1000.0f * cos(fAngle), 1000.0f * sin(fAngle)));
+		SpaceGame::Instance().AddEntity(new LaserBeam(ptr->fX, ptr->fY, 1000.0f * cos(fAngle), 1000.0f * sin(fAngle)));
 }
 

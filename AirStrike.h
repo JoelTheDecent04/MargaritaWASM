@@ -4,7 +4,7 @@
 class AirStrikeItem : public Item
 {
 public:
-	AirStrikeItem(const std::shared_ptr<Entity>& owner);
+	AirStrikeItem(Entity* owner);
 	bool Use(float fX, float fY, float fAngle) override;
 };
 

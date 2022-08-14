@@ -7,10 +7,10 @@ Turret::_nearest_entity Turret::FindNearestEnemy()
 {
 	using namespace Game;
 	_nearest_entity nearest_player = { nullptr, INFINITY };
-	for (const auto& entity : SpaceGame::Instance().Entities()) {
+	for (auto* entity : SpaceGame::Instance().Entities()) {
 		float dist;
-		if ((entity->GetType() == Entity::Type::Crab || entity->GetType() == Entity::Type::Enemy) && (dist = Distance(entity.get())) < nearest_player.distance) {
-			nearest_player.entity = entity.get();
+		if ((entity->GetType() == Entity::Type::Crab || entity->GetType() == Entity::Type::Enemy) && (dist = Distance(entity)) < nearest_player.distance) {
+			nearest_player.entity = entity;
 			nearest_player.distance = dist;
 		}
 	}
@@ -45,7 +45,7 @@ bool Turret::Update(float deltatime)
 	return Entity::Update(deltatime);
 }
 
-TurretPlacer::TurretPlacer(const std::shared_ptr<Entity>& owner)
+TurretPlacer::TurretPlacer(Entity* owner)
 	: Item(owner)
 {
 	nType = Type::TurretPlacer;
@@ -56,7 +56,7 @@ TurretPlacer::TurretPlacer(const std::shared_ptr<Entity>& owner)
 
 bool TurretPlacer::Use(float fX, float fY, float)
 {
-	auto turret = std::make_shared<Turret>(fX, fY);
+	auto* turret = new Turret(fX, fY);
 	//turret->SetWeapon(std::make_shared<LaserWeapon>(turret, LaserWeapon::LaserLevel::DoubleShot));
 	turret->SetWeapon(std::make_shared<LaserWeapon>(turret, LaserWeapon::LaserLevel::DoubleShot));
 	SpaceGame::Instance().AddEntity(turret);

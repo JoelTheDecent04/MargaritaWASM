@@ -15,8 +15,8 @@ CoinReward::CoinReward(float fX, float fY)
 
 bool CoinReward::Update(float delta)
 {
-    if (Distance(SpaceGame::Instance().Player().get()) < 40.0f) {
-        SpaceGame::Instance().Player()->fMoney += 50.0f;
+    if (Distance(SpaceGame::Instance().GetPlayer()) < 40.0f) {
+        SpaceGame::Instance().GetPlayer()->fMoney += 50.0f;
         return false;  
     }
 
@@ -45,8 +45,8 @@ bool CoinPickup::Update(float deltatime)
     if (SpaceGame::Instance().WaveSecondsLeft() == 0.0f)
         return false;
 
-    if (Distance(SpaceGame::Instance().Player().get()) < 40.0f) {
-        SpaceGame::Instance().Player()->fMoney += 100.0f;
+    if (Distance(SpaceGame::Instance().GetPlayer()) < 40.0f) {
+        SpaceGame::Instance().GetPlayer()->fMoney += 100.0f;
         OnDestroy();
         return false;  
     }
@@ -70,5 +70,5 @@ void CoinPickup::Draw()
 
 void CoinPickup::OnDestroy()
 {
-    SpaceGame::Instance().AddEntity(std::make_shared<CoinPickup>(randomf() * 5120.f, randomf() * 400.f));
+    SpaceGame::Instance().AddEntity(new CoinPickup(randomf() * 5120.f, randomf() * 400.f));
 }

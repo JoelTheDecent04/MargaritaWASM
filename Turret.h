@@ -22,6 +22,6 @@ public:
 class TurretPlacer : public Item
 {
 public:
-	TurretPlacer(const std::shared_ptr<Entity>& owner);
+	TurretPlacer(Entity* owner);
 	bool Use(float fX, float fY, float fAngle) override;
 };

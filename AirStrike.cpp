@@ -3,7 +3,7 @@
 #include "Bomb.h"
 #include "Player.h"
 
-AirStrikeItem::AirStrikeItem(const std::shared_ptr<Entity>& owner)
+AirStrikeItem::AirStrikeItem(Entity* owner)
 	: Item(owner)
 {
 	strName = "Air Attack";
@@ -16,7 +16,7 @@ bool AirStrikeItem::Use(float fX, float fY, float fAngle)
 	Player* player = weapon_owner->GetType() == Entity::Type::Player ? (Player*)weapon_owner : nullptr;
 
 	if (!player || player->fMoney > 50.0f) {
-		auto airstrike = std::make_shared<AirStrike>(fX, fY, 500.0f * cos(fAngle), 500.0f * sin(fAngle));
+		auto* airstrike = new AirStrike(fX, fY, 500.0f * cos(fAngle), 500.0f * sin(fAngle));
 		SpaceGame::Instance().AddEntity(airstrike);
 		nCount--;
 
@@ -47,8 +47,8 @@ bool AirStrike::Update(float deltatime)
 
 void AirStrike::LandOnGround()
 {
-	SpaceGame::Instance().AddEntity(std::make_shared<Bomb>(fX - 200.0f, -50.0f, 0.0f, 220.0f, 3));
-	SpaceGame::Instance().AddEntity(std::make_shared<Bomb>(fX		  , -50.0f, 0.0f, 220.0f, 3));
-	SpaceGame::Instance().AddEntity(std::make_shared<Bomb>(fX + 200.0f, -50.0f, 0.0f, 220.0f, 3));
+	SpaceGame::Instance().AddEntity(new Bomb(fX - 200.0f, -50.0f, 0.0f, 220.0f, 3));
+	SpaceGame::Instance().AddEntity(new Bomb(fX		  , -50.0f, 0.0f, 220.0f, 3));
+	SpaceGame::Instance().AddEntity(new Bomb(fX + 200.0f, -50.0f, 0.0f, 220.0f, 3));
 	launched = true;
 }

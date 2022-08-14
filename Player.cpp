@@ -95,15 +95,15 @@ bool Player::Update(float deltatime)
 	float fNewY = fY + fSpeedY * deltatime;
 
  	bool bCollidedVertically = false;
-	for (auto& entity : SpaceGame::Instance().Entities()) //Check if it can move vertically
+	for (auto* entity : SpaceGame::Instance().Entities()) //Check if it can move vertically
 	{
-		if (entity.get() == this) continue;
+		if (entity == this) continue;
 		if (!entity->bCanCollideWithPlayer) continue;
 		if (entity->WillOverlap(this, fX, fNewY))
 		{
 			bCollidedVertically = true;
 			bCollided = true;
-			Collide(entity.get());
+			Collide(entity);
 			break;
 		}
 	}
@@ -113,15 +113,15 @@ bool Player::Update(float deltatime)
 		fY = fNewY;
 
 	bool bCollidedHorizontally = false;
-	for (auto entity : SpaceGame::Instance().Entities()) //Check if it can move horizontally
+	for (auto* entity : SpaceGame::Instance().Entities()) //Check if it can move horizontally
 	{
-		if (entity.get() == this) continue;
+		if (entity == this) continue;
 		if (!entity->bCanCollideWithPlayer) continue;
 		if (entity->WillOverlap(this, fNewX, fY))
 		{
 			bCollidedHorizontally = true;
 			if (!bCollided)
-				Collide(entity.get());
+				Collide(entity);
 			break;
 		}
 	}
@@ -154,7 +154,7 @@ bool Player::Update(float deltatime)
 	if (fHealth > fMaxHealth) fHealth = fMaxHealth;
 
 	if (fMoney >= 150.0f && SpaceGame::Instance().GetItem("Bomb") == nullptr)
-		SpaceGame::Instance().AddItem(std::make_shared<BombWeapon>(shared_from_this(), 1));
+		SpaceGame::Instance().AddItem(std::make_shared<BombWeapon>(this, 1));
 
 	if (puCurrentPowerup)
 	{

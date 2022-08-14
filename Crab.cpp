@@ -15,9 +15,9 @@ Crab::Crab(float fX)
 	fSecondsUntilNextAttack = 0.0f;
 	bLegalPosition = true;
 
-	for (auto& entity : SpaceGame::Instance().Entities())
+	for (auto* entity : SpaceGame::Instance().Entities())
 	{
-		if (Overlapping(entity.get()))
+		if (Overlapping(entity))
 		{
 			bLegalPosition = false;
 			break;
@@ -28,16 +28,16 @@ Crab::Crab(float fX)
 }
 bool Crab::Update(float deltatime)
 {
-	if (abs(SpaceGame::Instance().Player()->fX - fX) > 80.0f)
-		fSpeedX = SpaceGame::Instance().Player()->fX > fX ? 100.0f + SpaceGame::Instance().Difficulty() / 60.0f : -100.0f - SpaceGame::Instance().Difficulty() / 60.0f;
+	if (abs(SpaceGame::Instance().GetPlayer()->fX - fX) > 80.0f)
+		fSpeedX = SpaceGame::Instance().GetPlayer()->fX > fX ? 100.0f + SpaceGame::Instance().Difficulty() / 60.0f : -100.0f - SpaceGame::Instance().Difficulty() / 60.0f;
 	else
 	{
 		fSpeedX = 0.0f;
 		if (fSecondsUntilNextAttack > 0.0f)
 			fSecondsUntilNextAttack -= deltatime;
-		else if (Distance(SpaceGame::Instance().Player().get()) <= 90.0f)
+		else if (Distance(SpaceGame::Instance().GetPlayer()) <= 90.0f)
 		{
-			SpaceGame::Instance().Player()->ChangeHealth(-15.0f, this);
+			SpaceGame::Instance().GetPlayer()->ChangeHealth(-15.0f, this);
 			fSecondsUntilNextAttack = 1.0f;
 		}
 	}
@@ -57,7 +57,7 @@ bool Crab::Update(float deltatime)
 
 void Crab::OnDestroy()
 {
-	SpaceGame::Instance().Player()->fMoney += 15.0f;
+	SpaceGame::Instance().GetPlayer()->fMoney += 15.0f;
 	SpaceGame::Instance().EnemyCount()--;
 
 	Particle::CreateParticles(fX, fY, clrPurple);

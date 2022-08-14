@@ -17,9 +17,9 @@ Enemy::Enemy(float fX, float fY)
 	fSecondsUntilNextAttack = 0.0f;
 	bLegalPosition = true;
 
-	for (auto& entity : SpaceGame::Instance().Entities())
+	for (auto* entity : SpaceGame::Instance().Entities())
 	{
-		if (Overlapping(entity.get()))
+		if (Overlapping(entity))
 		{
 			bLegalPosition = false;
 			break;
@@ -38,8 +38,8 @@ bool Enemy::Update(float deltatime)
 		return false;
 	}
 
-	float dist_to_player = Distance(SpaceGame::Instance().Player().get());
-	auto player = SpaceGame::Instance().Player();
+	float dist_to_player = Distance(SpaceGame::Instance().GetPlayer());
+	auto player = SpaceGame::Instance().GetPlayer();
 
 	if (dist_to_player > 55.0f)
 	{
@@ -61,10 +61,10 @@ bool Enemy::Update(float deltatime)
 	else
 	{
 		if (dist_to_player <= 55.0f && !bShoot)
-			SpaceGame::Instance().Player()->ChangeHealth(-10.0f, this);
+			SpaceGame::Instance().GetPlayer()->ChangeHealth(-10.0f, this);
 		
 		if (dist_to_player < 400.0f && bShoot)
-			SpaceGame::Instance().AddEntity(std::make_shared<LaserBeam>(fX, fY, 1000.f * (player->fX - fX) / dist_to_player, 1000.f * (player->fY - fY) / dist_to_player, LaserBeam::LaserType::DamagePlayers));
+			SpaceGame::Instance().AddEntity(new LaserBeam(fX, fY, 1000.f * (player->fX - fX) / dist_to_player, 1000.f * (player->fY - fY) / dist_to_player, LaserBeam::LaserType::DamagePlayers));
 
 		fSecondsUntilNextAttack = 1.0f;
 	}
@@ -77,8 +77,8 @@ void Enemy::OnDestroy()
 	//SpaceGame::Instance().Player()->fMoney += 10.0f;
 
 	if (randomf() <= 0.1f) {
-		SpaceGame::Instance().AddEntity(std::make_shared<CoinReward>(fX, fY));
-		SpaceGame::Instance().Player()->fMoney += 50.f;
+		SpaceGame::Instance().AddEntity(new CoinReward(fX, fY));
+		SpaceGame::Instance().GetPlayer()->fMoney += 50.f;
 	}
 
 	SpaceGame::Instance().EnemyCount()--;

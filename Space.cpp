@@ -45,7 +45,7 @@ std::shared_ptr<SpaceGame> SpaceGame::game = nullptr;
 SpaceGame::SpaceGame() 
 : gui(1280, 720)
 {
-	plPlayer = std::make_shared<class Player>(384.0f, 380.f);
+	plPlayer = new Player(384.0f, 380.f);
 
 	vEntities.push_back(plPlayer);
 	nPlayers++;
@@ -213,11 +213,13 @@ void SpaceGame::Update(float deltatime)
 	//Entity updates
 	for (size_t i = 0; i < vEntities.size(); i++)
 	{
-		auto& entity = *vEntities[i];
+		auto* entity = vEntities[i];
 		
 		//Remove entity if 'Update' returns false
-		if (!entity.Update(deltatime))
+		if (entity->Update(deltatime) == false) {
+			delete entity;
 			vEntities.erase(vEntities.begin() + (i--));
+		}
 	}
 
 	// If there are no players left the game has ended. Hence, go to death screen
@@ -245,7 +247,7 @@ void SpaceGame::Update(float deltatime)
 		//15% chance of crab, else normal enemy
 		if (randomf() >= 0.15f)
 		{
-			auto enemy = std::make_shared<Enemy>(random_off_screen(), randomf() * 500);
+			auto* enemy = new Enemy(random_off_screen(), randomf() * 500);
 			if (enemy->bLegalPosition)
 			{
 				vEntities.push_back(enemy);
@@ -254,7 +256,7 @@ void SpaceGame::Update(float deltatime)
 		}
 		else
 		{
-			auto crab = std::make_shared<Crab>(random_off_screen());
+			auto* crab = new Crab(random_off_screen());
 			if (crab->bLegalPosition)
 			{
 				vEntities.push_back(crab);
@@ -419,7 +421,7 @@ void SpaceGame::NextWave()
 
 	bWaveFinished = false;
 
-	vEntities.push_back(std::make_shared<CoinPickup>(randomf() * 5120.f, randomf() * 400.0f));
+	vEntities.push_back(new CoinPickup(randomf() * 5120.f, randomf() * 400.0f));
 }
 
 //Find player item

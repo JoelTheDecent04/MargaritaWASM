@@ -11,7 +11,7 @@ public:
 		DoubleShot
 	};
 	LaserLevel nLaserLevel;
-	LaserWeapon(const std::shared_ptr<Entity>& owner, LaserLevel nLaserLevel);
+	LaserWeapon(Entity* owner, LaserLevel nLaserLevel);
 	bool Use(float fX, float fY, float fAngle) override;
 
 	std::vector<std::unique_ptr<ItemUpgrade>> GetPossibleUpgrades() override;

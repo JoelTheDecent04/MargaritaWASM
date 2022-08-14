@@ -18,7 +18,7 @@ Orb::Orb(float fX, float fY, float fSpeedX, float fSpeedY)
 bool Orb::Update(float deltatime)
 {
 	fAge += deltatime;
-	if (fAge >= 1.0f && Distance(SpaceGame::Instance().Player().get()) < 40.0f)
+	if (fAge >= 1.0f && Distance(SpaceGame::Instance().GetPlayer()) < 40.0f)
 	{
 		OnDestroy();
 		SpaceGame::Instance().GetItem("Orb")->nCount++;
@@ -50,7 +50,7 @@ bool Orb::ShouldHit(Entity* entity)
 	return entity->GetType() != Type::Orb;
 }
 
-OrbWeapon::OrbWeapon(const std::shared_ptr<Entity>& owner)
+OrbWeapon::OrbWeapon(Entity* owner)
 	: Weapon(owner)
 {
 	nCount = 12;
@@ -63,7 +63,7 @@ bool OrbWeapon::Use(float fX, float fY, float fAngle)
 {
 	if (nCount)
 	{
-		SpaceGame::Instance().AddEntity(std::make_shared<Orb>(fX, fY, 300.0f * cos(fAngle), 300.0f * sin(fAngle)));
+		SpaceGame::Instance().AddEntity(new Orb(fX, fY, 300.0f * cos(fAngle), 300.0f * sin(fAngle)));
 		nCount--;
 	}
 	return true;

@@ -1,6 +1,6 @@
 #include "Item.h"
 
-Item::Item(const std::shared_ptr<Entity>& owner)
+Item::Item(Entity* owner)
 { 
 	nCount = 0; 
 	nType = Type::None;
