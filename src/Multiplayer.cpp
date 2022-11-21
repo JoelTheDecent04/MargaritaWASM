@@ -49,7 +49,7 @@ void AttemptConnection()
         SDL_Log("Websockets not supported\n");
 
     EmscriptenWebSocketCreateAttributes attributes = {
-        "ws://localhost:5252/", //URL 
+        "ws://119.42.52.199:5252/", //URL 
         nullptr, //Protocols
         EM_TRUE //Create on main thread
     };
@@ -216,8 +216,10 @@ void MultiplayerGameClient::DataReceive(const char* data)
         }
     }
 
-    if (server_data.contains("snails_received") && (int)server_data["snails_received"] > 1)
+    if (server_data.contains("snails_received") && (int)server_data["snails_received"] > 0) {
         SpaceGame::Instance().Entities.Add(new Snail());
+        printf("SNAIL\n");
+    }
 
     if (server_data.contains("winner"))
     {

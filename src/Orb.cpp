@@ -49,6 +49,9 @@ bool Orb::Collide(Entity& entity)
 		fSpeedX *= 0.8f;
 		fSpeedY *= 0.8f;
 		fTimeSinceLastHit = 0.0f;
+
+		if (entity.fHealth <= 0)
+			fTimeSinceLastHit = 0.35f;
 	}
 	return true;
 }
