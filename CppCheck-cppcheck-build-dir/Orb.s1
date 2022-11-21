@@ -1,0 +1,189 @@
+Rect
+RectSize
+operator+
+TextRenderer
+SetPosition
+SetSize
+SetAlignment
+SetAbsoluteCoordinates
+SetColour
+GraphicsStreamText
+operator<< call:[strlen,strncpy]
+operator<< call:[snprintf]
+operator<< call:[Draw] noreturn:[Draw]
+RectRenderer
+SetPosition
+SetSize
+SetColour
+SetAbsoluteCoordinates
+SetFilled
+SetAlignment
+Texture
+Handle
+Collide
+OnDestroy
+Destroy
+LandOnGround
+IsEnemy
+GetType
+operator| call:[return]
+operator& call:[return]
+ClickOn
+ClickOff
+OnMouseEnter
+OnMouseLeave
+Update
+TextInput
+KeyDown
+Draw
+WidgetChild
+Widget
+Children
+Clear call:[clear] noreturn:[clear]
+Add call:[WidgetChild,push_back]
+SetClickable
+SetText
+IsClickable
+Hovering
+SetText
+Text
+render
+Render call:[Draw,render] noreturn:[Draw]
+update
+Update call:[Update,update] noreturn:[Update]
+LeftClick
+KeyDown
+KeyPress
+Gui
+BackgroundObject
+Completed
+Objective
+DelayedFunctionInvoke call:[push_back] noreturn:[push_back]
+Objective
+SetSocket
+GameClient
+EventHandler
+GetPlayer
+Difficulty
+EnemyCount
+PlayerCount
+ShowingHitboxes
+Wave
+WaveFinished
+WaveSecondsLeft
+Instance call:[assert]
+InstanceExists call:[get] noreturn:[get]
+InstanceAsSharedPtr
+SetInstance
+RenderPosition call:[assert]
+ItemUpgrade
+DoUpgrade
+Description
+Cost
+PlayerUpgrade
+DoUpgrade
+Description
+Cost
+Current
+Max
+Increment
+GetPossibleUpgrades
+HoldUpdate
+HoldRender
+Owner
+Name
+GetOwner
+Item
+Weapon
+ChangeHealth
+Powerup
+Orb
+Update call:[Distance,GetItem,GetPlayer,Instance,OnDestroy,Update]
+Collide call:[ChangeHealth]
+OrbWeapon
+Use call:[Add,Instance,Orb,cos,sin]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < Entity >
+List < Entity >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < Item >
+List < Item >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < BackgroundObject >
+List < BackgroundObject >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < ItemUpgrade >
+List < ItemUpgrade >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < PlayerUpgrade >
+List < PlayerUpgrade >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]

@@ -1,0 +1,84 @@
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List
+List
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Rect
+RectSize
+operator+
+TextRenderer
+SetPosition
+SetSize
+SetAlignment
+SetAbsoluteCoordinates
+SetColour
+GraphicsStreamText
+operator<< call:[strlen,strncpy]
+operator<< call:[snprintf]
+operator<< call:[Draw] noreturn:[Draw]
+RectRenderer
+SetPosition
+SetSize
+SetColour
+SetAbsoluteCoordinates
+SetFilled
+SetAlignment
+Texture
+Handle
+ClickOn
+ClickOff
+OnMouseEnter
+OnMouseLeave
+Update
+TextInput
+KeyDown
+Draw
+WidgetChild
+Widget
+Children
+Clear call:[clear] noreturn:[clear]
+Add call:[WidgetChild,push_back]
+SetClickable
+SetText
+IsClickable
+Hovering
+SetText
+Text
+render
+Render call:[Draw,render] noreturn:[Draw]
+update
+Update call:[Update,update] noreturn:[Update]
+LeftClick
+KeyDown
+KeyPress
+Gui
+Initialise call:[IMG_Load,SDL_CreateRenderer,SDL_FreeSurface,SDL_GetError,SDL_Log,SDL_Quit,SDL_RenderSetLogicalSize,SDL_SetHint,SDL_SetRenderDrawBlendMode,SDL_SetWindowIcon] noreturn:[SDL_FreeSurface,SDL_Log,SDL_Quit]
+Close
+BeginDraw
+EndDraw call:[SDL_RenderPresent] noreturn:[SDL_RenderPresent]
+Clear call:[SDL_RenderClear,SDL_SetRenderDrawColor] noreturn:[SDL_RenderClear]
+WriteText global:[nScreenWidth] call:[SDL_CreateTextureFromSurface,SDL_DestroyTexture,SDL_FreeSurface,SDL_QueryTexture,SDL_RenderCopyF,TTF_RenderText_Blended_Wrapped] noreturn:[SDL_DestroyTexture]
+TextMetrics call:[TTF_SizeText]
+DrawRectangle call:[SDL_RenderDrawRectF,SDL_RenderFlush,SDL_SetRenderDrawColor] noreturn:[SDL_RenderFlush]
+FillRectangle call:[SDL_RenderFillRectF,SDL_RenderFlush,SDL_SetRenderDrawColor] noreturn:[SDL_RenderFlush]
+Resize call:[clear] noreturn:[clear]
+ResizeGUI call:[clear] noreturn:[clear]
+GetFont global:[fGUIScale,fWindowScale] call:[TTF_OpenFont,end,find]
+generate_texture call:[GetFont,SDL_CreateTextureFromSurface,SDL_FreeSurface,TTF_RenderText_Blended] noreturn:[SDL_FreeSurface]
+Draw call:[SDL_DestroyTexture,SDL_QueryTexture,SDL_RenderCopyF,assert,generate_texture] noreturn:[SDL_DestroyTexture,assert]
+Size call:[SDL_QueryTexture,generate_texture]
+GraphicsStreamRect call:[SDL_Log,SDL_RenderFillRectF,SDL_SetRenderDrawColor,assert] noreturn:[SDL_Log,assert]
+SetText global:[fGUIScale,fScaleH,fScaleV,fWindowScale] call:[GetFont,SDL_CreateTextureFromSurface,SDL_DestroyTexture,SDL_FreeSurface,SDL_QueryTexture,SDL_RenderCopyF,TTF_RenderText_Blended,assert,c_str,str] noreturn:[SDL_DestroyTexture,assert]
+Draw global:[fScaleH,fScaleV] call:[SDL_RenderDrawRectF,SDL_RenderFillRectF,SDL_RenderFlush,SDL_SetRenderDrawColor,assert] noreturn:[SDL_RenderDrawRectF,SDL_RenderFillRectF,SDL_RenderFlush,assert]

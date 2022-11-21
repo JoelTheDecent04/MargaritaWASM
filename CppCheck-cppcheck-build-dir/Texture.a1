@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="4305741325874263258">
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;size&apos;." verbose="Non-pure function: &apos;size&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="51" column="18"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::left&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::left&apos; is not initialized in the constructor." cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::left</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::top&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::top&apos; is not initialized in the constructor." cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::top</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::right&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::right&apos; is not initialized in the constructor." cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::right</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::bottom</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="13" column="3"/>
+            <symbol>Iterator</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Texture&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Texture&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Texture.cpp">
+            <location file="Texture.h" line="15" column="2"/>
+            <symbol>Texture</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WidgetLabel&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WidgetLabel&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Texture.cpp">
+            <location file="GUI.h" line="150" column="2"/>
+            <symbol>WidgetLabel</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WidgetTextbox&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WidgetTextbox&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Texture.cpp">
+            <location file="GUI.h" line="167" column="2"/>
+            <symbol>WidgetTextbox</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="18" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="18" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="19" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="Texture.cpp">
+            <location file="Utilities.h" line="19" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;error&apos; is assigned a value that is never used." verbose="Variable &apos;error&apos; is assigned a value that is never used." cwe="563" file0="Texture.cpp">
+            <location file="Texture.cpp" line="8" column="20"/>
+            <symbol>error</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;r&apos; is assigned a value that is never used." verbose="Variable &apos;r&apos; is assigned a value that is never used." cwe="563" file0="Texture.cpp">
+            <location file="Texture.cpp" line="71" column="9"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret&apos; is assigned a value that is never used." verbose="Variable &apos;ret&apos; is assigned a value that is never used." cwe="563" file0="Texture.cpp">
+            <location file="Texture.cpp" line="101" column="10"/>
+            <symbol>ret</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="List::Iterator" file="Utilities.h" line="10" col="2" hash="14372880026852542095"/>
+<class name="TextSize" file="Graphics.h" line="10" col="1" hash="10724191710049951354"/>
+<class name="RectSize" file="Graphics.h" line="15" col="1" hash="4061058003016658599"/>
+<class name="EndStream" file="Graphics.h" line="54" col="1" hash="9742039643195961405"/>
+<class name="Texture" file="Texture.h" line="7" col="1" hash="8150580669177877972"/>
+<class name="Textures" file="Texture.h" line="27" col="1" hash="17239033938627681325"/>
+<class name="Widget" file="GUI.h" line="35" col="1" hash="6949896112396479749"/>
+<class name="WidgetChild" file="GUI.h" line="49" col="1" hash="16368760178329580174"/>
+<class name="Level" file="Game.h" line="7" col="1" hash="7049039584434299977"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="Graphics.h:124:22" my-argnr="1" my-argname="source" file="Graphics.h" line="125" col="25" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Graphics.h:22:12" my-argnr="1" my-argname="rs" file="Graphics.h" line="23" col="12" value="0"/>
+    <unsafe-usage my-id="Graphics.h:124:22" my-argnr="1" my-argname="source" file="Graphics.h" line="125" col="25" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Draw" lineNumber="32"/>
+    <functiondecl functionName="DrawDifferentSize" lineNumber="37"/>
+    <functiondecl functionName="Draw" lineNumber="75"/>
+    <functiondecl functionName="DrawPanorama" lineNumber="113"/>
+    <functiondecl functionName="LoadAll" lineNumber="144"/>
+    <functioncall functionName="BUFFER_LENGTH"/>
+    <functioncall functionName="Bar"/>
+    <functioncall functionName="Bottom"/>
+    <functioncall functionName="BottomCentre"/>
+    <functioncall functionName="BottomLeft"/>
+    <functioncall functionName="BottomRight"/>
+    <functioncall functionName="Button"/>
+    <functioncall functionName="Centered"/>
+    <functioncall functionName="Centre"/>
+    <functioncall functionName="Draw"/>
+    <functioncall functionName="EndStream"/>
+    <functioncall functionName="IMG_LoadTexture"/>
+    <functioncall functionName="Iterator"/>
+    <functioncall functionName="Left"/>
+    <functioncall functionName="LeftCentre"/>
+    <functioncall functionName="Level"/>
+    <functioncall functionName="List"/>
+    <functioncall functionName="Rect"/>
+    <functioncall functionName="RectSize"/>
+    <functioncall functionName="Right"/>
+    <functioncall functionName="RightCentre"/>
+    <functioncall functionName="SDL_DestroyTexture"/>
+    <functioncall functionName="SDL_FLIP_NONE"/>
+    <functioncall functionName="SDL_GetError"/>
+    <functioncall functionName="SDL_Log"/>
+    <functioncall functionName="SDL_QueryTexture"/>
+    <functioncall functionName="SDL_RenderCopy"/>
+    <functioncall functionName="SDL_RenderCopyExF"/>
+    <functioncall functionName="SDL_RenderCopyF"/>
+    <functioncall functionName="SDL_SetTextureAlphaMod"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="Top"/>
+    <functioncall functionName="TopCentre"/>
+    <functioncall functionName="TopLeft"/>
+    <functioncall functionName="TopRight"/>
+    <functioncall functionName="Update"/>
+    <functioncall functionName="Widget"/>
+    <functioncall functionName="WidgetBitmapButton"/>
+    <functioncall functionName="WidgetChild"/>
+    <functioncall functionName="WidgetGroup"/>
+    <functioncall functionName="WidgetTextbox"/>
+    <functioncall functionName="X"/>
+    <functioncall functionName="Y"/>
+    <functioncall functionName="align"/>
+    <functioncall functionName="alpha"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="bRealCoordinates"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="bottom"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="clickable"/>
+    <functioncall functionName="clrWhite"/>
+    <functioncall functionName="colour"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="deltatime"/>
+    <functioncall functionName="element"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="fAngle"/>
+    <functioncall functionName="fTextureDrawnHeight"/>
+    <functioncall functionName="fTextureDrawnWidth"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="filename"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="make_move_iterator"/>
+    <functioncall functionName="nScreenHeight"/>
+    <functioncall functionName="nScreenWidth"/>
+    <functioncall functionName="nTextureFileWidth"/>
+    <functioncall functionName="nTextureHeight"/>
+    <functioncall functionName="nTextureWidth"/>
+    <functioncall functionName="nTexturesAcross"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="offset"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="pRenderer"/>
+    <functioncall functionName="pTexture"/>
+    <functioncall functionName="point"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="rDest"/>
+    <functioncall functionName="rSrc"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="right"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="source"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="text_size"/>
+    <functioncall functionName="top"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="typename"/>
+    <functioncall functionName="unique_ptr"/>
+    <functioncall functionName="update"/>
+    <functioncall functionName="vec"/>
+    <functioncall functionName="void"/>
+    <functioncall functionName="widget"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

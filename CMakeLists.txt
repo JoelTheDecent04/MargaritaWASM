@@ -8,7 +8,7 @@ cmake_minimum_required (VERSION 3.8)
 set(CMAKE_CXX_STANDARD 17) 
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Emscripten" )
-	set(USE_FLAGS "-fno-rtti -fno-exceptions -O2 -s USE_SDL=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS=['png'] -s USE_SDL_TTF=2")
+	set(USE_FLAGS "-fno-rtti -fno-exceptions -O2 -s USE_SDL=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS=['png'] -s USE_SDL_TTF=2 -Isrc")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${USE_FLAGS}")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${USE_FLAGS}")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${USE_FLAGS}  -s ALLOW_MEMORY_GROWTH=1 --preload-file resources/ -lwebsocket.js")
@@ -23,7 +23,10 @@ include_directories(${SDL2_INCLUDE_DIRS})
 include_directories(${SDL2_TTF_INCLUDE_DIRS})
 include_directories(${SDL2_IMAGE_INCLUDE_DIRS})
 
-add_executable (Margarita  Animation.cpp  Bomb.cpp BombAnimation.cpp Coin.cpp Comet.cpp ControlsScreen.cpp Crab.cpp DeathScreen.cpp Enemy.cpp EnergyPowerup.cpp Entity.cpp EntityHealthChangeText.cpp  EventHandler.cpp Game.cpp Graphics.cpp GUI.cpp Item.cpp  Laser.cpp  main.cpp Orb.cpp PauseScreen.cpp Player.cpp Powerup.cpp RegenerationPowerup.cpp Shop.cpp Space.cpp   TextObject.cpp Texture.cpp TitleScreen.cpp Utilities.cpp "Turret.cpp" "Turret.h" "ControlManager.cpp" "ControlManager.h" "Upgrades.h" "Upgrades.cpp" "Block.cpp" "Block.h" "AirStrike.cpp" "AirStrike.h" "Particle.cpp" "Particle.h" "Multiplayer.cpp")
+file(GLOB_RECURSE margarita_src CONFIGURE_DEPENDS "src/*.h" "src/*.cpp")
+
+
+add_executable (Margarita  ${margarita_src})
 
 target_link_libraries(Margarita ${SDL2_LIBRARIES})
 target_link_libraries(Margarita ${SDL2_TTF_LIBRARIES})

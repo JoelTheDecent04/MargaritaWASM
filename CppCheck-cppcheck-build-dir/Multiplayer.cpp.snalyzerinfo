@@ -1,0 +1,895 @@
+Rect
+RectSize
+operator+
+TextRenderer
+SetPosition
+SetSize
+SetAlignment
+SetAbsoluteCoordinates
+SetColour
+GraphicsStreamText
+operator<< call:[strlen,strncpy]
+operator<< call:[snprintf]
+operator<< call:[Draw] noreturn:[Draw]
+RectRenderer
+SetPosition
+SetSize
+SetColour
+SetAbsoluteCoordinates
+SetFilled
+SetAlignment
+Texture
+Handle
+ClickOn
+ClickOff
+OnMouseEnter
+OnMouseLeave
+Update
+TextInput
+KeyDown
+Draw
+WidgetChild
+Widget
+Children
+Clear call:[clear] noreturn:[clear]
+Add call:[WidgetChild,push_back]
+SetClickable
+SetText
+IsClickable
+Hovering
+SetText
+Text
+render
+Render call:[Draw,render] noreturn:[Draw]
+update
+Update call:[Update,update] noreturn:[Update]
+LeftClick
+KeyDown
+KeyPress
+Gui
+SetSocket
+operator< call:[size]
+replace_substring call:[assert,empty,find,replace,size]
+escape call:[replace_substring]
+unescape call:[replace_substring] noreturn:[replace_substring]
+operatorlong
+what call:[what] noreturn:[what]
+exception
+name call:[to_string]
+diagnostics
+create call:[c_str,diagnostics,name,position_string]
+create call:[c_str,diagnostics,name,to_string]
+parse_error
+position_string call:[to_string] noreturn:[to_string]
+create call:[c_str,diagnostics,name]
+invalid_iterator
+create call:[c_str,diagnostics,name]
+type_error
+create call:[c_str,diagnostics,name]
+out_of_range
+create call:[c_str,diagnostics,name]
+other_error
+conditional_static_cast
+conditional_static_cast
+from_json call:[abort,is_null] noreturn:[abort]
+get_arithmetic_value call:[abort] noreturn:[abort]
+from_json call:[abort,is_boolean] noreturn:[abort]
+from_json call:[abort,is_string] noreturn:[abort]
+from_json call:[abort,is_string] noreturn:[abort]
+from_json call:[get_arithmetic_value] noreturn:[get_arithmetic_value]
+from_json call:[get_arithmetic_value] noreturn:[get_arithmetic_value]
+from_json call:[get_arithmetic_value] noreturn:[get_arithmetic_value]
+from_json call:[get_arithmetic_value]
+from_json call:[abort,clear,front_inserter,is_array,rbegin,rend,transform] noreturn:[abort,transform]
+from_json call:[abort,begin,end,is_array,resize,size,transform] noreturn:[abort,transform]
+from_json call:[at]
+from_json_array_impl
+from_json_array_impl call:[at]
+from_json_array_impl call:[begin,end,inserter,move,reserve,size,transform] noreturn:[move]
+from_json_array_impl call:[begin,end,inserter,move,transform] noreturn:[move]
+from_json call:[abort,from_json_array_impl,is_array] noreturn:[abort,from_json_array_impl]
+from_json_inplace_array_impl call:[at]
+from_json call:[abort,from_json_inplace_array_impl,is_array] noreturn:[abort,from_json_inplace_array_impl]
+from_json call:[abort,is_binary] noreturn:[abort]
+from_json call:[abort,begin,end,inserter,is_object,move,transform,value_type] noreturn:[abort,move,value_type]
+from_json call:[abort] noreturn:[abort]
+from_json_tuple_impl_base call:[at,make_tuple] noreturn:[make_tuple]
+from_json_tuple_impl call:[at]
+from_json_tuple_impl call:[from_json_tuple_impl] noreturn:[from_json_tuple_impl]
+from_json_tuple_impl
+from_json_tuple_impl
+from_json call:[abort,from_json_tuple_impl,is_array] noreturn:[abort,from_json_tuple_impl]
+from_json call:[abort,at,clear,emplace,is_array] noreturn:[abort,emplace]
+from_json call:[abort,at,clear,emplace,is_array] noreturn:[abort,emplace]
+from_json call:[abort,is_string] noreturn:[abort]
+operator() call:[from_json] noreturn:[from_json]
+int_to_string call:[to_string] noreturn:[to_string]
+iteration_proxy_value
+operator*
+operator++
+operator==
+operator!=
+key call:[assert,int_to_string,key,type]
+value call:[value] noreturn:[value]
+iteration_proxy
+begin call:[begin]
+end call:[end]
+get call:[key] noreturn:[key]
+get call:[value] noreturn:[value]
+construct call:[assert_invariant,destroy] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy,move] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy] noreturn:[assert_invariant]
+construct call:[assert_invariant,binary_t,destroy] noreturn:[assert_invariant]
+construct call:[assert_invariant,binary_t,destroy,move] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy,set_parents] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy,move,set_parents] noreturn:[assert_invariant]
+construct call:[assert_invariant,begin,destroy,end,set_parents] noreturn:[assert_invariant]
+construct call:[assert_invariant,back,destroy,push_back,reserve,set_parent,size] noreturn:[assert_invariant,set_parent]
+construct call:[assert_invariant,begin,copy,destroy,end,resize,set_parents,size] noreturn:[assert_invariant,copy]
+construct call:[assert_invariant,destroy,set_parents] noreturn:[assert_invariant]
+construct call:[assert_invariant,destroy,move,set_parents] noreturn:[assert_invariant]
+construct call:[assert_invariant,begin,destroy,end,set_parents] noreturn:[assert_invariant]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct,move] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct,move] noreturn:[construct]
+to_json call:[construct,move] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json call:[construct,move] noreturn:[construct]
+to_json call:[construct] noreturn:[construct]
+to_json
+to_json call:[key,value]
+to_json_tuple_impl
+to_json call:[to_json_tuple_impl] noreturn:[to_json_tuple_impl]
+to_json call:[string] noreturn:[string]
+operator() call:[to_json] noreturn:[to_json]
+from_json call:[from_json] noreturn:[from_json]
+from_json call:[from_json] noreturn:[from_json]
+to_json call:[to_json] noreturn:[to_json]
+byte_container_with_subtype
+byte_container_with_subtype
+byte_container_with_subtype
+byte_container_with_subtype
+byte_container_with_subtype
+operator== call:[tie] noreturn:[tie]
+operator!=
+set_subtype
+subtype
+has_subtype
+clear_subtype
+combine
+hash call:[assert,combine,get_binary,has_subtype,hash,items,key,size,subtype,type,value] noreturn:[combine]
+file_input_adapter
+get_character call:[fgetc] noreturn:[fgetc]
+input_stream_adapter call:[clear,rdstate] noreturn:[clear]
+input_stream_adapter
+input_stream_adapter
+get_character call:[clear,eof,rdstate,sbumpc] noreturn:[clear]
+iterator_input_adapter
+get_character call:[advance,eof,to_int_type] noreturn:[eof]
+empty
+fill_buffer call:[empty,eof,get_character]
+fill_buffer call:[empty,eof,get_character]
+wide_string_input_adapter
+get_character call:[assert,sizeof] noreturn:[assert]
+fill_buffer call:[fill_buffer] noreturn:[fill_buffer]
+create call:[adapter_type,move] noreturn:[adapter_type]
+create call:[adapter_type,base_adapter_type,move] noreturn:[adapter_type]
+input_adapter call:[create] noreturn:[create]
+create call:[begin,end,input_adapter] noreturn:[input_adapter]
+input_adapter call:[create] noreturn:[create]
+input_adapter call:[file_input_adapter] noreturn:[file_input_adapter]
+input_adapter call:[input_stream_adapter] noreturn:[input_stream_adapter]
+input_adapter call:[input_stream_adapter] noreturn:[input_stream_adapter]
+input_adapter call:[input_adapter,strlen] noreturn:[input_adapter]
+input_adapter call:[input_adapter] noreturn:[input_adapter]
+span_input_adapter
+span_input_adapter
+json_sax_dom_parser
+null call:[handle_value]
+boolean call:[handle_value]
+number_integer call:[handle_value]
+number_unsigned call:[handle_value]
+number_float call:[handle_value]
+string call:[handle_value]
+binary call:[handle_value,move]
+start_object call:[abort,back,handle_value,max_size,push_back] noreturn:[abort]
+key call:[back,operator[]]
+end_object call:[back,pop_back,set_parents]
+start_array call:[abort,back,handle_value,max_size,push_back] noreturn:[abort]
+end_array call:[back,pop_back,set_parents]
+parse_error call:[abort] noreturn:[abort]
+is_errored
+handle_value call:[BasicJsonType,assert,back,emplace_back,empty,is_array,is_object]
+json_sax_dom_callback_parser call:[push_back] noreturn:[push_back]
+null call:[handle_value]
+boolean call:[handle_value]
+number_integer call:[handle_value]
+number_unsigned call:[handle_value]
+number_float call:[handle_value]
+string call:[handle_value]
+binary call:[handle_value,move]
+start_object call:[abort,back,callback,handle_value,max_size,push_back,size] noreturn:[abort]
+key call:[BasicJsonType,back,callback,operator[],push_back,size]
+end_object call:[assert,back,begin,callback,empty,end,erase,is_discarded,is_structured,pop_back,set_parents,size] noreturn:[set_parents]
+start_array call:[abort,back,callback,handle_value,max_size,push_back,size] noreturn:[abort]
+end_array call:[assert,back,callback,empty,is_array,pop_back,set_parents,size] noreturn:[pop_back,set_parents]
+parse_error call:[abort] noreturn:[abort]
+is_errored
+handle_value call:[BasicJsonType,assert,back,callback,emplace_back,empty,is_array,is_object,move,pop_back,size]
+null
+boolean
+number_integer
+number_unsigned
+number_float
+string
+binary
+start_object
+key
+end_object
+start_array
+end_array
+parse_error
+token_type_name
+lexer
+get_decimal_point call:[assert,localeconv,return]
+get_codepoint call:[assert,get]
+next_byte_in_range call:[add,assert,begin,end,get,size] noreturn:[add]
+scan_string call:[add,assert,eof,get,get_codepoint,next_byte_in_range,reset] noreturn:[add]
+scan_comment call:[eof,get,unget]
+strtof call:[strtof] noreturn:[strtof]
+strtof call:[strtod] noreturn:[strtod]
+strtof call:[strtold] noreturn:[strtold]
+scan_number call:[add,assert,data,get,reset,size,strtof,strtoll,strtoull,unget] noreturn:[assert]
+scan_literal call:[assert,get,to_char_type]
+reset call:[clear,push_back,to_char_type] noreturn:[push_back]
+get call:[eof,get_character,push_back,to_char_type] noreturn:[get_character,push_back]
+unget call:[assert,empty,eof,pop_back] noreturn:[pop_back]
+add call:[push_back] noreturn:[push_back]
+get_number_integer
+get_number_unsigned
+get_number_float
+get_string
+get_position
+get_token_string call:[data,push_back,size] noreturn:[data,push_back]
+get_error_message
+skip_bom call:[get,unget]
+skip_whitespace call:[get,while] noreturn:[get,while]
+scan call:[data,eof,scan_comment,scan_literal,scan_number,scan_string,size,skip_bom,skip_whitespace] noreturn:[scan_literal,skip_whitespace]
+little_endianness
+binary_reader
+sax_parse call:[BasicJsonType,assert,create,eof,exception_message,get,get_ignore_noop,get_token_string,parse_bson_internal,parse_cbor_internal,parse_error,parse_msgpack_internal,parse_ubjson_internal] noreturn:[assert,get,get_ignore_noop,parse_error]
+parse_bson_internal call:[end_object,parse_bson_element_list,start_object] noreturn:[end_object]
+get_bson_cstr call:[back_inserter,get,unexpect_eof]
+get_bson_string call:[BasicJsonType,create,eof,exception_message,get,get_string,get_token_string,parse_error,to_string] noreturn:[eof,parse_error]
+get_bson_binary call:[BasicJsonType,create,exception_message,get_binary,get_token_string,parse_error,set_subtype,to_string] noreturn:[get_binary,parse_error]
+parse_bson_element_internal call:[BasicJsonType,binary,boolean,create,data,get,get_bson_binary,get_bson_string,null,number_float,number_integer,parse_bson_array,parse_bson_internal,parse_error,size,string] noreturn:[binary,boolean,null,number_float,number_integer,parse_bson_array,parse_bson_internal,parse_error,string]
+parse_bson_element_list call:[clear,get,get_bson_cstr,key,parse_bson_element_internal,unexpect_eof] noreturn:[clear]
+parse_bson_array call:[end_array,parse_bson_element_list,start_array] noreturn:[end_array]
+parse_cbor_internal call:[BasicJsonType,assert,binary,boolean,create,eof,exception_message,get,get_cbor_array,get_cbor_binary,get_cbor_object,get_cbor_string,get_number,get_token_string,infinity,ldexp,null,number_float,number_integer,number_unsigned,parse_cbor_internal,parse_error,quiet_NaN,return,set_subtype,string,unexpect_eof] noreturn:[binary,get_cbor_array,get_cbor_object,ldexp,number_float,number_integer,number_unsigned,parse_cbor_internal,parse_error,string]
+get_cbor_string call:[BasicJsonType,append,create,exception_message,get,get_cbor_string,get_number,get_string,get_token_string,parse_error,unexpect_eof] noreturn:[append,get_string,parse_error]
+get_cbor_binary call:[BasicJsonType,begin,create,end,exception_message,get,get_binary,get_cbor_binary,get_number,get_token_string,insert,parse_error,unexpect_eof] noreturn:[get_binary,insert,parse_error]
+get_cbor_array call:[end_array,get,parse_cbor_internal,start_array] noreturn:[end_array]
+get_cbor_object call:[clear,end_object,get,get_cbor_string,key,parse_cbor_internal,start_object] noreturn:[clear,end_object]
+parse_msgpack_internal call:[BasicJsonType,binary,boolean,create,eof,exception_message,get,get_msgpack_array,get_msgpack_binary,get_msgpack_object,get_msgpack_string,get_number,get_token_string,null,number_float,number_integer,number_unsigned,parse_error,string,unexpect_eof] noreturn:[binary,get_msgpack_array,get_msgpack_object,number_float,number_integer,number_unsigned,parse_error,string]
+get_msgpack_string call:[BasicJsonType,create,exception_message,get_number,get_string,get_token_string,parse_error,unexpect_eof] noreturn:[get_string,parse_error]
+get_msgpack_binary call:[assign_and_return_true,get_binary,get_number,set_subtype] noreturn:[assign_and_return_true,get_binary]
+get_msgpack_array call:[end_array,parse_msgpack_internal,start_array] noreturn:[end_array]
+get_msgpack_object call:[clear,end_object,get,get_msgpack_string,key,parse_msgpack_internal,start_object] noreturn:[clear,end_object]
+parse_ubjson_internal call:[get_ignore_noop,get_ubjson_value] noreturn:[get_ubjson_value]
+get_ubjson_string call:[BasicJsonType,create,exception_message,get,get_number,get_string,get_token_string,parse_error,unexpect_eof] noreturn:[get,get_string,parse_error]
+get_ubjson_size_value call:[BasicJsonType,create,exception_message,get_ignore_noop,get_number,get_token_string,parse_error] noreturn:[parse_error]
+get_ubjson_size_type call:[BasicJsonType,create,exception_message,get,get_ignore_noop,get_token_string,get_ubjson_size_value,parse_error,unexpect_eof] noreturn:[get_ubjson_size_value,parse_error]
+get_ubjson_value call:[BasicJsonType,boolean,create,eof,exception_message,get,get_number,get_token_string,get_ubjson_array,get_ubjson_high_precision_number,get_ubjson_object,get_ubjson_string,null,number_float,number_integer,number_unsigned,parse_error,s,string,unexpect_eof] noreturn:[get_ubjson_high_precision_number,number_float,number_integer,number_unsigned,parse_error,string]
+get_ubjson_array call:[end_array,get_ignore_noop,get_ubjson_size_type,get_ubjson_value,parse_ubjson_internal,start_array] noreturn:[end_array,get_ignore_noop]
+get_ubjson_object call:[clear,end_object,get_ignore_noop,get_ubjson_size_type,get_ubjson_string,get_ubjson_value,key,parse_ubjson_internal,start_object] noreturn:[clear,end_object]
+get_ubjson_high_precision_number call:[BasicJsonType,create,decltype,exception_message,get,get_number_float,get_number_integer,get_number_unsigned,get_token_string,get_ubjson_size_value,input_adapter,move,number_float,number_integer,number_unsigned,parse_error,push_back,scan,unexpect_eof] noreturn:[parse_error,push_back]
+get call:[get_character] noreturn:[get_character]
+get_ignore_noop call:[get,while] noreturn:[get]
+get_number call:[data,get,memcpy,sizeof,unexpect_eof]
+get_string call:[get,push_back,unexpect_eof] noreturn:[push_back]
+get_binary call:[get,push_back,unexpect_eof] noreturn:[push_back]
+unexpect_eof call:[BasicJsonType,create,eof,exception_message,parse_error] noreturn:[parse_error]
+get_token_string call:[data,size]
+exception_message call:[assert] noreturn:[assert]
+parser call:[get_token] noreturn:[get_token]
+parse call:[BasicJsonType,assert_invariant,create,exception_message,get_position,get_token,get_token_string,is_discarded,is_errored,parse_error,sax_parse_internal,sdp] noreturn:[assert_invariant,parse_error]
+accept call:[sax_parse] noreturn:[sax_parse]
+sax_parse call:[BasicJsonType,create,exception_message,get_position,get_token,get_token_string,parse_error,sax_parse_internal] noreturn:[parse_error]
+sax_parse_internal call:[BasicJsonType,assert,back,boolean,create,empty,end_array,end_object,exception_message,get_number_float,get_number_integer,get_number_unsigned,get_position,get_string,get_token,get_token_string,isfinite,key,null,number_float,number_integer,number_unsigned,parse_error,pop_back,push_back,start_array,start_object,string] noreturn:[parse_error]
+get_token call:[scan] noreturn:[scan]
+exception_message call:[empty,get_error_message,get_token_string,string,token_type_name] noreturn:[string]
+get_value
+set_begin
+set_end
+is_begin
+is_end
+operator==
+operator<
+operator+
+operator-
+operator++
+operator++
+operator--
+operator--
+operator+=
+operator-=
+iter_impl call:[assert,iterator,primitive_iterator_t]
+iter_impl
+operator=
+iter_impl
+operator=
+set_begin call:[assert,begin,set_begin,set_end]
+set_end call:[assert,end,set_end]
+operator* call:[abort,assert,end,is_begin] noreturn:[abort]
+operator. call:[abort,assert,end,is_begin] noreturn:[abort]
+operator++
+operator++ call:[advance,assert]
+operator--
+operator-- call:[advance,assert]
+operator== call:[abort,assert,return] noreturn:[abort,return]
+operator!= call:[operator==] noreturn:[operator==]
+operator< call:[abort,assert,return] noreturn:[abort,return]
+operator<= call:[operator<] noreturn:[operator<]
+operator> call:[operator<=] noreturn:[operator<=]
+operator>= call:[operator<] noreturn:[operator<]
+operator+= call:[abort,advance,assert]
+operator-= call:[operator+=] noreturn:[operator+=]
+operator+
+operator+
+operator-
+operator- call:[abort,assert]
+operator[] call:[abort,assert,get_value,next] noreturn:[abort]
+key call:[abort,assert,is_object] noreturn:[abort]
+value call:[operator*] noreturn:[operator*]
+json_reverse_iterator
+json_reverse_iterator
+operator++ call:[operator++]
+operator++ call:[operator++]
+operator-- call:[operator--]
+operator-- call:[operator--]
+operator+= call:[operator+=]
+operator+ call:[operator+]
+operator- call:[operator-]
+operator- call:[base_iterator] noreturn:[base_iterator]
+operator[] call:[operator+]
+key call:[base,key] noreturn:[key]
+value call:[base,operator*] noreturn:[operator*]
+json_pointer
+to_string call:[accumulate,begin,end,escape] noreturn:[accumulate,escape]
+operatorstd::string call:[to_string] noreturn:[to_string]
+operator/= call:[begin,end,insert]
+operator/= call:[move,push_back]
+operator/= call:[to_string] noreturn:[to_string]
+operator/ call:[json_pointer]
+operator/ call:[json_pointer,move] noreturn:[move]
+operator/ call:[json_pointer]
+parent_pointer call:[empty,pop_back]
+pop_back call:[abort,empty,pop_back] noreturn:[abort,pop_back]
+back call:[abort,back,empty] noreturn:[abort,back]
+push_back call:[push_back] noreturn:[push_back]
+push_back call:[move,push_back] noreturn:[push_back]
+empty call:[empty] noreturn:[empty]
+array_index call:[abort,size,stoull] noreturn:[abort,stoull]
+top call:[abort,empty] noreturn:[abort]
+get_and_create call:[abort,array_index,operator[],type] noreturn:[abort,operator[]]
+get_unchecked call:[abort,all_of,array_index,begin,end,is_null,isdigit,operator[],size,type] noreturn:[abort,isdigit,operator[]]
+get_checked call:[abort,array_index,at,type] noreturn:[abort]
+get_unchecked call:[abort,array_index,operator[],type] noreturn:[abort]
+get_checked call:[abort,array_index,at,type] noreturn:[abort]
+contains call:[array_index,contains,operator[],size,type]
+split call:[abort,assert,empty,find_first_of,push_back,size,substr,unescape] noreturn:[abort,push_back]
+flatten call:[empty,escape,flatten,operator[],size,to_string,type] noreturn:[flatten]
+unflatten call:[abort,get_and_create,is_object,is_primitive,json_pointer] noreturn:[abort]
+operator==
+operator!=
+json_ref
+json_ref
+json_ref
+json_ref
+moved_or_copied call:[move] noreturn:[move]
+operator*
+operator.
+output_vector_adapter
+write_character call:[push_back] noreturn:[push_back]
+write_characters call:[back_inserter,copy] noreturn:[copy]
+output_stream_adapter
+write_character call:[put] noreturn:[put]
+write_characters call:[write] noreturn:[write]
+output_string_adapter
+write_character call:[push_back] noreturn:[push_back]
+write_characters call:[append] noreturn:[append]
+output_adapter
+output_adapter
+output_adapter
+operatoroutput_adapter_t
+binary_writer call:[assert] noreturn:[assert]
+write_bson call:[abort,type,write_bson_object] noreturn:[abort]
+write_cbor call:[c_str,data,has_subtype,isinf,isnan,size,subtype,to_char_type,type,write_cbor,write_character,write_characters,write_compact_float,write_number] noreturn:[write_cbor,write_character,write_compact_float,write_number]
+write_msgpack call:[c_str,data,has_subtype,size,subtype,to_char_type,type,write_character,write_characters,write_compact_float,write_msgpack,write_number] noreturn:[write_msgpack,write_number]
+write_ubjson call:[all_of,assert,begin,c_str,data,empty,end,front,size,to_char_type,type,ubjson_prefix,write_character,write_characters,write_number_with_ubjson_prefix,write_ubjson] noreturn:[write_character,write_characters,write_number_with_ubjson_prefix,write_ubjson]
+calc_bson_entry_header_size call:[abort,find,size]
+write_bson_entry_header call:[c_str,size,to_char_type,write_character,write_characters] noreturn:[write_characters]
+write_bson_boolean call:[to_char_type,write_bson_entry_header,write_character] noreturn:[write_character]
+write_bson_double call:[write_bson_entry_header]
+calc_bson_string_size call:[size,sizeof]
+write_bson_string call:[c_str,size,write_bson_entry_header,write_characters] noreturn:[write_characters]
+write_bson_null call:[write_bson_entry_header] noreturn:[write_bson_entry_header]
+calc_bson_integer_size call:[return,sizeof] noreturn:[sizeof]
+write_bson_integer call:[write_bson_entry_header]
+calc_bson_unsigned_size call:[return,sizeof] noreturn:[sizeof]
+write_bson_unsigned call:[abort,write_bson_entry_header] noreturn:[abort]
+write_bson_object_entry call:[write_bson_entry_header,write_bson_object] noreturn:[write_bson_object]
+calc_bson_array_size call:[accumulate,begin,calc_bson_element_size,end,sizeof,to_string] noreturn:[calc_bson_element_size]
+calc_bson_binary_size call:[size,sizeof]
+write_bson_array call:[calc_bson_array_size,to_char_type,to_string,write_bson_element,write_bson_entry_header,write_character] noreturn:[write_bson_element,write_character]
+write_bson_binary call:[data,has_subtype,size,subtype,write_bson_entry_header,write_characters,write_number] noreturn:[write_characters]
+calc_bson_element_size call:[assert,calc_bson_array_size,calc_bson_binary_size,calc_bson_entry_header_size,calc_bson_integer_size,calc_bson_object_size,calc_bson_string_size,calc_bson_unsigned_size,type]
+write_bson_element call:[assert,type,write_bson_array,write_bson_binary,write_bson_boolean,write_bson_double,write_bson_integer,write_bson_null,write_bson_object_entry,write_bson_string,write_bson_unsigned]
+calc_bson_object_size call:[accumulate,begin,calc_bson_element_size,end,sizeof] noreturn:[calc_bson_element_size]
+write_bson_object call:[calc_bson_object_size,to_char_type,write_bson_element,write_character] noreturn:[write_bson_element,write_character]
+get_cbor_float_prefix call:[to_char_type] noreturn:[to_char_type]
+get_cbor_float_prefix call:[to_char_type] noreturn:[to_char_type]
+get_msgpack_float_prefix call:[to_char_type] noreturn:[to_char_type]
+get_msgpack_float_prefix call:[to_char_type] noreturn:[to_char_type]
+write_number_with_ubjson_prefix call:[get_ubjson_float_prefix,write_character,write_number] noreturn:[write_character,write_number]
+write_number_with_ubjson_prefix call:[BasicJsonType,dump,size,to_char_type,write_character,write_number,write_number_with_ubjson_prefix] noreturn:[write_character,write_number]
+write_number_with_ubjson_prefix call:[BasicJsonType,dump,size,to_char_type,write_character,write_number,write_number_with_ubjson_prefix] noreturn:[write_character,write_number]
+ubjson_prefix call:[get_ubjson_float_prefix,type]
+get_ubjson_float_prefix
+get_ubjson_float_prefix
+write_number call:[begin,data,end,memcpy,reverse,sizeof,write_characters] noreturn:[reverse,write_characters]
+write_compact_float call:[get_cbor_float_prefix,get_msgpack_float_prefix,lowest,write_character,write_number] noreturn:[write_number]
+to_char_type
+to_char_type call:[memcpy,sizeof,static_assert]
+to_char_type
+to_char_type
+reinterpret_bits call:[memcpy,sizeof,static_assert]
+diyfp
+sub call:[assert]
+mul call:[static_assert]
+normalize call:[assert]
+normalize_to call:[assert]
+compute_boundaries call:[assert,diyfp,isfinite,normalize,normalize_to,static_assert]
+get_cached_power_for_binary_exponent call:[assert,size]
+find_largest_pow10
+grisu2_round call:[assert]
+grisu2_digit_gen call:[assert,find_largest_pow10,grisu2_round,one,static_assert,sub] noreturn:[grisu2_round]
+grisu2 call:[M_minus,M_plus,assert,c_minus_k,get_cached_power_for_binary_exponent,grisu2_digit_gen,mul] noreturn:[grisu2_digit_gen]
+grisu2 call:[assert,compute_boundaries,grisu2,isfinite,static_assert] noreturn:[grisu2]
+append_exponent call:[assert]
+format_buffer call:[append_exponent,assert,memmove,memset] noreturn:[append_exponent]
+to_chars call:[assert,format_buffer,grisu2,isfinite,signbit] noreturn:[format_buffer]
+serializer
+dump call:[assert,back,c_str,cbegin,cend,dump,dump_escaped,dump_float,dump_integer,empty,has_subtype,next,resize,size,subtype,write_character,write_characters] noreturn:[assert,dump_integer,resize,write_character,write_characters]
+dump_escaped call:[abort,assert,data,decode,size,to_char_type,write_characters] noreturn:[abort,assert,to_char_type,write_characters]
+count_digits
+hex_bytes
+is_negative_number
+is_negative_number
+dump_integer call:[assert,begin,count_digits,data,is_negative_number,remove_sign,size,write_character,write_characters] noreturn:[count_digits,write_characters]
+dump_float call:[dump_float,isfinite,write_characters] noreturn:[dump_float]
+dump_float call:[data,size,to_chars,write_characters] noreturn:[write_characters]
+dump_float call:[assert,begin,data,end,fill,find,none_of,remove,size,write_characters] noreturn:[begin,write_characters]
+decode call:[assert,size]
+remove_sign call:[assert]
+remove_sign call:[assert]
+ordered_map
+ordered_map
+ordered_map
+emplace call:[begin,emplace_back,end]
+operator[] call:[emplace]
+operator[] call:[at] noreturn:[at]
+at call:[abort,begin,end] noreturn:[abort]
+at call:[abort,begin,end] noreturn:[abort]
+erase call:[begin,end,move,new,pop_back,value_type]
+erase call:[erase,next] noreturn:[erase]
+erase call:[begin,distance,end,move,new,next,resize,size,value_type]
+count call:[begin,end]
+find call:[begin,end] noreturn:[end]
+find call:[begin,end] noreturn:[end]
+insert call:[emplace,move] noreturn:[emplace]
+insert call:[begin,end,push_back]
+insert call:[insert] noreturn:[insert]
+parser call:[move]
+get_allocator call:[allocator_type] noreturn:[allocator_type]
+meta call:[to_string]
+create call:[allocate,assert,construct,deallocate,decltype,get,obj,release] noreturn:[deallocate,release]
+json_value
+json_value
+json_value
+json_value
+json_value call:[abort] noreturn:[abort]
+json_value
+json_value
+json_value
+json_value
+json_value
+json_value
+json_value
+json_value
+json_value
+json_value
+destroy call:[back,back_inserter,begin,clear,current_item,deallocate,decltype,destroy,empty,end,is_array,is_object,move,pop_back,push_back,reserve,size] noreturn:[clear,move,push_back]
+assert_invariant call:[assert]
+set_parents
+set_parents
+set_parent
+basic_json call:[assert_invariant] noreturn:[assert_invariant]
+basic_json call:[assert_invariant] noreturn:[assert_invariant]
+basic_json call:[assert_invariant,set_parents,to_json] noreturn:[assert_invariant]
+basic_json call:[assert,assert_invariant,set_parents,to_json,type] noreturn:[assert,assert_invariant]
+basic_json call:[abort,all_of,assert_invariant,begin,emplace,end,is_array,is_string,move,moved_or_copied,set_parents,size] noreturn:[abort,assert_invariant,emplace,is_string]
+binary call:[basic_json]
+binary call:[basic_json,binary_t]
+binary call:[basic_json,move]
+binary call:[basic_json,binary_t,move]
+array call:[basic_json] noreturn:[basic_json]
+object call:[basic_json] noreturn:[basic_json]
+basic_json call:[assert_invariant,set_parents] noreturn:[assert_invariant]
+basic_json call:[abort,assert,assert_invariant,is_begin,is_end,set_parents] noreturn:[abort,assert_invariant]
+basic_json
+basic_json call:[assert_invariant,set_parents] noreturn:[assert_invariant]
+basic_json call:[assert_invariant,set_parents] noreturn:[assert_invariant]
+operator= call:[assert_invariant,set_parents,swap]
+basic_json call:[assert_invariant,destroy] noreturn:[destroy]
+dump call:[dump,s] noreturn:[dump]
+type
+is_primitive call:[is_binary,is_boolean,is_null,is_number,is_string] noreturn:[is_binary]
+is_structured call:[is_array,is_object] noreturn:[is_object]
+is_null
+is_boolean
+is_number call:[is_number_float,is_number_integer] noreturn:[is_number_float]
+is_number_integer
+is_number_unsigned
+is_number_float
+is_object
+is_array
+is_string
+is_binary
+is_discarded
+operatorvalue_t
+get_impl call:[abort,is_boolean] noreturn:[abort]
+get_impl_ptr call:[is_object]
+get_impl_ptr call:[is_object]
+get_impl_ptr call:[is_array]
+get_impl_ptr call:[is_array]
+get_impl_ptr call:[is_string]
+get_impl_ptr call:[is_string]
+get_impl_ptr call:[is_boolean]
+get_impl_ptr call:[is_boolean]
+get_impl_ptr call:[is_number_integer]
+get_impl_ptr call:[is_number_integer]
+get_impl_ptr call:[is_number_unsigned]
+get_impl_ptr call:[is_number_unsigned]
+get_impl_ptr call:[is_number_float]
+get_impl_ptr call:[is_number_float]
+get_impl_ptr call:[is_binary]
+get_impl_ptr call:[is_binary]
+get_ref_impl call:[abort] noreturn:[abort]
+get_ptr call:[get_impl_ptr] noreturn:[get_impl_ptr]
+get_ptr call:[get_impl_ptr] noreturn:[get_impl_ptr]
+get_impl call:[ValueType,from_json]
+get_impl call:[from_json] noreturn:[from_json]
+get_impl
+get_impl
+get_impl
+get call:[static_assert]
+get
+get_to call:[from_json]
+get_to
+get_to call:[from_json]
+get_ref
+get_ref
+operatorValueType
+get_binary call:[abort,is_binary] noreturn:[abort]
+get_binary call:[abort,is_binary] noreturn:[abort]
+at call:[abort,at,is_array,set_parent] noreturn:[abort,set_parent]
+at call:[abort,at,is_array] noreturn:[abort,at]
+at call:[abort,at,is_object,set_parent] noreturn:[abort,set_parent]
+at call:[abort,at,is_object] noreturn:[abort,at]
+operator[] call:[abort,assert_invariant,is_array,is_null,operator[],resize,size] noreturn:[abort,assert_invariant,operator[]]
+operator[] call:[abort,is_array,operator[]] noreturn:[abort,operator[]]
+operator[] call:[abort,assert_invariant,is_null,is_object,operator[],set_parent] noreturn:[abort,assert_invariant,set_parent]
+operator[] call:[abort,assert,end,find,is_object] noreturn:[abort]
+operator[] call:[abort,assert_invariant,is_null,is_object,operator[],set_parent] noreturn:[abort,assert_invariant,set_parent]
+operator[] call:[abort,assert,end,find,is_object] noreturn:[abort]
+value call:[abort,end,find,is_object] noreturn:[abort]
+value call:[string_t,value] noreturn:[value]
+value call:[abort,get_checked,is_object] noreturn:[abort]
+value call:[string_t,value] noreturn:[value]
+front call:[begin] noreturn:[begin]
+front call:[cbegin] noreturn:[cbegin]
+back call:[end]
+back call:[cend]
+erase call:[abort,assert_invariant,deallocate,decltype,destroy,end,erase,is_begin,is_binary,is_string] noreturn:[abort]
+erase call:[abort,assert_invariant,deallocate,decltype,destroy,end,erase,is_begin,is_binary,is_end,is_string] noreturn:[abort]
+erase call:[abort,erase,is_object] noreturn:[abort,erase]
+erase call:[abort,begin,erase,is_array,size] noreturn:[abort,erase]
+find call:[end,find,is_object] noreturn:[find]
+find call:[cend,find,is_object] noreturn:[find]
+count call:[count,is_object]
+contains call:[end,find,is_object] noreturn:[end]
+contains call:[contains] noreturn:[contains]
+begin call:[result,set_begin]
+begin call:[cbegin] noreturn:[cbegin]
+cbegin call:[result,set_begin]
+end call:[result,set_end]
+end call:[cend] noreturn:[cend]
+cend call:[result,set_end]
+rbegin call:[end,reverse_iterator] noreturn:[reverse_iterator]
+rbegin call:[crbegin] noreturn:[crbegin]
+rend call:[begin,reverse_iterator] noreturn:[reverse_iterator]
+rend call:[crend] noreturn:[crend]
+crbegin call:[cend,const_reverse_iterator] noreturn:[const_reverse_iterator]
+crend call:[cbegin,const_reverse_iterator] noreturn:[const_reverse_iterator]
+iterator_wrapper call:[items] noreturn:[items]
+iterator_wrapper call:[items] noreturn:[items]
+items
+items
+empty call:[empty] noreturn:[empty]
+size call:[size] noreturn:[size]
+max_size call:[max_size,size] noreturn:[max_size,size]
+clear call:[clear]
+push_back call:[abort,assert_invariant,back,capacity,is_array,is_null,move,push_back,set_parent] noreturn:[abort,assert_invariant,set_parent]
+operator+= call:[move,push_back]
+push_back call:[abort,assert_invariant,back,capacity,is_array,is_null,push_back,set_parent] noreturn:[abort,assert_invariant,set_parent]
+operator+= call:[push_back]
+push_back call:[abort,assert_invariant,insert,is_null,is_object,set_parent] noreturn:[abort,assert_invariant,set_parent]
+operator+= call:[push_back]
+push_back call:[basic_json,begin,is_object,is_string,move,moved_or_copied,push_back,size,value_type] noreturn:[push_back]
+operator+= call:[push_back]
+emplace_back call:[abort,assert_invariant,back,capacity,emplace_back,is_array,is_null,set_parent] noreturn:[abort,assert_invariant,set_parent]
+emplace call:[abort,assert_invariant,begin,emplace,is_null,is_object,set_parent] noreturn:[abort,assert_invariant]
+insert_iterator call:[assert,begin,distance,insert,result,set_parents]
+insert call:[abort,insert_iterator,is_array] noreturn:[abort,insert_iterator]
+insert call:[insert] noreturn:[insert]
+insert call:[abort,insert_iterator,is_array] noreturn:[abort,insert_iterator]
+insert call:[abort,insert_iterator,is_array] noreturn:[abort,insert_iterator]
+insert call:[abort,begin,end,insert_iterator,is_array] noreturn:[abort,insert_iterator]
+insert call:[abort,insert,is_object] noreturn:[abort,insert]
+update call:[begin,end,update] noreturn:[update]
+update call:[abort,assert_invariant,end,find,is_null,is_object,key,operator[],update,value] noreturn:[abort,assert_invariant,value]
+swap call:[assert_invariant,set_parents,swap] noreturn:[assert_invariant]
+swap call:[swap] noreturn:[swap]
+swap call:[abort,is_array,swap] noreturn:[abort,swap]
+swap call:[abort,is_object,swap] noreturn:[abort,swap]
+swap call:[abort,is_string,swap] noreturn:[abort,swap]
+swap call:[abort,is_binary,swap] noreturn:[abort,swap]
+swap call:[abort,is_binary,swap] noreturn:[abort,swap]
+operator== call:[type]
+operator== call:[basic_json] noreturn:[basic_json]
+operator== call:[basic_json]
+operator!=
+operator!= call:[basic_json] noreturn:[basic_json]
+operator!= call:[basic_json]
+operator< call:[operator<,return,type] noreturn:[operator<]
+operator< call:[basic_json] noreturn:[basic_json]
+operator< call:[basic_json]
+operator<=
+operator<= call:[basic_json] noreturn:[basic_json]
+operator<= call:[basic_json]
+operator>
+operator> call:[basic_json] noreturn:[basic_json]
+operator> call:[basic_json]
+operator>=
+operator>= call:[basic_json] noreturn:[basic_json]
+operator>= call:[basic_json]
+operator<< call:[dump,fill,s,width]
+operator>>
+parse call:[input_adapter,parse,parser]
+parse call:[input_adapter,move,parse,parser]
+parse call:[get,parse,parser]
+accept call:[accept,input_adapter,parser] noreturn:[accept]
+accept call:[accept,input_adapter,move,parser] noreturn:[accept]
+accept call:[accept,get,parser] noreturn:[accept]
+sax_parse call:[decltype,input_adapter,move,parser,sax_parse] noreturn:[sax_parse]
+sax_parse call:[decltype,input_adapter,move,parser,sax_parse] noreturn:[sax_parse]
+sax_parse call:[decltype,get,move,parser,sax_parse] noreturn:[sax_parse]
+operator<< call:[operator>>] noreturn:[operator>>]
+operator>> call:[input_adapter,parse,parser]
+type_name
+to_cbor call:[to_cbor]
+to_cbor call:[write_cbor] noreturn:[write_cbor]
+to_cbor call:[write_cbor] noreturn:[write_cbor]
+to_msgpack call:[to_msgpack]
+to_msgpack call:[write_msgpack] noreturn:[write_msgpack]
+to_msgpack call:[write_msgpack] noreturn:[write_msgpack]
+to_ubjson call:[to_ubjson]
+to_ubjson call:[write_ubjson] noreturn:[write_ubjson]
+to_ubjson call:[write_ubjson] noreturn:[write_ubjson]
+to_bson call:[to_bson]
+to_bson call:[write_bson] noreturn:[write_bson]
+to_bson call:[write_bson] noreturn:[write_bson]
+from_cbor call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_cbor call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_cbor call:[from_cbor] noreturn:[from_cbor]
+from_cbor call:[basic_json,decltype,get,move,sax_parse,sdp] noreturn:[basic_json]
+from_msgpack call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_msgpack call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_msgpack call:[from_msgpack] noreturn:[from_msgpack]
+from_msgpack call:[basic_json,decltype,get,move,sax_parse,sdp] noreturn:[basic_json]
+from_ubjson call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_ubjson call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_ubjson call:[from_ubjson] noreturn:[from_ubjson]
+from_ubjson call:[basic_json,decltype,get,move,sax_parse,sdp] noreturn:[basic_json]
+from_bson call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_bson call:[basic_json,decltype,input_adapter,move,sax_parse,sdp] noreturn:[basic_json]
+from_bson call:[from_bson] noreturn:[from_bson]
+from_bson call:[basic_json,decltype,get,move,sax_parse,sdp] noreturn:[basic_json]
+operator[] call:[get_unchecked] noreturn:[get_unchecked]
+operator[] call:[get_unchecked] noreturn:[get_unchecked]
+at call:[get_checked] noreturn:[get_checked]
+at call:[get_checked] noreturn:[get_checked]
+flatten call:[flatten,result]
+unflatten call:[unflatten] noreturn:[unflatten]
+patch call:[abort,array_index,assert,at,back,begin,empty,end,erase,find,from_ptr,get_op,get_value,insert,is_array,is_object,is_string,operation_add,operation_remove,pop_back,ptr,push_back,size,top] noreturn:[abort,assert,at,erase,get_value,insert,push_back]
+diff call:[begin,cbegin,cend,diff,end,escape,find,insert,key,object,push_back,result,size,to_string,type,value] noreturn:[insert,push_back]
+merge_patch call:[begin,end,erase,is_null,is_object,key,merge_patch,object,operator[],value] noreturn:[erase,merge_patch,object]
+to_string call:[dump] noreturn:[dump]
+operator() call:[hash] noreturn:[hash]
+operator() call:[operator<] noreturn:[operator<]
+operator""_json call:[parse] noreturn:[parse]
+operator""_json_pointer call:[json_pointer,string] noreturn:[json_pointer]
+BackgroundObject
+Collide
+OnDestroy
+Destroy
+LandOnGround
+IsEnemy
+GetType
+operator| call:[return]
+operator& call:[return]
+Completed
+Objective
+DelayedFunctionInvoke call:[push_back] noreturn:[push_back]
+Objective
+GameClient
+EventHandler
+GetPlayer
+Difficulty
+EnemyCount
+PlayerCount
+ShowingHitboxes
+Wave
+WaveFinished
+WaveSecondsLeft
+Instance call:[assert]
+InstanceExists call:[get] noreturn:[get]
+InstanceAsSharedPtr
+SetInstance
+RenderPosition call:[assert]
+ItemUpgrade
+DoUpgrade
+Description
+Cost
+PlayerUpgrade
+DoUpgrade
+Description
+Cost
+Current
+Max
+Increment
+GetPossibleUpgrades
+HoldUpdate
+HoldRender
+Owner
+Name
+GetOwner
+Item
+Powerup
+onopen global:[connected] call:[puts]
+onerror global:[connected] call:[puts]
+onclose global:[connected] call:[puts]
+onmessage call:[DataReceive,GameClient,Instance,printf,puts] noreturn:[DataReceive]
+AttemptConnection global:[sock] call:[SDL_Log,emscripten_websocket_is_supported,emscripten_websocket_new,emscripten_websocket_set_onclose_callback,emscripten_websocket_set_onerror_callback,emscripten_websocket_set_onmessage_callback,emscripten_websocket_set_onopen_callback] noreturn:[SDL_Log,emscripten_websocket_set_onmessage_callback]
+LoginScreen call:[Add,Login] noreturn:[Add,Login]
+update global:[connected,sock] call:[GameClient,Instance,LoadLevel,SetSocket] noreturn:[LoadLevel]
+LeftClick call:[ClickOn] noreturn:[ClickOn]
+KeyDown call:[KeyDown,LoadLevel] noreturn:[KeyDown,LoadLevel]
+KeyPress call:[TextInput] noreturn:[TextInput]
+Login global:[connected] call:[AttemptConnection,GetPlayer,Instance,Text] noreturn:[AttemptConnection]
+WidgetEnemyInformation global:[clrGreen] call:[Add,c_str]
+Refresh call:[sizeof,snprintf] noreturn:[snprintf]
+MultiplayerGameClient call:[Add,Gui] noreturn:[Add]
+MultiplayerGameClient call:[emscripten_websocket_close] noreturn:[emscripten_websocket_close]
+Update global:[connected] call:[SendGameStatus]
+Status global:[connected]
+SendGameStatus global:[sock] call:[GetPlayer,Instance,Wave,c_str,dump,emscripten_websocket_send_binary,length] noreturn:[emscripten_websocket_send_binary]
+DataReceive call:[Add,Children,Refresh,at,contains,get,is_string,parse,printf,size] noreturn:[get,printf]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < Entity >
+List < Entity >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < Item >
+List < Item >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < BackgroundObject >
+List < BackgroundObject >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < ItemUpgrade >
+List < ItemUpgrade >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List < PlayerUpgrade >
+List < PlayerUpgrade >
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]

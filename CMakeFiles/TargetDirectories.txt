@@ -1,0 +1,3 @@
+/mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles/Margarita.dir

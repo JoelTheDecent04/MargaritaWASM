@@ -1,0 +1,74 @@
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List
+List
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Rect
+RectSize
+operator+
+TextRenderer
+SetPosition
+SetSize
+SetAlignment
+SetAbsoluteCoordinates
+SetColour
+GraphicsStreamText
+operator<< call:[strlen,strncpy]
+operator<< call:[snprintf]
+operator<< call:[Draw] noreturn:[Draw]
+RectRenderer
+SetPosition
+SetSize
+SetColour
+SetAbsoluteCoordinates
+SetFilled
+SetAlignment
+Texture
+Handle
+ClickOn
+ClickOff
+OnMouseEnter
+OnMouseLeave
+Update
+TextInput
+KeyDown
+Draw
+WidgetChild
+Widget
+Children
+Clear call:[clear] noreturn:[clear]
+Add call:[WidgetChild,push_back]
+SetClickable
+SetText
+IsClickable
+Hovering
+SetText
+Text
+render
+Render call:[Draw,render] noreturn:[Draw]
+update
+Update call:[Update,update] noreturn:[Update]
+LeftClick
+KeyDown
+KeyPress
+Gui
+Texture call:[IMG_LoadTexture,SDL_GetError,SDL_Log,c_str,string] noreturn:[SDL_Log]
+Texture call:[SDL_QueryTexture]
+Texture call:[SDL_DestroyTexture] noreturn:[SDL_DestroyTexture]
+Draw call:[SDL_RenderCopy] noreturn:[SDL_RenderCopy]
+DrawDifferentSize global:[fScaleH,fScaleV] call:[SDL_RenderCopyExF,SDL_RenderCopyF] noreturn:[SDL_RenderCopyExF,SDL_RenderCopyF]
+Draw global:[fScaleH,fScaleV] call:[SDL_RenderCopyExF,SDL_RenderCopyF,SDL_SetTextureAlphaMod] noreturn:[SDL_RenderCopyExF,SDL_RenderCopyF]
+DrawPanorama global:[nScreenHeight,nScreenWidth] call:[SDL_RenderCopyF] noreturn:[SDL_RenderCopyF]
+LoadAll call:[Texture] noreturn:[Texture]

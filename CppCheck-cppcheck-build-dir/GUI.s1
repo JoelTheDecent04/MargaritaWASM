@@ -1,0 +1,101 @@
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List
+List
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Rect
+RectSize
+operator+
+TextRenderer
+SetPosition
+SetSize
+SetAlignment
+SetAbsoluteCoordinates
+SetColour
+GraphicsStreamText
+operator<< call:[strlen,strncpy]
+operator<< call:[snprintf]
+operator<< call:[Draw] noreturn:[Draw]
+RectRenderer
+SetPosition
+SetSize
+SetColour
+SetAbsoluteCoordinates
+SetFilled
+SetAlignment
+Texture
+Handle
+ClickOn
+ClickOff
+OnMouseEnter
+OnMouseLeave
+Update
+TextInput
+KeyDown
+Draw
+WidgetChild
+Widget
+Children
+Clear call:[clear] noreturn:[clear]
+Add call:[WidgetChild,push_back]
+SetClickable
+SetText
+IsClickable
+Hovering
+SetText
+Text
+render
+Render call:[Draw,render] noreturn:[Draw]
+update
+Update call:[Update,update] noreturn:[Update]
+LeftClick
+KeyDown
+KeyPress
+Gui
+Bar
+Draw global:[clrDarkGrey,fScaleH,fScaleV] call:[DrawRectangle,FillRectangle] noreturn:[DrawRectangle]
+Button
+Click call:[function] noreturn:[function]
+Draw global:[clrBlack,clrDarkGrey,clrDarkerGrey,fScaleH,fScaleV] call:[DrawRectangle,FillRectangle,GetFont,TextMetrics,WriteText] noreturn:[WriteText]
+WidgetGroup
+ClickOn call:[ClickOff,ClickOn,PointInRect,Rect,size] noreturn:[ClickOff,ClickOn]
+ClickOff call:[ClickOff] noreturn:[ClickOff]
+OnMouseEnter
+OnMouseLeave
+Update call:[OnMouseEnter,OnMouseLeave,PointInRect,Rect,Update,size] noreturn:[Update]
+TextInput call:[TextInput] noreturn:[TextInput]
+KeyDown call:[KeyDown] noreturn:[KeyDown]
+Draw call:[Draw] noreturn:[Draw]
+WidgetBitmapButton
+Draw global:[clrBlack,fScaleH,fScaleV] call:[DrawDifferentSize,FillRectangle] noreturn:[FillRectangle]
+ClickOn call:[function] noreturn:[function]
+OnMouseEnter
+OnMouseLeave
+WidgetButton
+Draw global:[clrBlack,clrDarkGrey,clrDarkerGrey,fScaleH,fScaleV] call:[DrawRectangle,FillRectangle,SDL_RenderFlush,SetAlignment,SetPosition,SetSize,SetText,TextRenderer,stringstream] noreturn:[SetText]
+ClickOn call:[function] noreturn:[function]
+OnMouseEnter
+OnMouseLeave
+WidgetLabel
+Draw call:[SetAlignment,SetPosition,SetSize,SetText,TextRenderer,stringstream] noreturn:[SetText]
+WidgetTextbox
+ClickOn
+TextInput call:[append] noreturn:[append]
+KeyDown call:[pop_back,size] noreturn:[pop_back]
+Draw call:[Draw,RectRenderer,SetAlignment,SetPosition,SetSize,SetText,TextRenderer,stringstream] noreturn:[SetText]
+WidgetBitmap
+Draw call:[DrawDifferentSize] noreturn:[DrawDifferentSize]
+WidgetBar
+Draw global:[clrDarkGrey,fScaleH,fScaleV] call:[DrawRectangle,FillRectangle] noreturn:[DrawRectangle]

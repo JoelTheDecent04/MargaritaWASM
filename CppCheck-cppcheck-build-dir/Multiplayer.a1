@@ -1,0 +1,1502 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14773939419471862167">
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to evaluate #elif condition" verbose="failed to evaluate #elif condition">
+            <location file="json.hpp" line="2345" column="0"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;size&apos;." verbose="Non-pure function: &apos;size&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="51" column="18"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="19121" column="13"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="19144" column="13"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="19167" column="13"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="19190" column="13"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::left&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::left&apos; is not initialized in the constructor." cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::left</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::top&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::top&apos; is not initialized in the constructor." cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::top</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::right&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::right&apos; is not initialized in the constructor." cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::right</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::bottom</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;lPrevLevel&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;lPrevLevel&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Multiplayer.cpp">
+            <location file="Multiplayer.cpp" line="68" column="5"/>
+            <symbol>lPrevLevel</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;widgetMultiplayerInfo&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;widgetMultiplayerInfo&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Multiplayer.cpp">
+            <location file="Multiplayer.cpp" line="128" column="5"/>
+            <symbol>widgetMultiplayerInfo</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Texture&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Texture&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="Texture.h" line="15" column="2"/>
+            <symbol>Texture</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WidgetLabel&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WidgetLabel&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="GUI.h" line="150" column="2"/>
+            <symbol>WidgetLabel</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WidgetTextbox&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WidgetTextbox&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="GUI.h" line="167" column="2"/>
+            <symbol>WidgetTextbox</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MultiplayerGameClient&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MultiplayerGameClient&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="Multiplayer.h" line="50" column="5"/>
+            <symbol>MultiplayerGameClient</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;byte_container_with_subtype&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;byte_container_with_subtype&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="4993" column="5"/>
+            <symbol>byte_container_with_subtype</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;byte_container_with_subtype&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;byte_container_with_subtype&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="4998" column="5"/>
+            <symbol>byte_container_with_subtype</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;wide_string_input_adapter&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;wide_string_input_adapter&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="5510" column="5"/>
+            <symbol>wide_string_input_adapter</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;json_ref&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;json_ref&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="13093" column="5"/>
+            <symbol>json_ref</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;json_ref&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;json_ref&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="13097" column="5"/>
+            <symbol>json_ref</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;output_adapter&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;output_adapter&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="13288" column="5"/>
+            <symbol>output_adapter</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;output_adapter&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;output_adapter&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="13292" column="5"/>
+            <symbol>output_adapter</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;output_adapter&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;output_adapter&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="13296" column="5"/>
+            <symbol>output_adapter</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;ordered_map&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;ordered_map&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="17069" column="5"/>
+            <symbol>ordered_map</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="17991" column="5"/>
+            <symbol>basic_json</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="17999" column="5"/>
+            <symbol>basic_json</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="18011" column="5"/>
+            <symbol>basic_json</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="18025" column="5"/>
+            <symbol>basic_json</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="18077" column="5"/>
+            <symbol>basic_json</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;basic_json&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="18315" column="5"/>
+            <symbol>basic_json</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="13" column="3"/>
+            <symbol>Iterator</symbol>
+        </error>
+        <error id="compareValueOutOfTypeRangeError" severity="style" msg="Comparing expression of type &apos;const unsigned char&apos; against value 400. Condition is always true." verbose="Comparing expression of type &apos;const unsigned char&apos; against value 400. Condition is always true." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="16964" column="9"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Multiplayer.cpp">
+            <location file="Multiplayer.cpp" line="37" column="57"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Multiplayer.cpp">
+            <location file="Multiplayer.cpp" line="175" column="44"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Multiplayer.cpp">
+            <location file="Multiplayer.cpp" line="195" column="26"/>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;m_value.object-&gt;emplace&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;m_value.object-&gt;emplace&apos;. The initialized value is overwritten before it is read." cwe="563" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="20167" column="18" info="m_value.object-&gt;emplace is overwritten"/>
+            <location file="json.hpp" line="20167" column="18" info="m_value.object-&gt;emplace is initialized"/>
+            <symbol>m_value.object-&gt;emplace</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &apos;kAlpha &gt;= -60&apos; is always true." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="15533" column="26"/>
+            <location file="json.hpp" line="15254" column="25" info="&apos;kAlpha&apos; is assigned value &apos;-60&apos; here."/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &apos;kGamma &lt;= -32&apos; is always true." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="15534" column="26"/>
+            <location file="json.hpp" line="15255" column="25" info="&apos;kGamma&apos; is assigned value &apos;-32&apos; here."/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &apos;thousands_sep != &apos;\0&apos;&apos; is always false because &apos;thousands_sep&apos; and &apos;&apos;\0&apos;&apos; represent the same value." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="16885" column="27"/>
+            <location file="json.hpp" line="17013" column="32" info="&apos;thousands_sep&apos; is assigned value &apos;&apos;\0&apos;&apos; here."/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &apos;decimal_point != &apos;\0&apos;&apos; is always false because &apos;decimal_point&apos; and &apos;&apos;\0&apos;&apos; represent the same value." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="16895" column="27"/>
+            <location file="json.hpp" line="17015" column="32" info="&apos;decimal_point&apos; is assigned value &apos;&apos;\0&apos;&apos; here."/>
+        </error>
+        <error id="unreachableCode" severity="style" msg="Statements following return, break, continue, goto or throw will never be executed." verbose="Statements following return, break, continue, goto or throw will never be executed." cwe="561" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="14236" column="13"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;description&apos; should be passed by const reference." verbose="Parameter &apos;description&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="Multiplayer.cpp">
+            <location file="Upgrades.h" line="40" column="101"/>
+            <symbol>description</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="18" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="18" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="19" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="Multiplayer.cpp">
+            <location file="Utilities.h" line="19" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="5139" column="22"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="17758" column="31"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="17780" column="35"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;offset&apos; is assigned a value that is never used." verbose="Variable &apos;offset&apos; is assigned a value that is never used." cwe="563" file0="Multiplayer.cpp">
+            <location file="json.hpp" line="17152" column="27"/>
+            <symbol>offset</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="GUI.h:55:2" call-funcname="WidgetChild" call-argnr="2" file="GUI.h" line="86" col="33" call-argexpr="x" call-argvaluetype="0" call-argvalue="0">
+  <path file="Multiplayer.cpp" line="200" col="56" info="Calling function &apos;Add&apos;, 2nd argument &apos;0&apos; value is 0"/>
+</function-call><function-call call-id="GUI.h:55:2" call-funcname="WidgetChild" call-argnr="3" file="GUI.h" line="86" col="33" call-argexpr="y" call-argvaluetype="0" call-argvalue="0">
+  <path file="Multiplayer.cpp" line="113" col="81" info="Calling function &apos;Add&apos;, 3rd argument &apos;0&apos; value is 0"/>
+</function-call><function-call call-id="json.hpp:5088:20" call-funcname="combine" call-argnr="2" file="json.hpp" line="5119" col="27" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:5588:69" call-funcname="input_adapter" call-argnr="1" file="json.hpp" line="5665" col="25" call-argexpr="array" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="json.hpp:5996:20" call-funcname="handle_value" call-argnr="1" file="json.hpp" line="5884" col="21" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:6254:37" call-funcname="handle_value" call-argnr="1" file="json.hpp" line="6059" col="21" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:8518:10" call-funcname="parse_bson_element_list" call-argnr="1" file="json.hpp" line="8348" col="13" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:10571:10" call-funcname="get_string" call-argnr="2" file="json.hpp" line="8401" col="26" call-argexpr="len-static_cast&lt;NumberType&gt;(1)" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="json.hpp" line="8395" col="13" info="Assuming that condition &apos;len&lt;1&apos; is not redundant"/>
+</function-call><function-call call-id="json.hpp:10604:10" call-funcname="get_binary" call-argnr="2" file="json.hpp" line="8427" col="26" call-argexpr="len" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="json.hpp" line="8416" col="13" info="Assuming that condition &apos;len&lt;0&apos; is not redundant"/>
+</function-call><function-call call-id="json.hpp:8586:10" call-funcname="parse_cbor_internal" call-argnr="1" file="json.hpp" line="9285" col="21" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:9989:10" call-funcname="parse_ubjson_internal" call-argnr="1" file="json.hpp" line="10329" col="21" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:10008:10" call-funcname="get_ubjson_string" call-argnr="2" file="json.hpp" line="10399" col="21" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:10888:10" call-funcname="sax_parse_internal" call-argnr="1" file="json.hpp" line="10806" col="31" call-argexpr="&amp;sdp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="json.hpp:10888:10" call-funcname="sax_parse_internal" call-argnr="1" file="json.hpp" line="10834" col="31" call-argexpr="&amp;sdp" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="json.hpp:10869:10" call-funcname="sax_parse" call-argnr="1" file="json.hpp" line="10864" col="25" call-argexpr="&amp;sax_acceptor" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="json.hpp:14888:31" call-funcname="to_char_type" call-argnr="1" file="json.hpp" line="13492" col="53" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:14888:31" call-funcname="to_char_type" call-argnr="1" file="json.hpp" line="13499" col="53" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:14888:31" call-funcname="to_char_type" call-argnr="1" file="json.hpp" line="14261" col="70" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:14888:31" call-funcname="to_char_type" call-argnr="1" file="json.hpp" line="14413" col="41" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:14888:31" call-funcname="to_char_type" call-argnr="1" file="json.hpp" line="14553" col="41" call-argexpr="0x00" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:15530:13" call-funcname="grisu2_digit_gen" call-argnr="2" file="json.hpp" line="15821" col="21" call-argexpr="len" call-argvaluetype="0" call-argvalue="0">
+  <path file="json.hpp" line="16042" col="15" info="Assignment &apos;len=0&apos;, assigned value is 0"/>
+  <path file="json.hpp" line="16044" col="30" info="Calling function &apos;grisu2&apos;, 2nd argument &apos;len&apos; value is 0"/>
+  <path file="json.hpp" line="15861" col="17" info="Calling function &apos;grisu2&apos;, 2nd argument &apos;len&apos; value is 0"/>
+</function-call><function-call call-id="json.hpp:15771:13" call-funcname="grisu2" call-argnr="2" file="json.hpp" line="15861" col="11" call-argexpr="len" call-argvaluetype="0" call-argvalue="0">
+  <path file="json.hpp" line="16042" col="15" info="Assignment &apos;len=0&apos;, assigned value is 0"/>
+  <path file="json.hpp" line="16044" col="30" info="Calling function &apos;grisu2&apos;, 2nd argument &apos;len&apos; value is 0"/>
+</function-call><function-call call-id="json.hpp:16149:10" call-funcname="dump" call-argnr="2" file="json.hpp" line="16212" col="29" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:16149:10" call-funcname="dump" call-argnr="2" file="json.hpp" line="16222" col="25" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:16149:10" call-funcname="dump" call-argnr="2" file="json.hpp" line="16275" col="29" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:16149:10" call-funcname="dump" call-argnr="2" file="json.hpp" line="16281" col="25" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:18077:5" call-funcname="basic_json" call-argnr="2" file="json.hpp" line="18179" col="26" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:18077:5" call-funcname="basic_json" call-argnr="2" file="json.hpp" line="18187" col="26" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17858:10" call-funcname="assert_invariant" call-argnr="1" file="json.hpp" line="18427" col="25" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="2" file="json.hpp" line="20875" col="22" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="3" file="json.hpp" line="20875" col="22" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="2" file="json.hpp" line="20884" col="22" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="3" file="json.hpp" line="20884" col="22" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="2" file="json.hpp" line="20892" col="22" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="3" file="json.hpp" line="20892" col="22" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="2" file="json.hpp" line="20906" col="24" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="2" file="json.hpp" line="20921" col="24" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:17328:69" call-funcname="parser" call-argnr="2" file="json.hpp" line="20941" col="24" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="GUI.h:85:21" call-funcname="Add" call-argnr="2" file="Multiplayer.cpp" line="113" col="8" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="GUI.h:85:21" call-funcname="Add" call-argnr="3" file="Multiplayer.cpp" line="113" col="8" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="GUI.h:85:21" call-funcname="Add" call-argnr="2" file="Multiplayer.cpp" line="114" col="8" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="GUI.h:85:21" call-funcname="Add" call-argnr="2" file="Multiplayer.cpp" line="115" col="8" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="GUI.h:85:21" call-funcname="Add" call-argnr="2" file="Multiplayer.cpp" line="116" col="8" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="GUI.h:85:21" call-funcname="Add" call-argnr="2" file="Multiplayer.cpp" line="117" col="8" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="GUI.h:85:21" call-funcname="Add" call-argnr="2" file="Multiplayer.cpp" line="118" col="8" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="json.hpp:5259:14" call-funcname="file_input_adapter" call-argnr="1" file="json.hpp" line="5631" col="12" my-id="json.hpp:5629:27" my-argnr="1"/>
+<function-call call-id="json.hpp:10654:17" call-funcname="exception_message" call-argnr="3" file="json.hpp" line="10633" col="74" my-id="json.hpp:10628:10" my-argnr="2"/>
+<function-call call-id="json.hpp:10888:10" call-funcname="sax_parse_internal" call-argnr="1" file="json.hpp" line="10872" col="29" my-id="json.hpp:10869:10" my-argnr="1"/>
+<function-call call-id="json.hpp:15530:13" call-funcname="grisu2_digit_gen" call-argnr="1" file="json.hpp" line="15821" col="5" my-id="json.hpp:15771:13" my-argnr="1"/>
+<function-call call-id="json.hpp:15771:13" call-funcname="grisu2" call-argnr="1" file="json.hpp" line="15861" col="5" my-id="json.hpp:15831:6" my-argnr="1"/>
+<function-call call-id="json.hpp:21157:23" call-funcname="from_cbor" call-argnr="1" file="json.hpp" line="21162" col="16" my-id="json.hpp:21157:23" my-argnr="1"/>
+<function-call call-id="json.hpp:21214:23" call-funcname="from_msgpack" call-argnr="1" file="json.hpp" line="21218" col="16" my-id="json.hpp:21214:23" my-argnr="1"/>
+<function-call call-id="json.hpp:21268:23" call-funcname="from_ubjson" call-argnr="1" file="json.hpp" line="21272" col="16" my-id="json.hpp:21268:23" my-argnr="1"/>
+<function-call call-id="json.hpp:21322:23" call-funcname="from_bson" call-argnr="1" file="json.hpp" line="21326" col="16" my-id="json.hpp:21322:23" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="TextSize" file="Graphics.h" line="10" col="1" hash="10724191710049951354"/>
+<class name="RectSize" file="Graphics.h" line="15" col="1" hash="4061058003016658599"/>
+<class name="EndStream" file="Graphics.h" line="54" col="1" hash="9742039643195961405"/>
+<class name="Widget" file="GUI.h" line="35" col="1" hash="6949896112396479749"/>
+<class name="WidgetChild" file="GUI.h" line="49" col="1" hash="16368760178329580174"/>
+<class name="Level" file="Game.h" line="7" col="1" hash="7049039584434299977"/>
+<class name="WidgetEnemyInformation" file="Multiplayer.h" line="9" col="1" hash="1310581087479769665"/>
+<class name="LoginScreen" file="Multiplayer.h" line="23" col="1" hash="17550606644729379845"/>
+<class name="MultiplayerGameClient" file="Multiplayer.h" line="44" col="1" hash="8592337809158406740"/>
+<class name="EventHandler::DelayedFunction" file="EventHandler.h" line="66" col="2" hash="6232065038466404301"/>
+<class name="ItemUpgrade" file="Upgrades.h" line="3" col="1" hash="1861685166424742826"/>
+<class name="PlayerUpgrade" file="Upgrades.h" line="30" col="1" hash="3998633456353619325"/>
+<class name="List &lt; Entity &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="7661575550208057443"/>
+<class name="List &lt; Item &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="2303848851761835863"/>
+<class name="List &lt; BackgroundObject &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="16309164132262582003"/>
+<class name="List &lt; ItemUpgrade &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="13560783311079967937"/>
+<class name="List &lt; PlayerUpgrade &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="12212796610954571705"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="Graphics.h:124:22" my-argnr="1" my-argname="source" file="Graphics.h" line="125" col="25" value="0"/>
+    <unsafe-usage my-id="json.hpp:2766:13" my-argnr="1" my-argname="s" file="json.hpp" line="2768" col="23" value="0"/>
+    <unsafe-usage my-id="json.hpp:7323:17" my-argnr="2" my-argname="str" file="json.hpp" line="7325" col="25" value="0"/>
+    <unsafe-usage my-id="json.hpp:7329:17" my-argnr="2" my-argname="str" file="json.hpp" line="7331" col="25" value="0"/>
+    <unsafe-usage my-id="json.hpp:7335:17" my-argnr="2" my-argname="str" file="json.hpp" line="7337" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:7711:16" my-argnr="1" my-argname="literal_text" file="json.hpp" line="7714" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:12327:25" my-argnr="1" my-argname="lhs" file="json.hpp" line="12330" col="29" value="0"/>
+    <unsafe-usage my-id="json.hpp:12335:25" my-argnr="1" my-argname="lhs" file="json.hpp" line="12337" col="29" value="0"/>
+    <unsafe-usage my-id="json.hpp:12342:25" my-argnr="1" my-argname="lhs" file="json.hpp" line="12344" col="29" value="0"/>
+    <unsafe-usage my-id="Multiplayer.cpp:32:9" my-argnr="2" my-argname="websocketEvent" file="Multiplayer.cpp" line="34" col="9" value="0"/>
+    <unsafe-usage my-id="Multiplayer.h:50:5" my-argnr="1" my-argname="game" file="Multiplayer.cpp" line="129" col="5" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="Graphics.h:22:12" my-argnr="1" my-argname="rs" file="Graphics.h" line="23" col="12" value="0"/>
+    <unsafe-usage my-id="Graphics.h:124:22" my-argnr="1" my-argname="source" file="Graphics.h" line="125" col="25" value="0"/>
+    <unsafe-usage my-id="json.hpp:2734:13" my-argnr="1" my-argname="s" file="json.hpp" line="2738" col="21" value="0"/>
+    <unsafe-usage my-id="json.hpp:2734:13" my-argnr="2" my-argname="f" file="json.hpp" line="2737" col="5" value="0"/>
+    <unsafe-usage my-id="json.hpp:2922:24" my-argnr="4" my-argname="context" file="json.hpp" line="2925" col="78" value="0"/>
+    <unsafe-usage my-id="json.hpp:2930:24" my-argnr="4" my-argname="context" file="json.hpp" line="2934" col="55" value="0"/>
+    <unsafe-usage my-id="json.hpp:2953:24" my-argnr="1" my-argname="pos" file="json.hpp" line="2955" col="45" value="0"/>
+    <unsafe-usage my-id="json.hpp:2966:29" my-argnr="3" my-argname="context" file="json.hpp" line="2968" col="91" value="0"/>
+    <unsafe-usage my-id="json.hpp:2984:23" my-argnr="3" my-argname="context" file="json.hpp" line="2986" col="85" value="0"/>
+    <unsafe-usage my-id="json.hpp:3001:25" my-argnr="3" my-argname="context" file="json.hpp" line="3003" col="87" value="0"/>
+    <unsafe-usage my-id="json.hpp:3018:24" my-argnr="3" my-argname="context" file="json.hpp" line="3020" col="86" value="0"/>
+    <unsafe-usage my-id="json.hpp:3843:6" my-argnr="1" my-argname="j" file="json.hpp" line="3845" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:3890:6" my-argnr="1" my-argname="j" file="json.hpp" line="3892" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:3900:6" my-argnr="1" my-argname="j" file="json.hpp" line="3902" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:3916:6" my-argnr="1" my-argname="j" file="json.hpp" line="3918" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:3927:6" my-argnr="1" my-argname="j" file="json.hpp" line="3929" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:3933:6" my-argnr="1" my-argname="j" file="json.hpp" line="3935" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:3939:6" my-argnr="1" my-argname="j" file="json.hpp" line="3941" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:3946:6" my-argnr="1" my-argname="j" file="json.hpp" line="3949" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:3956:6" my-argnr="1" my-argname="j" file="json.hpp" line="3958" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:3956:6" my-argnr="2" my-argname="l" file="json.hpp" line="3962" col="5" value="0"/>
+    <unsafe-usage my-id="json.hpp:3973:6" my-argnr="1" my-argname="j" file="json.hpp" line="3975" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:3973:6" my-argnr="2" my-argname="l" file="json.hpp" line="3979" col="5" value="0"/>
+    <unsafe-usage my-id="json.hpp:3998:6" my-argnr="1" my-argname="j" file="json.hpp" line="4000" col="12" value="0"/>
+    <unsafe-usage my-id="json.hpp:4018:6" my-argnr="1" my-argname="j" file="json.hpp" line="4027" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:4042:6" my-argnr="1" my-argname="j" file="json.hpp" line="4049" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4067:6" my-argnr="1" my-argname="j" file="json.hpp" line="4072" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4088:6" my-argnr="1" my-argname="j" file="json.hpp" line="4091" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4100:6" my-argnr="1" my-argname="j" file="json.hpp" line="4102" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4112:6" my-argnr="1" my-argname="j" file="json.hpp" line="4114" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4212:6" my-argnr="1" my-argname="j" file="json.hpp" line="4215" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4226:6" my-argnr="1" my-argname="j" file="json.hpp" line="4228" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4226:6" my-argnr="2" my-argname="m" file="json.hpp" line="4232" col="5" value="0"/>
+    <unsafe-usage my-id="json.hpp:4246:6" my-argnr="1" my-argname="j" file="json.hpp" line="4248" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4246:6" my-argnr="2" my-argname="m" file="json.hpp" line="4252" col="5" value="0"/>
+    <unsafe-usage my-id="json.hpp:4265:6" my-argnr="1" my-argname="j" file="json.hpp" line="4267" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4378:10" my-argnr="1" my-argname="o" file="json.hpp" line="4380" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:4384:10" my-argnr="1" my-argname="o" file="json.hpp" line="4386" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:4460:6" my-argnr="1" my-argname="i" file="json.hpp" line="4462" col="12" value="0"/>
+    <unsafe-usage my-id="json.hpp:4468:6" my-argnr="1" my-argname="i" file="json.hpp" line="4470" col="12" value="0"/>
+    <unsafe-usage my-id="json.hpp:4545:17" my-argnr="1" my-argname="j" file="json.hpp" line="4547" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4558:17" my-argnr="1" my-argname="j" file="json.hpp" line="4560" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4567:17" my-argnr="1" my-argname="j" file="json.hpp" line="4569" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4578:17" my-argnr="1" my-argname="j" file="json.hpp" line="4580" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4591:17" my-argnr="1" my-argname="j" file="json.hpp" line="4593" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4600:17" my-argnr="1" my-argname="j" file="json.hpp" line="4602" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4613:17" my-argnr="1" my-argname="j" file="json.hpp" line="4615" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4626:17" my-argnr="1" my-argname="j" file="json.hpp" line="4628" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4639:17" my-argnr="1" my-argname="j" file="json.hpp" line="4641" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4652:17" my-argnr="1" my-argname="j" file="json.hpp" line="4654" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4662:17" my-argnr="1" my-argname="j" file="json.hpp" line="4664" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4674:17" my-argnr="1" my-argname="j" file="json.hpp" line="4679" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4687:17" my-argnr="1" my-argname="j" file="json.hpp" line="4689" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4687:17" my-argnr="2" my-argname="arr" file="json.hpp" line="4692" col="34" value="0"/>
+    <unsafe-usage my-id="json.hpp:4703:17" my-argnr="1" my-argname="j" file="json.hpp" line="4705" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4703:17" my-argnr="2" my-argname="arr" file="json.hpp" line="4708" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:4722:17" my-argnr="1" my-argname="j" file="json.hpp" line="4724" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4732:17" my-argnr="1" my-argname="j" file="json.hpp" line="4734" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4743:17" my-argnr="1" my-argname="j" file="json.hpp" line="4748" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:4879:6" my-argnr="2" my-argname="b" file="json.hpp" line="4881" col="12" value="0"/>
+    <unsafe-usage my-id="json.hpp:4891:6" my-argnr="2" my-argname="t" file="json.hpp" line="4893" col="27" value="0"/>
+    <unsafe-usage my-id="json.hpp:4898:6" my-argnr="2" my-argname="p" file="json.hpp" line="4900" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:5106:13" my-argnr="1" my-argname="j" file="json.hpp" line="5113" col="48" value="0"/>
+    <unsafe-usage my-id="json.hpp:5387:17" my-argnr="1" my-argname="input" file="json.hpp" line="5394" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:5445:17" my-argnr="1" my-argname="input" file="json.hpp" line="5452" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:7323:17" my-argnr="2" my-argname="str" file="json.hpp" line="7325" col="25" value="0"/>
+    <unsafe-usage my-id="json.hpp:7329:17" my-argnr="2" my-argname="str" file="json.hpp" line="7331" col="25" value="0"/>
+    <unsafe-usage my-id="json.hpp:7335:17" my-argnr="2" my-argname="str" file="json.hpp" line="7337" col="26" value="0"/>
+    <unsafe-usage my-id="json.hpp:7711:16" my-argnr="1" my-argname="literal_text" file="json.hpp" line="7714" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:11174:17" my-argnr="2" my-argname="context" file="json.hpp" line="11178" col="14" value="0"/>
+    <unsafe-usage my-id="json.hpp:11550:16" my-argnr="1" my-argname="other" file="json.hpp" line="11552" col="20" value="0"/>
+    <unsafe-usage my-id="json.hpp:11834:10" my-argnr="1" my-argname="other" file="json.hpp" line="11837" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:11870:10" my-argnr="1" my-argname="other" file="json.hpp" line="11872" col="28" value="0"/>
+    <unsafe-usage my-id="json.hpp:11879:10" my-argnr="1" my-argname="other" file="json.hpp" line="11882" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:11914:10" my-argnr="1" my-argname="other" file="json.hpp" line="11916" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:12302:19" my-argnr="1" my-argname="ptr" file="json.hpp" line="12305" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:12327:25" my-argnr="2" my-argname="rhs" file="json.hpp" line="12330" col="37" value="0"/>
+    <unsafe-usage my-id="json.hpp:12417:46" my-argnr="1" my-argname="s" file="json.hpp" line="12422" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:12869:37" my-argnr="1" my-argname="reference_string" file="json.hpp" line="12874" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:12937:17" my-argnr="2" my-argname="value" file="json.hpp" line="12941" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:13008:5" my-argnr="1" my-argname="value" file="json.hpp" line="13010" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:13046:17" my-argnr="1" my-argname="lhs" file="json.hpp" line="13049" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:13046:17" my-argnr="2" my-argname="rhs" file="json.hpp" line="13049" col="40" value="0"/>
+    <unsafe-usage my-id="json.hpp:13344:10" my-argnr="1" my-argname="j" file="json.hpp" line="13346" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:13373:10" my-argnr="1" my-argname="j" file="json.hpp" line="13375" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:13697:10" my-argnr="1" my-argname="j" file="json.hpp" line="13699" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:14022:10" my-argnr="1" my-argname="j" file="json.hpp" line="14025" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:14230:24" my-argnr="1" my-argname="name" file="json.hpp" line="14232" col="25" value="0"/>
+    <unsafe-usage my-id="json.hpp:14245:10" my-argnr="1" my-argname="name" file="json.hpp" line="14250" col="47" value="0"/>
+    <unsafe-usage my-id="json.hpp:14257:10" my-argnr="1" my-argname="name" file="json.hpp" line="14260" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:14267:10" my-argnr="1" my-argname="name" file="json.hpp" line="14270" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:14277:24" my-argnr="1" my-argname="value" file="json.hpp" line="14279" col="39" value="0"/>
+    <unsafe-usage my-id="json.hpp:14285:10" my-argnr="1" my-argname="name" file="json.hpp" line="14288" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:14285:10" my-argnr="2" my-argname="value" file="json.hpp" line="14290" col="68" value="0"/>
+    <unsafe-usage my-id="json.hpp:14299:10" my-argnr="1" my-argname="name" file="json.hpp" line="14301" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:14345:10" my-argnr="2" my-argname="j" file="json.hpp" line="14348" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:14367:10" my-argnr="1" my-argname="name" file="json.hpp" line="14370" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:14392:24" my-argnr="1" my-argname="value" file="json.hpp" line="14394" col="39" value="0"/>
+    <unsafe-usage my-id="json.hpp:14400:10" my-argnr="1" my-argname="name" file="json.hpp" line="14403" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:14419:10" my-argnr="1" my-argname="name" file="json.hpp" line="14422" col="33" value="0"/>
+    <unsafe-usage my-id="json.hpp:14419:10" my-argnr="2" my-argname="value" file="json.hpp" line="14424" col="68" value="0"/>
+    <unsafe-usage my-id="json.hpp:14434:24" my-argnr="1" my-argname="name" file="json.hpp" line="14437" col="62" value="0"/>
+    <unsafe-usage my-id="json.hpp:14434:24" my-argnr="2" my-argname="j" file="json.hpp" line="14437" col="68" value="0"/>
+    <unsafe-usage my-id="json.hpp:14482:10" my-argnr="2" my-argname="j" file="json.hpp" line="14485" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:14529:24" my-argnr="1" my-argname="value" file="json.hpp" line="14531" col="53" value="0"/>
+    <unsafe-usage my-id="json.hpp:14731:14" my-argnr="1" my-argname="j" file="json.hpp" line="14733" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:15013:18" my-argnr="1" my-argname="x" file="json.hpp" line="15015" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:15013:18" my-argnr="2" my-argname="y" file="json.hpp" line="15015" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:15025:18" my-argnr="1" my-argname="x" file="json.hpp" line="15052" col="36" value="0"/>
+    <unsafe-usage my-id="json.hpp:15025:18" my-argnr="2" my-argname="y" file="json.hpp" line="15054" col="36" value="0"/>
+    <unsafe-usage my-id="json.hpp:15107:18" my-argnr="1" my-argname="x" file="json.hpp" line="15109" col="27" value="0"/>
+    <unsafe-usage my-id="json.hpp:16149:10" my-argnr="1" my-argname="val" file="json.hpp" line="16155" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:16433:10" my-argnr="1" my-argname="s" file="json.hpp" line="16443" col="37" value="0"/>
+    <unsafe-usage my-id="json.hpp:17089:8" my-argnr="1" my-argname="key" file="json.hpp" line="17091" col="24" value="0"/>
+    <unsafe-usage my-id="json.hpp:17094:14" my-argnr="1" my-argname="key" file="json.hpp" line="17096" col="19" value="0"/>
+    <unsafe-usage my-id="json.hpp:17233:31" my-argnr="1" my-argname="value" file="json.hpp" line="17235" col="24" value="0"/>
+    <unsafe-usage my-id="json.hpp:18025:5" my-argnr="1" my-argname="val" file="json.hpp" line="18036" col="17" value="0"/>
+    <unsafe-usage my-id="json.hpp:18319:5" my-argnr="1" my-argname="other" file="json.hpp" line="18323" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:18387:5" my-argnr="1" my-argname="other" file="json.hpp" line="18392" col="9" value="0"/>
+    <unsafe-usage my-id="json.hpp:18695:26" my-argnr="1" my-argname="obj" file="json.hpp" line="18698" col="21" value="0"/>
+    <unsafe-usage my-id="json.hpp:19665:10" my-argnr="1" my-argname="ptr" file="json.hpp" line="19667" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:20791:26" my-argnr="1" my-argname="o" file="json.hpp" line="20794" col="35" value="0"/>
+    <unsafe-usage my-id="json.hpp:20813:26" my-argnr="1" my-argname="j" file="json.hpp" line="20815" col="21" value="0"/>
+    <unsafe-usage my-id="json.hpp:20813:26" my-argnr="2" my-argname="o" file="json.hpp" line="20815" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:20859:23" my-argnr="1" my-argname="i" file="json.hpp" line="20865" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:20889:17" my-argnr="1" my-argname="i" file="json.hpp" line="20892" col="23" value="0"/>
+    <unsafe-usage my-id="json.hpp:20933:17" my-argnr="1" my-argname="i" file="json.hpp" line="20938" col="19" value="0"/>
+    <unsafe-usage my-id="json.hpp:21168:23" my-argnr="1" my-argname="i" file="json.hpp" line="21175" col="19" value="0"/>
+    <unsafe-usage my-id="json.hpp:21223:23" my-argnr="1" my-argname="i" file="json.hpp" line="21229" col="19" value="0"/>
+    <unsafe-usage my-id="json.hpp:21277:23" my-argnr="1" my-argname="i" file="json.hpp" line="21283" col="19" value="0"/>
+    <unsafe-usage my-id="json.hpp:21331:23" my-argnr="1" my-argname="i" file="json.hpp" line="21337" col="19" value="0"/>
+    <unsafe-usage my-id="json.hpp:21353:15" my-argnr="1" my-argname="ptr" file="json.hpp" line="21355" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:21360:21" my-argnr="1" my-argname="ptr" file="json.hpp" line="21362" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:21367:15" my-argnr="1" my-argname="ptr" file="json.hpp" line="21369" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:21374:21" my-argnr="1" my-argname="ptr" file="json.hpp" line="21376" col="16" value="0"/>
+    <unsafe-usage my-id="json.hpp:21824:10" my-argnr="1" my-argname="apply_patch" file="json.hpp" line="21826" col="13" value="0"/>
+    <unsafe-usage my-id="json.hpp:21856:13" my-argnr="1" my-argname="j" file="json.hpp" line="21858" col="12" value="0"/>
+    <unsafe-usage my-id="Multiplayer.cpp:32:9" my-argnr="2" my-argname="websocketEvent" file="Multiplayer.cpp" line="34" col="9" value="0"/>
+    <unsafe-usage my-id="Multiplayer.h:50:5" my-argnr="1" my-argname="game" file="Multiplayer.cpp" line="129" col="5" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="onopen" lineNumber="13"/>
+    <functiondecl functionName="onerror" lineNumber="20"/>
+    <functiondecl functionName="onclose" lineNumber="26"/>
+    <functiondecl functionName="onmessage" lineNumber="32"/>
+    <functiondecl functionName="AttemptConnection" lineNumber="45"/>
+    <functiondecl functionName="update" lineNumber="74"/>
+    <functiondecl functionName="LeftClick" lineNumber="81"/>
+    <functiondecl functionName="KeyDown" lineNumber="85"/>
+    <functiondecl functionName="KeyPress" lineNumber="92"/>
+    <functiondecl functionName="Login" lineNumber="100"/>
+    <functiondecl functionName="Refresh" lineNumber="121"/>
+    <functiondecl functionName="Update" lineNumber="139"/>
+    <functiondecl functionName="Status" lineNumber="153"/>
+    <functiondecl functionName="SendGameStatus" lineNumber="161"/>
+    <functiondecl functionName="DataReceive" lineNumber="178"/>
+    <functioncall functionName="A1"/>
+    <functioncall functionName="A2"/>
+    <functioncall functionName="Add"/>
+    <functioncall functionName="Airstrike"/>
+    <functioncall functionName="Allocator"/>
+    <functioncall functionName="AllocatorType"/>
+    <functioncall functionName="Args"/>
+    <functioncall functionName="ArithmeticType"/>
+    <functioncall functionName="Array"/>
+    <functioncall functionName="ArrayType"/>
+    <functioncall functionName="AttemptConnection"/>
+    <functioncall functionName="B1"/>
+    <functioncall functionName="BUFFER_LENGTH"/>
+    <functioncall functionName="BackgroundObject"/>
+    <functioncall functionName="Bar"/>
+    <functioncall functionName="Base"/>
+    <functioncall functionName="BaseInputAdapter"/>
+    <functioncall functionName="BasicJsonType"/>
+    <functioncall functionName="Binary"/>
+    <functioncall functionName="BinaryType"/>
+    <functioncall functionName="Block"/>
+    <functioncall functionName="Bn"/>
+    <functioncall functionName="Bomb"/>
+    <functioncall functionName="BooleanType"/>
+    <functioncall functionName="Bottom"/>
+    <functioncall functionName="BottomCentre"/>
+    <functioncall functionName="BottomLeft"/>
+    <functioncall functionName="BottomRight"/>
+    <functioncall functionName="Button"/>
+    <functioncall functionName="C"/>
+    <functioncall functionName="Category"/>
+    <functioncall functionName="Centered"/>
+    <functioncall functionName="Centre"/>
+    <functioncall functionName="CharT"/>
+    <functioncall functionName="CharType"/>
+    <functioncall functionName="Children"/>
+    <functioncall functionName="ClickOn"/>
+    <functioncall functionName="Coin"/>
+    <functioncall functionName="Compare"/>
+    <functioncall functionName="CompatibleArrayType"/>
+    <functioncall functionName="CompatibleNumberIntegerType"/>
+    <functioncall functionName="CompatibleNumberUnsignedType"/>
+    <functioncall functionName="CompatibleObjectType"/>
+    <functioncall functionName="CompatibleString"/>
+    <functioncall functionName="CompatibleStringType"/>
+    <functioncall functionName="CompatibleType"/>
+    <functioncall functionName="ConstructibleArrayType"/>
+    <functioncall functionName="ConstructibleObjectType"/>
+    <functioncall functionName="ConstructibleStringType"/>
+    <functioncall functionName="ContainerType"/>
+    <functioncall functionName="Crab"/>
+    <functioncall functionName="Damage"/>
+    <functioncall functionName="DataReceive"/>
+    <functioncall functionName="Default"/>
+    <functioncall functionName="DelayedFunction"/>
+    <functioncall functionName="Draw"/>
+    <functioncall functionName="E"/>
+    <functioncall functionName="EM_TRUE"/>
+    <functioncall functionName="EndStream"/>
+    <functioncall functionName="Enemy"/>
+    <functioncall functionName="EnergyPowerup"/>
+    <functioncall functionName="Entity"/>
+    <functioncall functionName="EnumType"/>
+    <functioncall functionName="Expected"/>
+    <functioncall functionName="F"/>
+    <functioncall functionName="Float"/>
+    <functioncall functionName="FloatType"/>
+    <functioncall functionName="GameClient"/>
+    <functioncall functionName="GetPlayer"/>
+    <functioncall functionName="Gui"/>
+    <functioncall functionName="Hash"/>
+    <functioncall functionName="Hit"/>
+    <functioncall functionName="Idx"/>
+    <functioncall functionName="InputAdapterType"/>
+    <functioncall functionName="InputCharType"/>
+    <functioncall functionName="InputIT"/>
+    <functioncall functionName="InputIt"/>
+    <functioncall functionName="InputType"/>
+    <functioncall functionName="Instance"/>
+    <functioncall functionName="Integer"/>
+    <functioncall functionName="It"/>
+    <functioncall functionName="Item"/>
+    <functioncall functionName="ItemUpgrade"/>
+    <functioncall functionName="IterImpl"/>
+    <functioncall functionName="Iterator"/>
+    <functioncall functionName="IteratorType"/>
+    <functioncall functionName="JSONSerializer"/>
+    <functioncall functionName="JsonRef"/>
+    <functioncall functionName="KEEPALIVE"/>
+    <functioncall functionName="Key"/>
+    <functioncall functionName="KeyDown"/>
+    <functioncall functionName="KeyEqual"/>
+    <functioncall functionName="KeyT"/>
+    <functioncall functionName="Kill"/>
+    <functioncall functionName="Laser"/>
+    <functioncall functionName="Left"/>
+    <functioncall functionName="LeftCentre"/>
+    <functioncall functionName="Level"/>
+    <functioncall functionName="Light"/>
+    <functioncall functionName="List &lt; BackgroundObject &gt;"/>
+    <functioncall functionName="List &lt; Entity &gt;"/>
+    <functioncall functionName="List &lt; Item &gt;"/>
+    <functioncall functionName="List &lt; ItemUpgrade &gt;"/>
+    <functioncall functionName="List &lt; PlayerUpgrade &gt;"/>
+    <functioncall functionName="LoadLevel"/>
+    <functioncall functionName="Login"/>
+    <functioncall functionName="LoginScreen"/>
+    <functioncall functionName="M_minus"/>
+    <functioncall functionName="M_plus"/>
+    <functioncall functionName="MultiplayerGameClient"/>
+    <functioncall functionName="N"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="Name"/>
+    <functioncall functionName="None"/>
+    <functioncall functionName="NumberFloatType"/>
+    <functioncall functionName="NumberIntegerType"/>
+    <functioncall functionName="NumberType"/>
+    <functioncall functionName="NumberUnsignedType"/>
+    <functioncall functionName="ObjectType"/>
+    <functioncall functionName="Objective"/>
+    <functioncall functionName="Op"/>
+    <functioncall functionName="Orb"/>
+    <functioncall functionName="Particle"/>
+    <functioncall functionName="Player"/>
+    <functioncall functionName="PlayerUpgrade"/>
+    <functioncall functionName="PointerType"/>
+    <functioncall functionName="Powerup"/>
+    <functioncall functionName="R"/>
+    <functioncall functionName="REMOVE"/>
+    <functioncall functionName="RealIntegerType"/>
+    <functioncall functionName="Rect"/>
+    <functioncall functionName="RectSize"/>
+    <functioncall functionName="ReferenceType"/>
+    <functioncall functionName="Refresh"/>
+    <functioncall functionName="RegenerationPowerup"/>
+    <functioncall functionName="Right"/>
+    <functioncall functionName="RightCentre"/>
+    <functioncall functionName="SAX"/>
+    <functioncall functionName="SDL_Log"/>
+    <functioncall functionName="SFINAE"/>
+    <functioncall functionName="ScalarType"/>
+    <functioncall functionName="SendGameStatus"/>
+    <functioncall functionName="SetSocket"/>
+    <functioncall functionName="Source"/>
+    <functioncall functionName="SpaceGame"/>
+    <functioncall functionName="String"/>
+    <functioncall functionName="StringType"/>
+    <functioncall functionName="Structure"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="T1"/>
+    <functioncall functionName="T2"/>
+    <functioncall functionName="Target"/>
+    <functioncall functionName="TargetType"/>
+    <functioncall functionName="Text"/>
+    <functioncall functionName="TextInput"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="To"/>
+    <functioncall functionName="Top"/>
+    <functioncall functionName="TopCentre"/>
+    <functioncall functionName="TopLeft"/>
+    <functioncall functionName="TopRight"/>
+    <functioncall functionName="Ts"/>
+    <functioncall functionName="TupleRelated"/>
+    <functioncall functionName="Turret"/>
+    <functioncall functionName="TurretPlacer"/>
+    <functioncall functionName="U"/>
+    <functioncall functionName="UTF8_ACCEPT"/>
+    <functioncall functionName="Unsigned"/>
+    <functioncall functionName="Update"/>
+    <functioncall functionName="Value"/>
+    <functioncall functionName="ValueType"/>
+    <functioncall functionName="ValueTypeCV"/>
+    <functioncall functionName="Wave"/>
+    <functioncall functionName="WideCharType"/>
+    <functioncall functionName="Widget"/>
+    <functioncall functionName="WidgetBar"/>
+    <functioncall functionName="WidgetBitmapButton"/>
+    <functioncall functionName="WidgetButton"/>
+    <functioncall functionName="WidgetChild"/>
+    <functioncall functionName="WidgetEnemyInformation"/>
+    <functioncall functionName="WidgetGroup"/>
+    <functioncall functionName="WidgetLabel"/>
+    <functioncall functionName="WidgetTextbox"/>
+    <functioncall functionName="X"/>
+    <functioncall functionName="Y"/>
+    <functioncall functionName="abort"/>
+    <functioncall functionName="abs_value"/>
+    <functioncall functionName="accept"/>
+    <functioncall functionName="accumulate"/>
+    <functioncall functionName="adapter"/>
+    <functioncall functionName="adapter_type"/>
+    <functioncall functionName="add"/>
+    <functioncall functionName="add_pointer"/>
+    <functioncall functionName="add_prefix"/>
+    <functioncall functionName="advance"/>
+    <functioncall functionName="align"/>
+    <functioncall functionName="all_of"/>
+    <functioncall functionName="alloc"/>
+    <functioncall functionName="allocate"/>
+    <functioncall functionName="allocator_type"/>
+    <functioncall functionName="allow_exceptions"/>
+    <functioncall functionName="allow_exceptions_"/>
+    <functioncall functionName="anchor"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="append_exponent"/>
+    <functioncall functionName="apply_patch"/>
+    <functioncall functionName="args"/>
+    <functioncall functionName="arr"/>
+    <functioncall functionName="array"/>
+    <functioncall functionName="array_end"/>
+    <functioncall functionName="array_idx"/>
+    <functioncall functionName="array_index"/>
+    <functioncall functionName="array_index_str"/>
+    <functioncall functionName="array_iterator"/>
+    <functioncall functionName="array_start"/>
+    <functioncall functionName="array_t"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="assert_invariant"/>
+    <functioncall functionName="assign_and_return_true"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="attributes"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="back"/>
+    <functioncall functionName="back_inserter"/>
+    <functioncall functionName="base"/>
+    <functioncall functionName="base_adapter"/>
+    <functioncall functionName="base_adapter_type"/>
+    <functioncall functionName="base_iterator"/>
+    <functioncall functionName="basic_json"/>
+    <functioncall functionName="basic_json_t"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="begin_array"/>
+    <functioncall functionName="begin_object"/>
+    <functioncall functionName="begin_tag"/>
+    <functioncall functionName="begin_value"/>
+    <functioncall functionName="bidirectional_iterator_tag"/>
+    <functioncall functionName="bin"/>
+    <functioncall functionName="binary"/>
+    <functioncall functionName="binary_char_t"/>
+    <functioncall functionName="binary_function_t"/>
+    <functioncall functionName="binary_reader"/>
+    <functioncall functionName="binary_t"/>
+    <functioncall functionName="binary_writer"/>
+    <functioncall functionName="bits_type"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="boolean"/>
+    <functioncall functionName="boolean_function_t"/>
+    <functioncall functionName="boolean_t"/>
+    <functioncall functionName="bottom"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="bson"/>
+    <functioncall functionName="buf"/>
+    <functioncall functionName="buffer"/>
+    <functioncall functionName="byte"/>
+    <functioncall functionName="byte1_raw"/>
+    <functioncall functionName="byte2"/>
+    <functioncall functionName="byte2_raw"/>
+    <functioncall functionName="byte_"/>
+    <functioncall functionName="byte_container_with_subtype"/>
+    <functioncall functionName="bytes"/>
+    <functioncall functionName="bytes_after_last_accept"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="c_minus_k"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="cached_power"/>
+    <functioncall functionName="calc_bson_array_size"/>
+    <functioncall functionName="calc_bson_binary_size"/>
+    <functioncall functionName="calc_bson_element_size"/>
+    <functioncall functionName="calc_bson_entry_header_size"/>
+    <functioncall functionName="calc_bson_integer_size"/>
+    <functioncall functionName="calc_bson_object_size"/>
+    <functioncall functionName="calc_bson_string_size"/>
+    <functioncall functionName="calc_bson_unsigned_size"/>
+    <functioncall functionName="callback"/>
+    <functioncall functionName="capacity"/>
+    <functioncall functionName="cb"/>
+    <functioncall functionName="cbegin"/>
+    <functioncall functionName="cbor"/>
+    <functioncall functionName="cbor_tag_handler_t"/>
+    <functioncall functionName="cend"/>
+    <functioncall functionName="char"/>
+    <functioncall functionName="char_int_type"/>
+    <functioncall functionName="char_traits"/>
+    <functioncall functionName="char_type"/>
+    <functioncall functionName="chars_read"/>
+    <functioncall functionName="chars_read_current_line"/>
+    <functioncall functionName="chars_read_total"/>
+    <functioncall functionName="check_parents"/>
+    <functioncall functionName="chunk"/>
+    <functioncall functionName="class"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="clickable"/>
+    <functioncall functionName="clrGreen"/>
+    <functioncall functionName="clrWhite"/>
+    <functioncall functionName="cnt"/>
+    <functioncall functionName="codepoint"/>
+    <functioncall functionName="codepoint1"/>
+    <functioncall functionName="codepoint2"/>
+    <functioncall functionName="colour"/>
+    <functioncall functionName="combine"/>
+    <functioncall functionName="compute_boundaries"/>
+    <functioncall functionName="conditional"/>
+    <functioncall functionName="conditional_static_cast"/>
+    <functioncall functionName="conjunction"/>
+    <functioncall functionName="connected"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="const_iterator"/>
+    <functioncall functionName="const_pointer"/>
+    <functioncall functionName="const_reference"/>
+    <functioncall functionName="const_reverse_iterator"/>
+    <functioncall functionName="construct"/>
+    <functioncall functionName="cont"/>
+    <functioncall functionName="container"/>
+    <functioncall functionName="container_type"/>
+    <functioncall functionName="contains"/>
+    <functioncall functionName="context"/>
+    <functioncall functionName="continue"/>
+    <functioncall functionName="copy"/>
+    <functioncall functionName="cost"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="count_digits"/>
+    <functioncall functionName="count_set_parents"/>
+    <functioncall functionName="crbegin"/>
+    <functioncall functionName="create"/>
+    <functioncall functionName="crend"/>
+    <functioncall functionName="current"/>
+    <functioncall functionName="current_energy"/>
+    <functioncall functionName="current_hp"/>
+    <functioncall functionName="current_indent"/>
+    <functioncall functionName="current_item"/>
+    <functioncall functionName="current_value"/>
+    <functioncall functionName="d"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="deallocate"/>
+    <functioncall functionName="decimal_exponent"/>
+    <functioncall functionName="decimal_point"/>
+    <functioncall functionName="decimal_point_char"/>
+    <functioncall functionName="decltype"/>
+    <functioncall functionName="decode"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="default_value"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="deleter"/>
+    <functioncall functionName="delta"/>
+    <functioncall functionName="deltatime"/>
+    <functioncall functionName="description"/>
+    <functioncall functionName="destroy"/>
+    <functioncall functionName="detail"/>
+    <functioncall functionName="detected_t"/>
+    <functioncall functionName="diagnostics"/>
+    <functioncall functionName="diff"/>
+    <functioncall functionName="difference_type"/>
+    <functioncall functionName="difference_type_t"/>
+    <functioncall functionName="digits_index"/>
+    <functioncall functionName="discarded"/>
+    <functioncall functionName="dist"/>
+    <functioncall functionName="distance"/>
+    <functioncall functionName="diyfp"/>
+    <functioncall functionName="document_size"/>
+    <functioncall functionName="double"/>
+    <functioncall functionName="dump"/>
+    <functioncall functionName="dump_escaped"/>
+    <functioncall functionName="dump_float"/>
+    <functioncall functionName="dump_integer"/>
+    <functioncall functionName="e"/>
+    <functioncall functionName="e_"/>
+    <functioncall functionName="el"/>
+    <functioncall functionName="element"/>
+    <functioncall functionName="element_type"/>
+    <functioncall functionName="element_type_parse_position"/>
+    <functioncall functionName="elements_affected"/>
+    <functioncall functionName="emplace"/>
+    <functioncall functionName="emplace_back"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="emscripten_websocket_close"/>
+    <functioncall functionName="emscripten_websocket_is_supported"/>
+    <functioncall functionName="emscripten_websocket_new"/>
+    <functioncall functionName="emscripten_websocket_send_binary"/>
+    <functioncall functionName="emscripten_websocket_set_onclose_callback"/>
+    <functioncall functionName="emscripten_websocket_set_onerror_callback"/>
+    <functioncall functionName="emscripten_websocket_set_onmessage_callback"/>
+    <functioncall functionName="emscripten_websocket_set_onopen_callback"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="end_array"/>
+    <functioncall functionName="end_array_function_t"/>
+    <functioncall functionName="end_index"/>
+    <functioncall functionName="end_object"/>
+    <functioncall functionName="end_object_function_t"/>
+    <functioncall functionName="end_of_input"/>
+    <functioncall functionName="end_tag"/>
+    <functioncall functionName="end_value"/>
+    <functioncall functionName="endptr"/>
+    <functioncall functionName="ensure_ascii"/>
+    <functioncall functionName="eof"/>
+    <functioncall functionName="eofbit"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="error"/>
+    <functioncall functionName="error_handler"/>
+    <functioncall functionName="error_handler_"/>
+    <functioncall functionName="error_handler_t"/>
+    <functioncall functionName="escape"/>
+    <functioncall functionName="ex"/>
+    <functioncall functionName="exception"/>
+    <functioncall functionName="exception_message"/>
+    <functioncall functionName="exception_t"/>
+    <functioncall functionName="exp"/>
+    <functioncall functionName="expected"/>
+    <functioncall functionName="f"/>
+    <functioncall functionName="fBackgroundPosition"/>
+    <functioncall functionName="fEnergy"/>
+    <functioncall functionName="fHealth"/>
+    <functioncall functionName="fMaxEnergy"/>
+    <functioncall functionName="fMaxHealth"/>
+    <functioncall functionName="fSecondsSinceLastSend"/>
+    <functioncall functionName="f_"/>
+    <functioncall functionName="factors"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="false_type"/>
+    <functioncall functionName="fgetc"/>
+    <functioncall functionName="file"/>
+    <functioncall functionName="file_input_adapter"/>
+    <functioncall functionName="fill"/>
+    <functioncall functionName="fill_buffer"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="find_first_of"/>
+    <functioncall functionName="find_largest_pow10"/>
+    <functioncall functionName="first"/>
+    <functioncall functionName="first_input"/>
+    <functioncall functionName="first_prefix"/>
+    <functioncall functionName="fixed"/>
+    <functioncall functionName="flatten"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="fn"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="format"/>
+    <functioncall functionName="format_buffer"/>
+    <functioncall functionName="forward"/>
+    <functioncall functionName="from_bson"/>
+    <functioncall functionName="from_cbor"/>
+    <functioncall functionName="from_json"/>
+    <functioncall functionName="from_json_array_impl"/>
+    <functioncall functionName="from_json_function"/>
+    <functioncall functionName="from_json_inplace_array_impl"/>
+    <functioncall functionName="from_json_tuple_impl"/>
+    <functioncall functionName="from_json_tuple_impl_base"/>
+    <functioncall functionName="from_msgpack"/>
+    <functioncall functionName="from_path"/>
+    <functioncall functionName="from_ptr"/>
+    <functioncall functionName="from_ubjson"/>
+    <functioncall functionName="front"/>
+    <functioncall functionName="front_inserter"/>
+    <functioncall functionName="game"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="get_and_create"/>
+    <functioncall functionName="get_arithmetic_value"/>
+    <functioncall functionName="get_binary"/>
+    <functioncall functionName="get_bson_binary"/>
+    <functioncall functionName="get_bson_cstr"/>
+    <functioncall functionName="get_bson_string"/>
+    <functioncall functionName="get_cached_power_for_binary_exponent"/>
+    <functioncall functionName="get_cbor_array"/>
+    <functioncall functionName="get_cbor_binary"/>
+    <functioncall functionName="get_cbor_float_prefix"/>
+    <functioncall functionName="get_cbor_object"/>
+    <functioncall functionName="get_cbor_string"/>
+    <functioncall functionName="get_char"/>
+    <functioncall functionName="get_character"/>
+    <functioncall functionName="get_checked"/>
+    <functioncall functionName="get_codepoint"/>
+    <functioncall functionName="get_decimal_point"/>
+    <functioncall functionName="get_error_message"/>
+    <functioncall functionName="get_ignore_noop"/>
+    <functioncall functionName="get_impl"/>
+    <functioncall functionName="get_impl_ptr"/>
+    <functioncall functionName="get_msgpack_array"/>
+    <functioncall functionName="get_msgpack_binary"/>
+    <functioncall functionName="get_msgpack_float_prefix"/>
+    <functioncall functionName="get_msgpack_object"/>
+    <functioncall functionName="get_msgpack_string"/>
+    <functioncall functionName="get_number"/>
+    <functioncall functionName="get_number_float"/>
+    <functioncall functionName="get_number_integer"/>
+    <functioncall functionName="get_number_unsigned"/>
+    <functioncall functionName="get_op"/>
+    <functioncall functionName="get_position"/>
+    <functioncall functionName="get_ptr"/>
+    <functioncall functionName="get_ref"/>
+    <functioncall functionName="get_ref_impl"/>
+    <functioncall functionName="get_string"/>
+    <functioncall functionName="get_template_function"/>
+    <functioncall functionName="get_token"/>
+    <functioncall functionName="get_token_string"/>
+    <functioncall functionName="get_ubjson_array"/>
+    <functioncall functionName="get_ubjson_float_prefix"/>
+    <functioncall functionName="get_ubjson_high_precision_number"/>
+    <functioncall functionName="get_ubjson_object"/>
+    <functioncall functionName="get_ubjson_size_type"/>
+    <functioncall functionName="get_ubjson_size_value"/>
+    <functioncall functionName="get_ubjson_string"/>
+    <functioncall functionName="get_ubjson_value"/>
+    <functioncall functionName="get_unchecked"/>
+    <functioncall functionName="get_value"/>
+    <functioncall functionName="grisu2"/>
+    <functioncall functionName="grisu2_digit_gen"/>
+    <functioncall functionName="grisu2_round"/>
+    <functioncall functionName="h"/>
+    <functioncall functionName="half"/>
+    <functioncall functionName="handle_value"/>
+    <functioncall functionName="has_from_json"/>
+    <functioncall functionName="has_non_default_from_json"/>
+    <functioncall functionName="has_subtype"/>
+    <functioncall functionName="hash"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="ia"/>
+    <functioncall functionName="ia_type"/>
+    <functioncall functionName="ichar"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="id_"/>
+    <functioncall functionName="idx"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="ignore"/>
+    <functioncall functionName="ignore_comments"/>
+    <functioncall functionName="ignore_comments_"/>
+    <functioncall functionName="increment"/>
+    <functioncall functionName="indent"/>
+    <functioncall functionName="indent_char"/>
+    <functioncall functionName="indent_step"/>
+    <functioncall functionName="indent_string"/>
+    <functioncall functionName="indentation"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="infinity"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="input_adapter"/>
+    <functioncall functionName="input_format_t"/>
+    <functioncall functionName="input_iterator_tag"/>
+    <functioncall functionName="input_stream_adapter"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="insert_iterator"/>
+    <functioncall functionName="insert_pos"/>
+    <functioncall functionName="inserter"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="int16_t"/>
+    <functioncall functionName="int32_t"/>
+    <functioncall functionName="int64_t"/>
+    <functioncall functionName="int8_t"/>
+    <functioncall functionName="int_to_string"/>
+    <functioncall functionName="integral_constant"/>
+    <functioncall functionName="invalid"/>
+    <functioncall functionName="invalid_iterator"/>
+    <functioncall functionName="is"/>
+    <functioncall functionName="isText"/>
+    <functioncall functionName="is_an_object"/>
+    <functioncall functionName="is_arithmetic"/>
+    <functioncall functionName="is_array"/>
+    <functioncall functionName="is_assignable"/>
+    <functioncall functionName="is_basic_json"/>
+    <functioncall functionName="is_begin"/>
+    <functioncall functionName="is_binary"/>
+    <functioncall functionName="is_boolean"/>
+    <functioncall functionName="is_compatible_array_type"/>
+    <functioncall functionName="is_compatible_integer_type"/>
+    <functioncall functionName="is_compatible_object_type"/>
+    <functioncall functionName="is_complete_type"/>
+    <functioncall functionName="is_const"/>
+    <functioncall functionName="is_constructible"/>
+    <functioncall functionName="is_constructible_array_type"/>
+    <functioncall functionName="is_constructible_object_type"/>
+    <functioncall functionName="is_constructible_string_type"/>
+    <functioncall functionName="is_constructible_tuple"/>
+    <functioncall functionName="is_convertible"/>
+    <functioncall functionName="is_default_constructible"/>
+    <functioncall functionName="is_detected"/>
+    <functioncall functionName="is_discarded"/>
+    <functioncall functionName="is_end"/>
+    <functioncall functionName="is_enum"/>
+    <functioncall functionName="is_errored"/>
+    <functioncall functionName="is_floating_point"/>
+    <functioncall functionName="is_getable"/>
+    <functioncall functionName="is_ieee_single_or_double"/>
+    <functioncall functionName="is_integral"/>
+    <functioncall functionName="is_iterator_of_multibyte"/>
+    <functioncall functionName="is_json_ref"/>
+    <functioncall functionName="is_negative_number"/>
+    <functioncall functionName="is_null"/>
+    <functioncall functionName="is_number"/>
+    <functioncall functionName="is_number_float"/>
+    <functioncall functionName="is_number_integer"/>
+    <functioncall functionName="is_number_unsigned"/>
+    <functioncall functionName="is_object"/>
+    <functioncall functionName="is_pointer"/>
+    <functioncall functionName="is_primitive"/>
+    <functioncall functionName="is_range"/>
+    <functioncall functionName="is_reference"/>
+    <functioncall functionName="is_same"/>
+    <functioncall functionName="is_scalar"/>
+    <functioncall functionName="is_signed"/>
+    <functioncall functionName="is_string"/>
+    <functioncall functionName="is_structured"/>
+    <functioncall functionName="is_unsigned"/>
+    <functioncall functionName="isdigit"/>
+    <functioncall functionName="isfinite"/>
+    <functioncall functionName="isinf"/>
+    <functioncall functionName="isnan"/>
+    <functioncall functionName="it"/>
+    <functioncall functionName="items"/>
+    <functioncall functionName="iter_impl"/>
+    <functioncall functionName="iteration_proxy"/>
+    <functioncall functionName="iteration_proxy_value"/>
+    <functioncall functionName="iterator"/>
+    <functioncall functionName="iterator_category"/>
+    <functioncall functionName="iterator_category_t"/>
+    <functioncall functionName="iterator_input_adapter"/>
+    <functioncall functionName="iterator_t"/>
+    <functioncall functionName="iterator_traits"/>
+    <functioncall functionName="iterator_type"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="json"/>
+    <functioncall functionName="json_patch"/>
+    <functioncall functionName="json_pointer"/>
+    <functioncall functionName="json_ref"/>
+    <functioncall functionName="json_reverse_iterator"/>
+    <functioncall functionName="json_sax"/>
+    <functioncall functionName="json_sax_dom_callback_parser"/>
+    <functioncall functionName="json_sax_dom_parser"/>
+    <functioncall functionName="json_value"/>
+    <functioncall functionName="k"/>
+    <functioncall functionName="kBias"/>
+    <functioncall functionName="kCachedPowersDecStep"/>
+    <functioncall functionName="kHiddenBit"/>
+    <functioncall functionName="kMaxExp"/>
+    <functioncall functionName="kMinExp"/>
+    <functioncall functionName="kPrecision"/>
+    <functioncall functionName="keep"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="key_function_t"/>
+    <functioncall functionName="key_type"/>
+    <functioncall functionName="key_type_t"/>
+    <functioncall functionName="l"/>
+    <functioncall functionName="lCurrentLevel"/>
+    <functioncall functionName="lPrevLevel"/>
+    <functioncall functionName="l_index"/>
+    <functioncall functionName="last"/>
+    <functioncall functionName="last_path"/>
+    <functioncall functionName="last_token"/>
+    <functioncall functionName="ldexp"/>
+    <functioncall functionName="leaf_element"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="len"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="lexer"/>
+    <functioncall functionName="lhs"/>
+    <functioncall functionName="lhs_type"/>
+    <functioncall functionName="lines_read"/>
+    <functioncall functionName="literal_false"/>
+    <functioncall functionName="literal_null"/>
+    <functioncall functionName="literal_or_value"/>
+    <functioncall functionName="literal_true"/>
+    <functioncall functionName="little_endianness"/>
+    <functioncall functionName="loc"/>
+    <functioncall functionName="localeconv"/>
+    <functioncall functionName="long"/>
+    <functioncall functionName="lowest"/>
+    <functioncall functionName="m"/>
+    <functioncall functionName="m_file"/>
+    <functioncall functionName="m_has_subtype"/>
+    <functioncall functionName="m_it"/>
+    <functioncall functionName="m_lexer"/>
+    <functioncall functionName="m_minus"/>
+    <functioncall functionName="m_object"/>
+    <functioncall functionName="m_plus"/>
+    <functioncall functionName="m_subtype"/>
+    <functioncall functionName="m_type"/>
+    <functioncall functionName="m_value"/>
+    <functioncall functionName="make_move_iterator"/>
+    <functioncall functionName="make_shared"/>
+    <functioncall functionName="make_tuple"/>
+    <functioncall functionName="mant"/>
+    <functioncall functionName="mapped_type"/>
+    <functioncall functionName="mapped_type_t"/>
+    <functioncall functionName="max_energy"/>
+    <functioncall functionName="max_exp"/>
+    <functioncall functionName="max_hp"/>
+    <functioncall functionName="max_size"/>
+    <functioncall functionName="max_value"/>
+    <functioncall functionName="member"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="merge_objects"/>
+    <functioncall functionName="merge_patch"/>
+    <functioncall functionName="minus"/>
+    <functioncall functionName="move"/>
+    <functioncall functionName="moved_or_copied"/>
+    <functioncall functionName="msgpack"/>
+    <functioncall functionName="mul"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="nTextureFrame"/>
+    <functioncall functionName="n_chars"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="name_separator"/>
+    <functioncall functionName="negation"/>
+    <functioncall functionName="new"/>
+    <functioncall functionName="new_indent"/>
+    <functioncall functionName="new_inst"/>
+    <functioncall functionName="new_widget"/>
+    <functioncall functionName="next"/>
+    <functioncall functionName="next_byte_in_range"/>
+    <functioncall functionName="next_unget"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="none_of"/>
+    <functioncall functionName="nonesuch"/>
+    <functioncall functionName="normalize"/>
+    <functioncall functionName="normalize_to"/>
+    <functioncall functionName="npos"/>
+    <functioncall functionName="null"/>
+    <functioncall functionName="null_function_t"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="nullptr_t"/>
+    <functioncall functionName="num"/>
+    <functioncall functionName="number"/>
+    <functioncall functionName="number_float"/>
+    <functioncall functionName="number_float_function_t"/>
+    <functioncall functionName="number_float_t"/>
+    <functioncall functionName="number_integer"/>
+    <functioncall functionName="number_integer_function_t"/>
+    <functioncall functionName="number_integer_t"/>
+    <functioncall functionName="number_string"/>
+    <functioncall functionName="number_unsigned"/>
+    <functioncall functionName="number_unsigned_function_t"/>
+    <functioncall functionName="number_unsigned_t"/>
+    <functioncall functionName="number_vector"/>
+    <functioncall functionName="o"/>
+    <functioncall functionName="oa"/>
+    <functioncall functionName="obj"/>
+    <functioncall functionName="object"/>
+    <functioncall functionName="object_comparator_t"/>
+    <functioncall functionName="object_element"/>
+    <functioncall functionName="object_end"/>
+    <functioncall functionName="object_iterator"/>
+    <functioncall functionName="object_start"/>
+    <functioncall functionName="object_t"/>
+    <functioncall functionName="offset"/>
+    <functioncall functionName="old_capacity"/>
+    <functioncall functionName="onclose"/>
+    <functioncall functionName="one"/>
+    <functioncall functionName="onerror"/>
+    <functioncall functionName="onmessage"/>
+    <functioncall functionName="onopen"/>
+    <functioncall functionName="op"/>
+    <functioncall functionName="operation_add"/>
+    <functioncall functionName="operation_remove"/>
+    <functioncall functionName="operator*"/>
+    <functioncall functionName="operator+"/>
+    <functioncall functionName="operator++"/>
+    <functioncall functionName="operator+="/>
+    <functioncall functionName="operator-"/>
+    <functioncall functionName="operator--"/>
+    <functioncall functionName="operator&lt;"/>
+    <functioncall functionName="operator&lt;="/>
+    <functioncall functionName="operator=="/>
+    <functioncall functionName="operator&gt;&gt;"/>
+    <functioncall functionName="operator[]"/>
+    <functioncall functionName="operatorstd::string"/>
+    <functioncall functionName="ordered_map"/>
+    <functioncall functionName="other"/>
+    <functioncall functionName="other_array_t"/>
+    <functioncall functionName="other_binary_t"/>
+    <functioncall functionName="other_boolean_t"/>
+    <functioncall functionName="other_error"/>
+    <functioncall functionName="other_iter_impl"/>
+    <functioncall functionName="other_number_float_t"/>
+    <functioncall functionName="other_number_integer_t"/>
+    <functioncall functionName="other_number_unsigned_t"/>
+    <functioncall functionName="other_object_t"/>
+    <functioncall functionName="other_string_t"/>
+    <functioncall functionName="out_of_range"/>
+    <functioncall functionName="output_adapter"/>
+    <functioncall functionName="output_adapter_protocol"/>
+    <functioncall functionName="output_stream_adapter"/>
+    <functioncall functionName="output_string_adapter"/>
+    <functioncall functionName="output_type"/>
+    <functioncall functionName="output_vector_adapter"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="owned_value"/>
+    <functioncall functionName="p1"/>
+    <functioncall functionName="p2"/>
+    <functioncall functionName="p2_lo"/>
+    <functioncall functionName="pair"/>
+    <functioncall functionName="parse"/>
+    <functioncall functionName="parse_bson_array"/>
+    <functioncall functionName="parse_bson_element_internal"/>
+    <functioncall functionName="parse_bson_element_list"/>
+    <functioncall functionName="parse_bson_internal"/>
+    <functioncall functionName="parse_cbor_internal"/>
+    <functioncall functionName="parse_error"/>
+    <functioncall functionName="parse_error_function_t"/>
+    <functioncall functionName="parse_event_t"/>
+    <functioncall functionName="parse_msgpack_internal"/>
+    <functioncall functionName="parse_ubjson_internal"/>
+    <functioncall functionName="parser"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="path_key"/>
+    <functioncall functionName="plus"/>
+    <functioncall functionName="pointer"/>
+    <functioncall functionName="pointer_t"/>
+    <functioncall functionName="pop_back"/>
+    <functioncall functionName="pos"/>
+    <functioncall functionName="position_string"/>
+    <functioncall functionName="positive_number"/>
+    <functioncall functionName="pow10"/>
+    <functioncall functionName="prefix"/>
+    <functioncall functionName="prefix_required"/>
+    <functioncall functionName="pretty_print"/>
+    <functioncall functionName="primitive_iterator"/>
+    <functioncall functionName="primitive_iterator_t"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="priority_tag &lt; 0 &gt;"/>
+    <functioncall functionName="processed_chars"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="put"/>
+    <functioncall functionName="puts"/>
+    <functioncall functionName="quiet_NaN"/>
+    <functioncall functionName="r"/>
+    <functioncall functionName="r_index"/>
+    <functioncall functionName="random_access_iterator_tag"/>
+    <functioncall functionName="range_value_t"/>
+    <functioncall functionName="rbegin"/>
+    <functioncall functionName="rdbuf"/>
+    <functioncall functionName="rdstate"/>
+    <functioncall functionName="reference"/>
+    <functioncall functionName="reference_string"/>
+    <functioncall functionName="reference_t"/>
+    <functioncall functionName="reference_token"/>
+    <functioncall functionName="reference_tokens"/>
+    <functioncall functionName="reinterpret_bits"/>
+    <functioncall functionName="reinterpret_cast"/>
+    <functioncall functionName="release"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="remove_const"/>
+    <functioncall functionName="remove_reference"/>
+    <functioncall functionName="remove_sign"/>
+    <functioncall functionName="rend"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="replace"/>
+    <functioncall functionName="replace_substring"/>
+    <functioncall functionName="res"/>
+    <functioncall functionName="reserve"/>
+    <functioncall functionName="reset"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="rest"/>
+    <functioncall functionName="result"/>
+    <functioncall functionName="result_number"/>
+    <functioncall functionName="result_of_begin"/>
+    <functioncall functionName="result_of_end"/>
+    <functioncall functionName="ret"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="reverse"/>
+    <functioncall functionName="reverse_iterator"/>
+    <functioncall functionName="rhs"/>
+    <functioncall functionName="rhs_type"/>
+    <functioncall functionName="right"/>
+    <functioncall functionName="root"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="same_prefix"/>
+    <functioncall functionName="sax"/>
+    <functioncall functionName="sax_"/>
+    <functioncall functionName="sax_acceptor"/>
+    <functioncall functionName="sax_parse"/>
+    <functioncall functionName="sax_parse_internal"/>
+    <functioncall functionName="sb"/>
+    <functioncall functionName="sbumpc"/>
+    <functioncall functionName="scan"/>
+    <functioncall functionName="scan_comment"/>
+    <functioncall functionName="scan_literal"/>
+    <functioncall functionName="scan_number"/>
+    <functioncall functionName="scan_number_any1"/>
+    <functioncall functionName="scan_number_any2"/>
+    <functioncall functionName="scan_number_decimal1"/>
+    <functioncall functionName="scan_number_decimal2"/>
+    <functioncall functionName="scan_number_done"/>
+    <functioncall functionName="scan_number_exponent"/>
+    <functioncall functionName="scan_number_minus"/>
+    <functioncall functionName="scan_number_sign"/>
+    <functioncall functionName="scan_number_zero"/>
+    <functioncall functionName="scan_string"/>
+    <functioncall functionName="sdp"/>
+    <functioncall functionName="second"/>
+    <functioncall functionName="seed"/>
+    <functioncall functionName="sentinel"/>
+    <functioncall functionName="serializer"/>
+    <functioncall functionName="set_begin"/>
+    <functioncall functionName="set_end"/>
+    <functioncall functionName="set_parent"/>
+    <functioncall functionName="set_parents"/>
+    <functioncall functionName="set_subtype"/>
+    <functioncall functionName="signbit"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="size_and_type"/>
+    <functioncall functionName="size_type"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="sizeof..."/>
+    <functioncall functionName="skip_bom"/>
+    <functioncall functionName="skip_comments"/>
+    <functioncall functionName="skip_to_state_evaluation"/>
+    <functioncall functionName="skip_whitespace"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="sock"/>
+    <functioncall functionName="socket"/>
+    <functioncall functionName="source"/>
+    <functioncall functionName="split"/>
+    <functioncall functionName="stack"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="start_array"/>
+    <functioncall functionName="start_array_function_t"/>
+    <functioncall functionName="start_object"/>
+    <functioncall functionName="start_object_function_t"/>
+    <functioncall functionName="state"/>
+    <functioncall functionName="static_assert"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="store"/>
+    <functioncall functionName="store_element"/>
+    <functioncall functionName="stoull"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="stream"/>
+    <functioncall functionName="streamsize"/>
+    <functioncall functionName="strict"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="string_function_t"/>
+    <functioncall functionName="string_t"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="strtod"/>
+    <functioncall functionName="strtof"/>
+    <functioncall functionName="strtold"/>
+    <functioncall functionName="strtoll"/>
+    <functioncall functionName="strtoull"/>
+    <functioncall functionName="sub"/>
+    <functioncall functionName="substr"/>
+    <functioncall functionName="subtype"/>
+    <functioncall functionName="subtype_"/>
+    <functioncall functionName="subtype_to_ignore"/>
+    <functioncall functionName="subtype_type"/>
+    <functioncall functionName="success"/>
+    <functioncall functionName="swap"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="t"/>
+    <functioncall functionName="t_ref"/>
+    <functioncall functionName="tag"/>
+    <functioncall functionName="tag_handler"/>
+    <functioncall functionName="target"/>
+    <functioncall functionName="target_exponent"/>
+    <functioncall functionName="template"/>
+    <functioncall functionName="ten_k"/>
+    <functioncall functionName="ten_m"/>
+    <functioncall functionName="ten_n"/>
+    <functioncall functionName="test"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="text_size"/>
+    <functioncall functionName="texture"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="thousands_sep"/>
+    <functioncall functionName="tie"/>
+    <functioncall functionName="to_bson"/>
+    <functioncall functionName="to_cbor"/>
+    <functioncall functionName="to_char_type"/>
+    <functioncall functionName="to_chars"/>
+    <functioncall functionName="to_int_type"/>
+    <functioncall functionName="to_json"/>
+    <functioncall functionName="to_json_function"/>
+    <functioncall functionName="to_json_tuple_impl"/>
+    <functioncall functionName="to_msgpack"/>
+    <functioncall functionName="to_string"/>
+    <functioncall functionName="to_ubjson"/>
+    <functioncall functionName="token"/>
+    <functioncall functionName="token_string"/>
+    <functioncall functionName="token_type_name"/>
+    <functioncall functionName="top"/>
+    <functioncall functionName="top_pointer"/>
+    <functioncall functionName="traits"/>
+    <functioncall functionName="transform"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="true_type"/>
+    <functioncall functionName="tuple"/>
+    <functioncall functionName="tuple_size"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="type_deduction"/>
+    <functioncall functionName="type_error"/>
+    <functioncall functionName="typename"/>
+    <functioncall functionName="ubjson"/>
+    <functioncall functionName="ubjson_prefix"/>
+    <functioncall functionName="uint16_t"/>
+    <functioncall functionName="uint32_t"/>
+    <functioncall functionName="uint64_t"/>
+    <functioncall functionName="uint8_t"/>
+    <functioncall functionName="underlying_type"/>
+    <functioncall functionName="undumped_chars"/>
+    <functioncall functionName="unescape"/>
+    <functioncall functionName="unexpect_eof"/>
+    <functioncall functionName="unflatten"/>
+    <functioncall functionName="unget"/>
+    <functioncall functionName="uninitialized"/>
+    <functioncall functionName="unique_ptr"/>
+    <functioncall functionName="update"/>
+    <functioncall functionName="upgrade"/>
+    <functioncall functionName="use_count"/>
+    <functioncall functionName="use_ext"/>
+    <functioncall functionName="use_size"/>
+    <functioncall functionName="use_type"/>
+    <functioncall functionName="utf8_bytes"/>
+    <functioncall functionName="utf8_bytes_filled"/>
+    <functioncall functionName="utf8_bytes_index"/>
+    <functioncall functionName="v"/>
+    <functioncall functionName="val"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="value_float"/>
+    <functioncall functionName="value_integer"/>
+    <functioncall functionName="value_is_int_like"/>
+    <functioncall functionName="value_ref"/>
+    <functioncall functionName="value_separator"/>
+    <functioncall functionName="value_string"/>
+    <functioncall functionName="value_t"/>
+    <functioncall functionName="value_type"/>
+    <functioncall functionName="value_type_t"/>
+    <functioncall functionName="value_unsigned"/>
+    <functioncall functionName="vec"/>
+    <functioncall functionName="void"/>
+    <functioncall functionName="w"/>
+    <functioncall functionName="w_minus"/>
+    <functioncall functionName="w_plus"/>
+    <functioncall functionName="wave"/>
+    <functioncall functionName="wave_number_str"/>
+    <functioncall functionName="wc"/>
+    <functioncall functionName="websocket"/>
+    <functioncall functionName="what"/>
+    <functioncall functionName="what_arg"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="wide_string_input_adapter"/>
+    <functioncall functionName="widget"/>
+    <functioncall functionName="widgetMultiplayerInfo"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="write"/>
+    <functioncall functionName="write_bson"/>
+    <functioncall functionName="write_bson_array"/>
+    <functioncall functionName="write_bson_binary"/>
+    <functioncall functionName="write_bson_boolean"/>
+    <functioncall functionName="write_bson_double"/>
+    <functioncall functionName="write_bson_element"/>
+    <functioncall functionName="write_bson_entry_header"/>
+    <functioncall functionName="write_bson_integer"/>
+    <functioncall functionName="write_bson_null"/>
+    <functioncall functionName="write_bson_object"/>
+    <functioncall functionName="write_bson_object_entry"/>
+    <functioncall functionName="write_bson_string"/>
+    <functioncall functionName="write_bson_unsigned"/>
+    <functioncall functionName="write_cbor"/>
+    <functioncall functionName="write_character"/>
+    <functioncall functionName="write_characters"/>
+    <functioncall functionName="write_compact_float"/>
+    <functioncall functionName="write_msgpack"/>
+    <functioncall functionName="write_number"/>
+    <functioncall functionName="write_number_with_ubjson_prefix"/>
+    <functioncall functionName="write_ubjson"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

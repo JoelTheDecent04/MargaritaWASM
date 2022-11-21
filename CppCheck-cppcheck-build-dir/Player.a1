@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="4204253537648888816">
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;size&apos;." verbose="Non-pure function: &apos;size&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="51" column="18"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::left&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::left&apos; is not initialized in the constructor." cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::left</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::top&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::top&apos; is not initialized in the constructor." cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::top</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::right&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::right&apos; is not initialized in the constructor." cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::right</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::bottom</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;puCurrentPowerup&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;puCurrentPowerup&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Player.cpp">
+            <location file="Player.cpp" line="33" column="2"/>
+            <symbol>puCurrentPowerup</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Texture&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Texture&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Player.cpp">
+            <location file="Texture.h" line="15" column="2"/>
+            <symbol>Texture</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WidgetLabel&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WidgetLabel&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Player.cpp">
+            <location file="GUI.h" line="150" column="2"/>
+            <symbol>WidgetLabel</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WidgetTextbox&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WidgetTextbox&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Player.cpp">
+            <location file="GUI.h" line="167" column="2"/>
+            <symbol>WidgetTextbox</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MultiplayerGameClient&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MultiplayerGameClient&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Player.cpp">
+            <location file="Multiplayer.h" line="50" column="5"/>
+            <symbol>MultiplayerGameClient</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Weapon&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Weapon&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Player.cpp">
+            <location file="Weapon.h" line="9" column="2"/>
+            <symbol>Weapon</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="13" column="3"/>
+            <symbol>Iterator</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;description&apos; should be passed by const reference." verbose="Parameter &apos;description&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="Player.cpp">
+            <location file="Upgrades.h" line="40" column="101"/>
+            <symbol>description</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="18" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="18" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="19" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="Player.cpp">
+            <location file="Utilities.h" line="19" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="TextSize" file="Graphics.h" line="10" col="1" hash="10724191710049951354"/>
+<class name="RectSize" file="Graphics.h" line="15" col="1" hash="4061058003016658599"/>
+<class name="EndStream" file="Graphics.h" line="54" col="1" hash="9742039643195961405"/>
+<class name="Widget" file="GUI.h" line="35" col="1" hash="6949896112396479749"/>
+<class name="WidgetChild" file="GUI.h" line="49" col="1" hash="16368760178329580174"/>
+<class name="Level" file="Game.h" line="7" col="1" hash="7049039584434299977"/>
+<class name="EventHandler::DelayedFunction" file="EventHandler.h" line="66" col="2" hash="6232065038466404301"/>
+<class name="ItemUpgrade" file="Upgrades.h" line="3" col="1" hash="1861685166424742826"/>
+<class name="PlayerUpgrade" file="Upgrades.h" line="30" col="1" hash="3998633456353619325"/>
+<class name="Player" file="Player.h" line="7" col="1" hash="4343595334083020605"/>
+<class name="Weapon" file="Weapon.h" line="6" col="1" hash="14448609937694101267"/>
+<class name="List &lt; Entity &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="7661575550208057443"/>
+<class name="List &lt; Item &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="2303848851761835863"/>
+<class name="List &lt; BackgroundObject &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="16309164132262582003"/>
+<class name="List &lt; ItemUpgrade &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="13560783311079967937"/>
+<class name="List &lt; PlayerUpgrade &gt;::Iterator" file="Utilities.h" line="10" col="2" hash="12212796610954571705"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="Graphics.h:124:22" my-argnr="1" my-argname="source" file="Graphics.h" line="125" col="25" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="Graphics.h:22:12" my-argnr="1" my-argname="rs" file="Graphics.h" line="23" col="12" value="0"/>
+    <unsafe-usage my-id="Graphics.h:124:22" my-argnr="1" my-argname="source" file="Graphics.h" line="125" col="25" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Update" lineNumber="41"/>
+    <functiondecl functionName="OnDestroy" lineNumber="172"/>
+    <functiondecl functionName="GetPossibleUpgrades" lineNumber="177"/>
+    <functioncall functionName="Add"/>
+    <functioncall functionName="Airstrike"/>
+    <functioncall functionName="BUFFER_LENGTH"/>
+    <functioncall functionName="BackgroundObject"/>
+    <functioncall functionName="Bar"/>
+    <functioncall functionName="Block"/>
+    <functioncall functionName="Bomb"/>
+    <functioncall functionName="BombWeapon"/>
+    <functioncall functionName="Bottom"/>
+    <functioncall functionName="BottomCentre"/>
+    <functioncall functionName="BottomLeft"/>
+    <functioncall functionName="BottomRight"/>
+    <functioncall functionName="Button"/>
+    <functioncall functionName="Category"/>
+    <functioncall functionName="Centered"/>
+    <functioncall functionName="Centre"/>
+    <functioncall functionName="Character"/>
+    <functioncall functionName="Coin"/>
+    <functioncall functionName="Collide"/>
+    <functioncall functionName="Control"/>
+    <functioncall functionName="Crab"/>
+    <functioncall functionName="Damage"/>
+    <functioncall functionName="DelayedFunction"/>
+    <functioncall functionName="Down"/>
+    <functioncall functionName="Draw"/>
+    <functioncall functionName="EndStream"/>
+    <functioncall functionName="Enemy"/>
+    <functioncall functionName="EnergyPowerup"/>
+    <functioncall functionName="Entities"/>
+    <functioncall functionName="Entity"/>
+    <functioncall functionName="GetControlFromAction"/>
+    <functioncall functionName="GetItem"/>
+    <functioncall functionName="Hit"/>
+    <functioncall functionName="Instance"/>
+    <functioncall functionName="IsControlActivated"/>
+    <functioncall functionName="Item"/>
+    <functioncall functionName="ItemUpgrade"/>
+    <functioncall functionName="Iterator"/>
+    <functioncall functionName="Jump"/>
+    <functioncall functionName="KEEPALIVE"/>
+    <functioncall functionName="Kill"/>
+    <functioncall functionName="Laser"/>
+    <functioncall functionName="Left"/>
+    <functioncall functionName="LeftCentre"/>
+    <functioncall functionName="Level"/>
+    <functioncall functionName="Light"/>
+    <functioncall functionName="List &lt; BackgroundObject &gt;"/>
+    <functioncall functionName="List &lt; Entity &gt;"/>
+    <functioncall functionName="List &lt; Item &gt;"/>
+    <functioncall functionName="List &lt; ItemUpgrade &gt;"/>
+    <functioncall functionName="List &lt; PlayerUpgrade &gt;"/>
+    <functioncall functionName="MultiplayerGameClient"/>
+    <functioncall functionName="NextWave"/>
+    <functioncall functionName="None"/>
+    <functioncall functionName="Objective"/>
+    <functioncall functionName="OnDestroy"/>
+    <functioncall functionName="OpenShop"/>
+    <functioncall functionName="Orb"/>
+    <functioncall functionName="PLAYER"/>
+    <functioncall functionName="Particle"/>
+    <functioncall functionName="Player"/>
+    <functioncall functionName="PlayerCount"/>
+    <functioncall functionName="PlayerUpgrade"/>
+    <functioncall functionName="Powerup"/>
+    <functioncall functionName="REMOVE"/>
+    <functioncall functionName="Rect"/>
+    <functioncall functionName="RectSize"/>
+    <functioncall functionName="RegenerationPowerup"/>
+    <functioncall functionName="Right"/>
+    <functioncall functionName="RightCentre"/>
+    <functioncall functionName="SDL_SCANCODE_A"/>
+    <functioncall functionName="SDL_SCANCODE_D"/>
+    <functioncall functionName="SDL_SCANCODE_S"/>
+    <functioncall functionName="SDL_SCANCODE_SPACE"/>
+    <functioncall functionName="SDL_SCANCODE_W"/>
+    <functioncall functionName="STRUCTURE"/>
+    <functioncall functionName="ShouldCollideWith"/>
+    <functioncall functionName="ShowHideMap"/>
+    <functioncall functionName="Slot1"/>
+    <functioncall functionName="Slot2"/>
+    <functioncall functionName="Slot3"/>
+    <functioncall functionName="Slot4"/>
+    <functioncall functionName="Slot5"/>
+    <functioncall functionName="Slot6"/>
+    <functioncall functionName="Slot7"/>
+    <functioncall functionName="Slot8"/>
+    <functioncall functionName="SpaceGame"/>
+    <functioncall functionName="Structure"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="Texture"/>
+    <functioncall functionName="Top"/>
+    <functioncall functionName="TopCentre"/>
+    <functioncall functionName="TopLeft"/>
+    <functioncall functionName="TopRight"/>
+    <functioncall functionName="Turret"/>
+    <functioncall functionName="TurretPlacer"/>
+    <functioncall functionName="Update"/>
+    <functioncall functionName="Widget"/>
+    <functioncall functionName="WidgetBitmapButton"/>
+    <functioncall functionName="WidgetChild"/>
+    <functioncall functionName="WidgetEnemyInformation"/>
+    <functioncall functionName="WidgetGroup"/>
+    <functioncall functionName="WidgetTextbox"/>
+    <functioncall functionName="WillOverlap"/>
+    <functioncall functionName="X"/>
+    <functioncall functionName="Y"/>
+    <functioncall functionName="align"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="bCollided"/>
+    <functioncall functionName="bCollidedHorizontally"/>
+    <functioncall functionName="bCollidedVertically"/>
+    <functioncall functionName="bOnGround"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="bottom"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="clickable"/>
+    <functioncall functionName="clrWhite"/>
+    <functioncall functionName="colour"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="continue"/>
+    <functioncall functionName="cost"/>
+    <functioncall functionName="current_value"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="deltatime"/>
+    <functioncall functionName="description"/>
+    <functioncall functionName="element"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="entity"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="fBackgroundPosition"/>
+    <functioncall functionName="fEnergy"/>
+    <functioncall functionName="fEnergyRechargeSpeed"/>
+    <functioncall functionName="fHealth"/>
+    <functioncall functionName="fHealthRegeneration"/>
+    <functioncall functionName="fMaxEnergy"/>
+    <functioncall functionName="fMaxEnergyRechargeSpeed"/>
+    <functioncall functionName="fMaxHealth"/>
+    <functioncall functionName="fMaxHealthRegeneration"/>
+    <functioncall functionName="fMaxHealthUpgrade"/>
+    <functioncall functionName="fMaxMovementSpeed"/>
+    <functioncall functionName="fMovementSpeed"/>
+    <functioncall functionName="fNewX"/>
+    <functioncall functionName="fNewY"/>
+    <functioncall functionName="fSpeedX"/>
+    <functioncall functionName="fX"/>
+    <functioncall functionName="fY"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fn"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="game"/>
+    <functioncall functionName="get"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="increment"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="make_move_iterator"/>
+    <functioncall functionName="max_value"/>
+    <functioncall functionName="move_down"/>
+    <functioncall functionName="move_left"/>
+    <functioncall functionName="move_right"/>
+    <functioncall functionName="move_up"/>
+    <functioncall functionName="nLevel"/>
+    <functioncall functionName="nTextureFrame"/>
+    <functioncall functionName="new_inst"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="offset"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="owner"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="puCurrentPowerup"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="rhs"/>
+    <functioncall functionName="right"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="socket"/>
+    <functioncall functionName="source"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="text_size"/>
+    <functioncall functionName="texture"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="top"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="typename"/>
+    <functioncall functionName="unique_ptr"/>
+    <functioncall functionName="update"/>
+    <functioncall functionName="upgrade"/>
+    <functioncall functionName="vec"/>
+    <functioncall functionName="void"/>
+    <functioncall functionName="widget"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

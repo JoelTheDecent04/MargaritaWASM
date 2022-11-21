@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Joel/Desktop/Margarita
+CMAKE_SOURCE_DIR = /mnt/c/Users/Joel/Desktop/Margarita/Margarita
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Joel/Desktop/Margarita
+CMAKE_BINARY_DIR = /mnt/c/Users/Joel/Desktop/Margarita/Margarita
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Joel/Desktop/Margarita/CMakeFiles /mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles/progress.marks
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f CMakeFiles/Makefile2 Margarita/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Joel/Desktop/Margarita/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles /mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f CMakeFiles/Makefile2 Margarita/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -97,1032 +97,1058 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f CMakeFiles/Makefile2 Margarita/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f CMakeFiles/Makefile2 Margarita/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -P /mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-Margarita/CMakeFiles/Margarita.dir/rule:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f CMakeFiles/Makefile2 Margarita/CMakeFiles/Margarita.dir/rule
-.PHONY : Margarita/CMakeFiles/Margarita.dir/rule
+#=============================================================================
+# Target rules for targets named Margarita
 
-# Convenience name for target.
-Margarita: Margarita/CMakeFiles/Margarita.dir/rule
-
+# Build rule for target.
+Margarita: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Margarita
 .PHONY : Margarita
 
 # fast build rule for target.
 Margarita/fast:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/build
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/build
 .PHONY : Margarita/fast
 
-AirStrike.o: AirStrike.cpp.o
+src/AirStrike.o: src/AirStrike.cpp.o
 
-.PHONY : AirStrike.o
-
-# target to build an object file
-AirStrike.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/AirStrike.cpp.o
-.PHONY : AirStrike.cpp.o
-
-AirStrike.i: AirStrike.cpp.i
-
-.PHONY : AirStrike.i
-
-# target to preprocess a source file
-AirStrike.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/AirStrike.cpp.i
-.PHONY : AirStrike.cpp.i
-
-AirStrike.s: AirStrike.cpp.s
-
-.PHONY : AirStrike.s
-
-# target to generate assembly for a file
-AirStrike.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/AirStrike.cpp.s
-.PHONY : AirStrike.cpp.s
-
-Animation.o: Animation.cpp.o
-
-.PHONY : Animation.o
+.PHONY : src/AirStrike.o
 
 # target to build an object file
-Animation.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Animation.cpp.o
-.PHONY : Animation.cpp.o
+src/AirStrike.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/AirStrike.cpp.o
+.PHONY : src/AirStrike.cpp.o
 
-Animation.i: Animation.cpp.i
+src/AirStrike.i: src/AirStrike.cpp.i
 
-.PHONY : Animation.i
+.PHONY : src/AirStrike.i
 
 # target to preprocess a source file
-Animation.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Animation.cpp.i
-.PHONY : Animation.cpp.i
+src/AirStrike.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/AirStrike.cpp.i
+.PHONY : src/AirStrike.cpp.i
 
-Animation.s: Animation.cpp.s
+src/AirStrike.s: src/AirStrike.cpp.s
 
-.PHONY : Animation.s
+.PHONY : src/AirStrike.s
 
 # target to generate assembly for a file
-Animation.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Animation.cpp.s
-.PHONY : Animation.cpp.s
+src/AirStrike.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/AirStrike.cpp.s
+.PHONY : src/AirStrike.cpp.s
 
-Block.o: Block.cpp.o
+src/Animation.o: src/Animation.cpp.o
 
-.PHONY : Block.o
+.PHONY : src/Animation.o
 
 # target to build an object file
-Block.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Block.cpp.o
-.PHONY : Block.cpp.o
+src/Animation.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Animation.cpp.o
+.PHONY : src/Animation.cpp.o
 
-Block.i: Block.cpp.i
+src/Animation.i: src/Animation.cpp.i
 
-.PHONY : Block.i
+.PHONY : src/Animation.i
 
 # target to preprocess a source file
-Block.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Block.cpp.i
-.PHONY : Block.cpp.i
+src/Animation.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Animation.cpp.i
+.PHONY : src/Animation.cpp.i
 
-Block.s: Block.cpp.s
+src/Animation.s: src/Animation.cpp.s
 
-.PHONY : Block.s
+.PHONY : src/Animation.s
 
 # target to generate assembly for a file
-Block.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Block.cpp.s
-.PHONY : Block.cpp.s
+src/Animation.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Animation.cpp.s
+.PHONY : src/Animation.cpp.s
 
-Bomb.o: Bomb.cpp.o
+src/Block.o: src/Block.cpp.o
 
-.PHONY : Bomb.o
+.PHONY : src/Block.o
 
 # target to build an object file
-Bomb.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Bomb.cpp.o
-.PHONY : Bomb.cpp.o
+src/Block.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Block.cpp.o
+.PHONY : src/Block.cpp.o
 
-Bomb.i: Bomb.cpp.i
+src/Block.i: src/Block.cpp.i
 
-.PHONY : Bomb.i
+.PHONY : src/Block.i
 
 # target to preprocess a source file
-Bomb.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Bomb.cpp.i
-.PHONY : Bomb.cpp.i
+src/Block.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Block.cpp.i
+.PHONY : src/Block.cpp.i
 
-Bomb.s: Bomb.cpp.s
+src/Block.s: src/Block.cpp.s
 
-.PHONY : Bomb.s
+.PHONY : src/Block.s
 
 # target to generate assembly for a file
-Bomb.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Bomb.cpp.s
-.PHONY : Bomb.cpp.s
+src/Block.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Block.cpp.s
+.PHONY : src/Block.cpp.s
 
-BombAnimation.o: BombAnimation.cpp.o
+src/Bomb.o: src/Bomb.cpp.o
 
-.PHONY : BombAnimation.o
+.PHONY : src/Bomb.o
 
 # target to build an object file
-BombAnimation.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/BombAnimation.cpp.o
-.PHONY : BombAnimation.cpp.o
+src/Bomb.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Bomb.cpp.o
+.PHONY : src/Bomb.cpp.o
 
-BombAnimation.i: BombAnimation.cpp.i
+src/Bomb.i: src/Bomb.cpp.i
 
-.PHONY : BombAnimation.i
+.PHONY : src/Bomb.i
 
 # target to preprocess a source file
-BombAnimation.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/BombAnimation.cpp.i
-.PHONY : BombAnimation.cpp.i
+src/Bomb.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Bomb.cpp.i
+.PHONY : src/Bomb.cpp.i
 
-BombAnimation.s: BombAnimation.cpp.s
+src/Bomb.s: src/Bomb.cpp.s
 
-.PHONY : BombAnimation.s
+.PHONY : src/Bomb.s
 
 # target to generate assembly for a file
-BombAnimation.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/BombAnimation.cpp.s
-.PHONY : BombAnimation.cpp.s
+src/Bomb.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Bomb.cpp.s
+.PHONY : src/Bomb.cpp.s
 
-Coin.o: Coin.cpp.o
+src/BombAnimation.o: src/BombAnimation.cpp.o
 
-.PHONY : Coin.o
+.PHONY : src/BombAnimation.o
 
 # target to build an object file
-Coin.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Coin.cpp.o
-.PHONY : Coin.cpp.o
+src/BombAnimation.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/BombAnimation.cpp.o
+.PHONY : src/BombAnimation.cpp.o
 
-Coin.i: Coin.cpp.i
+src/BombAnimation.i: src/BombAnimation.cpp.i
 
-.PHONY : Coin.i
+.PHONY : src/BombAnimation.i
 
 # target to preprocess a source file
-Coin.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Coin.cpp.i
-.PHONY : Coin.cpp.i
+src/BombAnimation.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/BombAnimation.cpp.i
+.PHONY : src/BombAnimation.cpp.i
 
-Coin.s: Coin.cpp.s
+src/BombAnimation.s: src/BombAnimation.cpp.s
 
-.PHONY : Coin.s
+.PHONY : src/BombAnimation.s
 
 # target to generate assembly for a file
-Coin.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Coin.cpp.s
-.PHONY : Coin.cpp.s
+src/BombAnimation.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/BombAnimation.cpp.s
+.PHONY : src/BombAnimation.cpp.s
 
-Comet.o: Comet.cpp.o
+src/Coin.o: src/Coin.cpp.o
 
-.PHONY : Comet.o
+.PHONY : src/Coin.o
 
 # target to build an object file
-Comet.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Comet.cpp.o
-.PHONY : Comet.cpp.o
+src/Coin.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Coin.cpp.o
+.PHONY : src/Coin.cpp.o
 
-Comet.i: Comet.cpp.i
+src/Coin.i: src/Coin.cpp.i
 
-.PHONY : Comet.i
+.PHONY : src/Coin.i
 
 # target to preprocess a source file
-Comet.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Comet.cpp.i
-.PHONY : Comet.cpp.i
+src/Coin.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Coin.cpp.i
+.PHONY : src/Coin.cpp.i
 
-Comet.s: Comet.cpp.s
+src/Coin.s: src/Coin.cpp.s
 
-.PHONY : Comet.s
+.PHONY : src/Coin.s
 
 # target to generate assembly for a file
-Comet.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Comet.cpp.s
-.PHONY : Comet.cpp.s
+src/Coin.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Coin.cpp.s
+.PHONY : src/Coin.cpp.s
 
-ControlManager.o: ControlManager.cpp.o
+src/Comet.o: src/Comet.cpp.o
 
-.PHONY : ControlManager.o
+.PHONY : src/Comet.o
 
 # target to build an object file
-ControlManager.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/ControlManager.cpp.o
-.PHONY : ControlManager.cpp.o
+src/Comet.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Comet.cpp.o
+.PHONY : src/Comet.cpp.o
 
-ControlManager.i: ControlManager.cpp.i
+src/Comet.i: src/Comet.cpp.i
 
-.PHONY : ControlManager.i
+.PHONY : src/Comet.i
 
 # target to preprocess a source file
-ControlManager.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/ControlManager.cpp.i
-.PHONY : ControlManager.cpp.i
+src/Comet.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Comet.cpp.i
+.PHONY : src/Comet.cpp.i
 
-ControlManager.s: ControlManager.cpp.s
+src/Comet.s: src/Comet.cpp.s
 
-.PHONY : ControlManager.s
+.PHONY : src/Comet.s
 
 # target to generate assembly for a file
-ControlManager.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/ControlManager.cpp.s
-.PHONY : ControlManager.cpp.s
+src/Comet.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Comet.cpp.s
+.PHONY : src/Comet.cpp.s
 
-ControlsScreen.o: ControlsScreen.cpp.o
+src/ControlManager.o: src/ControlManager.cpp.o
 
-.PHONY : ControlsScreen.o
+.PHONY : src/ControlManager.o
 
 # target to build an object file
-ControlsScreen.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/ControlsScreen.cpp.o
-.PHONY : ControlsScreen.cpp.o
+src/ControlManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/ControlManager.cpp.o
+.PHONY : src/ControlManager.cpp.o
 
-ControlsScreen.i: ControlsScreen.cpp.i
+src/ControlManager.i: src/ControlManager.cpp.i
 
-.PHONY : ControlsScreen.i
+.PHONY : src/ControlManager.i
 
 # target to preprocess a source file
-ControlsScreen.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/ControlsScreen.cpp.i
-.PHONY : ControlsScreen.cpp.i
+src/ControlManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/ControlManager.cpp.i
+.PHONY : src/ControlManager.cpp.i
 
-ControlsScreen.s: ControlsScreen.cpp.s
+src/ControlManager.s: src/ControlManager.cpp.s
 
-.PHONY : ControlsScreen.s
+.PHONY : src/ControlManager.s
 
 # target to generate assembly for a file
-ControlsScreen.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/ControlsScreen.cpp.s
-.PHONY : ControlsScreen.cpp.s
+src/ControlManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/ControlManager.cpp.s
+.PHONY : src/ControlManager.cpp.s
 
-Crab.o: Crab.cpp.o
+src/ControlsScreen.o: src/ControlsScreen.cpp.o
 
-.PHONY : Crab.o
+.PHONY : src/ControlsScreen.o
 
 # target to build an object file
-Crab.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Crab.cpp.o
-.PHONY : Crab.cpp.o
+src/ControlsScreen.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/ControlsScreen.cpp.o
+.PHONY : src/ControlsScreen.cpp.o
 
-Crab.i: Crab.cpp.i
+src/ControlsScreen.i: src/ControlsScreen.cpp.i
 
-.PHONY : Crab.i
+.PHONY : src/ControlsScreen.i
 
 # target to preprocess a source file
-Crab.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Crab.cpp.i
-.PHONY : Crab.cpp.i
+src/ControlsScreen.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/ControlsScreen.cpp.i
+.PHONY : src/ControlsScreen.cpp.i
 
-Crab.s: Crab.cpp.s
+src/ControlsScreen.s: src/ControlsScreen.cpp.s
 
-.PHONY : Crab.s
+.PHONY : src/ControlsScreen.s
 
 # target to generate assembly for a file
-Crab.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Crab.cpp.s
-.PHONY : Crab.cpp.s
+src/ControlsScreen.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/ControlsScreen.cpp.s
+.PHONY : src/ControlsScreen.cpp.s
 
-DeathScreen.o: DeathScreen.cpp.o
+src/Crab.o: src/Crab.cpp.o
 
-.PHONY : DeathScreen.o
+.PHONY : src/Crab.o
 
 # target to build an object file
-DeathScreen.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/DeathScreen.cpp.o
-.PHONY : DeathScreen.cpp.o
+src/Crab.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Crab.cpp.o
+.PHONY : src/Crab.cpp.o
 
-DeathScreen.i: DeathScreen.cpp.i
+src/Crab.i: src/Crab.cpp.i
 
-.PHONY : DeathScreen.i
+.PHONY : src/Crab.i
 
 # target to preprocess a source file
-DeathScreen.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/DeathScreen.cpp.i
-.PHONY : DeathScreen.cpp.i
+src/Crab.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Crab.cpp.i
+.PHONY : src/Crab.cpp.i
 
-DeathScreen.s: DeathScreen.cpp.s
+src/Crab.s: src/Crab.cpp.s
 
-.PHONY : DeathScreen.s
+.PHONY : src/Crab.s
 
 # target to generate assembly for a file
-DeathScreen.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/DeathScreen.cpp.s
-.PHONY : DeathScreen.cpp.s
+src/Crab.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Crab.cpp.s
+.PHONY : src/Crab.cpp.s
 
-Enemy.o: Enemy.cpp.o
+src/DeathScreen.o: src/DeathScreen.cpp.o
 
-.PHONY : Enemy.o
+.PHONY : src/DeathScreen.o
 
 # target to build an object file
-Enemy.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Enemy.cpp.o
-.PHONY : Enemy.cpp.o
+src/DeathScreen.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/DeathScreen.cpp.o
+.PHONY : src/DeathScreen.cpp.o
 
-Enemy.i: Enemy.cpp.i
+src/DeathScreen.i: src/DeathScreen.cpp.i
 
-.PHONY : Enemy.i
+.PHONY : src/DeathScreen.i
 
 # target to preprocess a source file
-Enemy.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Enemy.cpp.i
-.PHONY : Enemy.cpp.i
+src/DeathScreen.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/DeathScreen.cpp.i
+.PHONY : src/DeathScreen.cpp.i
 
-Enemy.s: Enemy.cpp.s
+src/DeathScreen.s: src/DeathScreen.cpp.s
 
-.PHONY : Enemy.s
+.PHONY : src/DeathScreen.s
 
 # target to generate assembly for a file
-Enemy.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Enemy.cpp.s
-.PHONY : Enemy.cpp.s
+src/DeathScreen.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/DeathScreen.cpp.s
+.PHONY : src/DeathScreen.cpp.s
 
-EnergyPowerup.o: EnergyPowerup.cpp.o
+src/Enemy.o: src/Enemy.cpp.o
 
-.PHONY : EnergyPowerup.o
+.PHONY : src/Enemy.o
 
 # target to build an object file
-EnergyPowerup.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EnergyPowerup.cpp.o
-.PHONY : EnergyPowerup.cpp.o
+src/Enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Enemy.cpp.o
+.PHONY : src/Enemy.cpp.o
 
-EnergyPowerup.i: EnergyPowerup.cpp.i
+src/Enemy.i: src/Enemy.cpp.i
 
-.PHONY : EnergyPowerup.i
+.PHONY : src/Enemy.i
 
 # target to preprocess a source file
-EnergyPowerup.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EnergyPowerup.cpp.i
-.PHONY : EnergyPowerup.cpp.i
+src/Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Enemy.cpp.i
+.PHONY : src/Enemy.cpp.i
 
-EnergyPowerup.s: EnergyPowerup.cpp.s
+src/Enemy.s: src/Enemy.cpp.s
 
-.PHONY : EnergyPowerup.s
+.PHONY : src/Enemy.s
 
 # target to generate assembly for a file
-EnergyPowerup.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EnergyPowerup.cpp.s
-.PHONY : EnergyPowerup.cpp.s
+src/Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Enemy.cpp.s
+.PHONY : src/Enemy.cpp.s
 
-Entity.o: Entity.cpp.o
+src/EnergyPowerup.o: src/EnergyPowerup.cpp.o
 
-.PHONY : Entity.o
+.PHONY : src/EnergyPowerup.o
 
 # target to build an object file
-Entity.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Entity.cpp.o
-.PHONY : Entity.cpp.o
+src/EnergyPowerup.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EnergyPowerup.cpp.o
+.PHONY : src/EnergyPowerup.cpp.o
 
-Entity.i: Entity.cpp.i
+src/EnergyPowerup.i: src/EnergyPowerup.cpp.i
 
-.PHONY : Entity.i
+.PHONY : src/EnergyPowerup.i
 
 # target to preprocess a source file
-Entity.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Entity.cpp.i
-.PHONY : Entity.cpp.i
+src/EnergyPowerup.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EnergyPowerup.cpp.i
+.PHONY : src/EnergyPowerup.cpp.i
 
-Entity.s: Entity.cpp.s
+src/EnergyPowerup.s: src/EnergyPowerup.cpp.s
 
-.PHONY : Entity.s
+.PHONY : src/EnergyPowerup.s
 
 # target to generate assembly for a file
-Entity.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Entity.cpp.s
-.PHONY : Entity.cpp.s
+src/EnergyPowerup.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EnergyPowerup.cpp.s
+.PHONY : src/EnergyPowerup.cpp.s
 
-EntityHealthChangeText.o: EntityHealthChangeText.cpp.o
+src/Entity.o: src/Entity.cpp.o
 
-.PHONY : EntityHealthChangeText.o
+.PHONY : src/Entity.o
 
 # target to build an object file
-EntityHealthChangeText.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EntityHealthChangeText.cpp.o
-.PHONY : EntityHealthChangeText.cpp.o
+src/Entity.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Entity.cpp.o
+.PHONY : src/Entity.cpp.o
 
-EntityHealthChangeText.i: EntityHealthChangeText.cpp.i
+src/Entity.i: src/Entity.cpp.i
 
-.PHONY : EntityHealthChangeText.i
+.PHONY : src/Entity.i
 
 # target to preprocess a source file
-EntityHealthChangeText.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EntityHealthChangeText.cpp.i
-.PHONY : EntityHealthChangeText.cpp.i
+src/Entity.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Entity.cpp.i
+.PHONY : src/Entity.cpp.i
 
-EntityHealthChangeText.s: EntityHealthChangeText.cpp.s
+src/Entity.s: src/Entity.cpp.s
 
-.PHONY : EntityHealthChangeText.s
+.PHONY : src/Entity.s
 
 # target to generate assembly for a file
-EntityHealthChangeText.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EntityHealthChangeText.cpp.s
-.PHONY : EntityHealthChangeText.cpp.s
+src/Entity.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Entity.cpp.s
+.PHONY : src/Entity.cpp.s
 
-EventHandler.o: EventHandler.cpp.o
+src/EntityHealthChangeText.o: src/EntityHealthChangeText.cpp.o
 
-.PHONY : EventHandler.o
+.PHONY : src/EntityHealthChangeText.o
 
 # target to build an object file
-EventHandler.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EventHandler.cpp.o
-.PHONY : EventHandler.cpp.o
+src/EntityHealthChangeText.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EntityHealthChangeText.cpp.o
+.PHONY : src/EntityHealthChangeText.cpp.o
 
-EventHandler.i: EventHandler.cpp.i
+src/EntityHealthChangeText.i: src/EntityHealthChangeText.cpp.i
 
-.PHONY : EventHandler.i
+.PHONY : src/EntityHealthChangeText.i
 
 # target to preprocess a source file
-EventHandler.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EventHandler.cpp.i
-.PHONY : EventHandler.cpp.i
+src/EntityHealthChangeText.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EntityHealthChangeText.cpp.i
+.PHONY : src/EntityHealthChangeText.cpp.i
 
-EventHandler.s: EventHandler.cpp.s
+src/EntityHealthChangeText.s: src/EntityHealthChangeText.cpp.s
 
-.PHONY : EventHandler.s
+.PHONY : src/EntityHealthChangeText.s
 
 # target to generate assembly for a file
-EventHandler.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/EventHandler.cpp.s
-.PHONY : EventHandler.cpp.s
+src/EntityHealthChangeText.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EntityHealthChangeText.cpp.s
+.PHONY : src/EntityHealthChangeText.cpp.s
 
-GUI.o: GUI.cpp.o
+src/EventHandler.o: src/EventHandler.cpp.o
 
-.PHONY : GUI.o
+.PHONY : src/EventHandler.o
 
 # target to build an object file
-GUI.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/GUI.cpp.o
-.PHONY : GUI.cpp.o
+src/EventHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EventHandler.cpp.o
+.PHONY : src/EventHandler.cpp.o
 
-GUI.i: GUI.cpp.i
+src/EventHandler.i: src/EventHandler.cpp.i
 
-.PHONY : GUI.i
+.PHONY : src/EventHandler.i
 
 # target to preprocess a source file
-GUI.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/GUI.cpp.i
-.PHONY : GUI.cpp.i
+src/EventHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EventHandler.cpp.i
+.PHONY : src/EventHandler.cpp.i
 
-GUI.s: GUI.cpp.s
+src/EventHandler.s: src/EventHandler.cpp.s
 
-.PHONY : GUI.s
+.PHONY : src/EventHandler.s
 
 # target to generate assembly for a file
-GUI.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/GUI.cpp.s
-.PHONY : GUI.cpp.s
+src/EventHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/EventHandler.cpp.s
+.PHONY : src/EventHandler.cpp.s
 
-Game.o: Game.cpp.o
+src/GUI.o: src/GUI.cpp.o
 
-.PHONY : Game.o
+.PHONY : src/GUI.o
 
 # target to build an object file
-Game.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Game.cpp.o
-.PHONY : Game.cpp.o
+src/GUI.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/GUI.cpp.o
+.PHONY : src/GUI.cpp.o
 
-Game.i: Game.cpp.i
+src/GUI.i: src/GUI.cpp.i
 
-.PHONY : Game.i
+.PHONY : src/GUI.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+src/GUI.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/GUI.cpp.i
+.PHONY : src/GUI.cpp.i
 
-Game.s: Game.cpp.s
+src/GUI.s: src/GUI.cpp.s
 
-.PHONY : Game.s
+.PHONY : src/GUI.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+src/GUI.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/GUI.cpp.s
+.PHONY : src/GUI.cpp.s
 
-Graphics.o: Graphics.cpp.o
+src/Game.o: src/Game.cpp.o
 
-.PHONY : Graphics.o
+.PHONY : src/Game.o
 
 # target to build an object file
-Graphics.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Graphics.cpp.o
-.PHONY : Graphics.cpp.o
+src/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
 
-Graphics.i: Graphics.cpp.i
+src/Game.i: src/Game.cpp.i
 
-.PHONY : Graphics.i
+.PHONY : src/Game.i
 
 # target to preprocess a source file
-Graphics.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Graphics.cpp.i
-.PHONY : Graphics.cpp.i
+src/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
 
-Graphics.s: Graphics.cpp.s
+src/Game.s: src/Game.cpp.s
 
-.PHONY : Graphics.s
+.PHONY : src/Game.s
 
 # target to generate assembly for a file
-Graphics.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Graphics.cpp.s
-.PHONY : Graphics.cpp.s
+src/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
-Item.o: Item.cpp.o
+src/Graphics.o: src/Graphics.cpp.o
 
-.PHONY : Item.o
+.PHONY : src/Graphics.o
 
 # target to build an object file
-Item.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Item.cpp.o
-.PHONY : Item.cpp.o
+src/Graphics.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Graphics.cpp.o
+.PHONY : src/Graphics.cpp.o
 
-Item.i: Item.cpp.i
+src/Graphics.i: src/Graphics.cpp.i
 
-.PHONY : Item.i
+.PHONY : src/Graphics.i
 
 # target to preprocess a source file
-Item.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Item.cpp.i
-.PHONY : Item.cpp.i
+src/Graphics.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Graphics.cpp.i
+.PHONY : src/Graphics.cpp.i
 
-Item.s: Item.cpp.s
+src/Graphics.s: src/Graphics.cpp.s
 
-.PHONY : Item.s
+.PHONY : src/Graphics.s
 
 # target to generate assembly for a file
-Item.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Item.cpp.s
-.PHONY : Item.cpp.s
+src/Graphics.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Graphics.cpp.s
+.PHONY : src/Graphics.cpp.s
 
-Laser.o: Laser.cpp.o
+src/Items/Item.o: src/Items/Item.cpp.o
 
-.PHONY : Laser.o
+.PHONY : src/Items/Item.o
 
 # target to build an object file
-Laser.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Laser.cpp.o
-.PHONY : Laser.cpp.o
+src/Items/Item.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Items/Item.cpp.o
+.PHONY : src/Items/Item.cpp.o
 
-Laser.i: Laser.cpp.i
+src/Items/Item.i: src/Items/Item.cpp.i
 
-.PHONY : Laser.i
+.PHONY : src/Items/Item.i
 
 # target to preprocess a source file
-Laser.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Laser.cpp.i
-.PHONY : Laser.cpp.i
+src/Items/Item.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Items/Item.cpp.i
+.PHONY : src/Items/Item.cpp.i
 
-Laser.s: Laser.cpp.s
+src/Items/Item.s: src/Items/Item.cpp.s
 
-.PHONY : Laser.s
+.PHONY : src/Items/Item.s
 
 # target to generate assembly for a file
-Laser.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Laser.cpp.s
-.PHONY : Laser.cpp.s
+src/Items/Item.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Items/Item.cpp.s
+.PHONY : src/Items/Item.cpp.s
 
-Multiplayer.o: Multiplayer.cpp.o
+src/Laser.o: src/Laser.cpp.o
 
-.PHONY : Multiplayer.o
+.PHONY : src/Laser.o
 
 # target to build an object file
-Multiplayer.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Multiplayer.cpp.o
-.PHONY : Multiplayer.cpp.o
+src/Laser.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Laser.cpp.o
+.PHONY : src/Laser.cpp.o
 
-Multiplayer.i: Multiplayer.cpp.i
+src/Laser.i: src/Laser.cpp.i
 
-.PHONY : Multiplayer.i
+.PHONY : src/Laser.i
 
 # target to preprocess a source file
-Multiplayer.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Multiplayer.cpp.i
-.PHONY : Multiplayer.cpp.i
+src/Laser.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Laser.cpp.i
+.PHONY : src/Laser.cpp.i
 
-Multiplayer.s: Multiplayer.cpp.s
+src/Laser.s: src/Laser.cpp.s
 
-.PHONY : Multiplayer.s
+.PHONY : src/Laser.s
 
 # target to generate assembly for a file
-Multiplayer.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Multiplayer.cpp.s
-.PHONY : Multiplayer.cpp.s
+src/Laser.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Laser.cpp.s
+.PHONY : src/Laser.cpp.s
 
-Orb.o: Orb.cpp.o
+src/Multiplayer.o: src/Multiplayer.cpp.o
 
-.PHONY : Orb.o
+.PHONY : src/Multiplayer.o
 
 # target to build an object file
-Orb.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Orb.cpp.o
-.PHONY : Orb.cpp.o
+src/Multiplayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Multiplayer.cpp.o
+.PHONY : src/Multiplayer.cpp.o
 
-Orb.i: Orb.cpp.i
+src/Multiplayer.i: src/Multiplayer.cpp.i
 
-.PHONY : Orb.i
+.PHONY : src/Multiplayer.i
 
 # target to preprocess a source file
-Orb.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Orb.cpp.i
-.PHONY : Orb.cpp.i
+src/Multiplayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Multiplayer.cpp.i
+.PHONY : src/Multiplayer.cpp.i
 
-Orb.s: Orb.cpp.s
+src/Multiplayer.s: src/Multiplayer.cpp.s
 
-.PHONY : Orb.s
+.PHONY : src/Multiplayer.s
 
 # target to generate assembly for a file
-Orb.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Orb.cpp.s
-.PHONY : Orb.cpp.s
+src/Multiplayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Multiplayer.cpp.s
+.PHONY : src/Multiplayer.cpp.s
 
-Particle.o: Particle.cpp.o
+src/Orb.o: src/Orb.cpp.o
 
-.PHONY : Particle.o
+.PHONY : src/Orb.o
 
 # target to build an object file
-Particle.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Particle.cpp.o
-.PHONY : Particle.cpp.o
+src/Orb.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Orb.cpp.o
+.PHONY : src/Orb.cpp.o
 
-Particle.i: Particle.cpp.i
+src/Orb.i: src/Orb.cpp.i
 
-.PHONY : Particle.i
+.PHONY : src/Orb.i
 
 # target to preprocess a source file
-Particle.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Particle.cpp.i
-.PHONY : Particle.cpp.i
+src/Orb.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Orb.cpp.i
+.PHONY : src/Orb.cpp.i
 
-Particle.s: Particle.cpp.s
+src/Orb.s: src/Orb.cpp.s
 
-.PHONY : Particle.s
+.PHONY : src/Orb.s
 
 # target to generate assembly for a file
-Particle.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Particle.cpp.s
-.PHONY : Particle.cpp.s
+src/Orb.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Orb.cpp.s
+.PHONY : src/Orb.cpp.s
 
-PauseScreen.o: PauseScreen.cpp.o
+src/Particle.o: src/Particle.cpp.o
 
-.PHONY : PauseScreen.o
+.PHONY : src/Particle.o
 
 # target to build an object file
-PauseScreen.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/PauseScreen.cpp.o
-.PHONY : PauseScreen.cpp.o
+src/Particle.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Particle.cpp.o
+.PHONY : src/Particle.cpp.o
 
-PauseScreen.i: PauseScreen.cpp.i
+src/Particle.i: src/Particle.cpp.i
 
-.PHONY : PauseScreen.i
+.PHONY : src/Particle.i
 
 # target to preprocess a source file
-PauseScreen.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/PauseScreen.cpp.i
-.PHONY : PauseScreen.cpp.i
+src/Particle.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Particle.cpp.i
+.PHONY : src/Particle.cpp.i
 
-PauseScreen.s: PauseScreen.cpp.s
+src/Particle.s: src/Particle.cpp.s
 
-.PHONY : PauseScreen.s
+.PHONY : src/Particle.s
 
 # target to generate assembly for a file
-PauseScreen.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/PauseScreen.cpp.s
-.PHONY : PauseScreen.cpp.s
+src/Particle.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Particle.cpp.s
+.PHONY : src/Particle.cpp.s
 
-Player.o: Player.cpp.o
+src/PauseScreen.o: src/PauseScreen.cpp.o
 
-.PHONY : Player.o
+.PHONY : src/PauseScreen.o
 
 # target to build an object file
-Player.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Player.cpp.o
-.PHONY : Player.cpp.o
+src/PauseScreen.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/PauseScreen.cpp.o
+.PHONY : src/PauseScreen.cpp.o
 
-Player.i: Player.cpp.i
+src/PauseScreen.i: src/PauseScreen.cpp.i
 
-.PHONY : Player.i
+.PHONY : src/PauseScreen.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+src/PauseScreen.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/PauseScreen.cpp.i
+.PHONY : src/PauseScreen.cpp.i
 
-Player.s: Player.cpp.s
+src/PauseScreen.s: src/PauseScreen.cpp.s
 
-.PHONY : Player.s
+.PHONY : src/PauseScreen.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+src/PauseScreen.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/PauseScreen.cpp.s
+.PHONY : src/PauseScreen.cpp.s
 
-Powerup.o: Powerup.cpp.o
+src/Player.o: src/Player.cpp.o
 
-.PHONY : Powerup.o
+.PHONY : src/Player.o
 
 # target to build an object file
-Powerup.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Powerup.cpp.o
-.PHONY : Powerup.cpp.o
+src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
 
-Powerup.i: Powerup.cpp.i
+src/Player.i: src/Player.cpp.i
 
-.PHONY : Powerup.i
+.PHONY : src/Player.i
 
 # target to preprocess a source file
-Powerup.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Powerup.cpp.i
-.PHONY : Powerup.cpp.i
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
 
-Powerup.s: Powerup.cpp.s
+src/Player.s: src/Player.cpp.s
 
-.PHONY : Powerup.s
+.PHONY : src/Player.s
 
 # target to generate assembly for a file
-Powerup.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Powerup.cpp.s
-.PHONY : Powerup.cpp.s
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
 
-RegenerationPowerup.o: RegenerationPowerup.cpp.o
+src/Powerup.o: src/Powerup.cpp.o
 
-.PHONY : RegenerationPowerup.o
+.PHONY : src/Powerup.o
 
 # target to build an object file
-RegenerationPowerup.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/RegenerationPowerup.cpp.o
-.PHONY : RegenerationPowerup.cpp.o
+src/Powerup.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Powerup.cpp.o
+.PHONY : src/Powerup.cpp.o
 
-RegenerationPowerup.i: RegenerationPowerup.cpp.i
+src/Powerup.i: src/Powerup.cpp.i
 
-.PHONY : RegenerationPowerup.i
+.PHONY : src/Powerup.i
 
 # target to preprocess a source file
-RegenerationPowerup.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/RegenerationPowerup.cpp.i
-.PHONY : RegenerationPowerup.cpp.i
+src/Powerup.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Powerup.cpp.i
+.PHONY : src/Powerup.cpp.i
 
-RegenerationPowerup.s: RegenerationPowerup.cpp.s
+src/Powerup.s: src/Powerup.cpp.s
 
-.PHONY : RegenerationPowerup.s
+.PHONY : src/Powerup.s
 
 # target to generate assembly for a file
-RegenerationPowerup.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/RegenerationPowerup.cpp.s
-.PHONY : RegenerationPowerup.cpp.s
+src/Powerup.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Powerup.cpp.s
+.PHONY : src/Powerup.cpp.s
 
-Shop.o: Shop.cpp.o
+src/RegenerationPowerup.o: src/RegenerationPowerup.cpp.o
 
-.PHONY : Shop.o
+.PHONY : src/RegenerationPowerup.o
 
 # target to build an object file
-Shop.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Shop.cpp.o
-.PHONY : Shop.cpp.o
+src/RegenerationPowerup.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/RegenerationPowerup.cpp.o
+.PHONY : src/RegenerationPowerup.cpp.o
 
-Shop.i: Shop.cpp.i
+src/RegenerationPowerup.i: src/RegenerationPowerup.cpp.i
 
-.PHONY : Shop.i
+.PHONY : src/RegenerationPowerup.i
 
 # target to preprocess a source file
-Shop.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Shop.cpp.i
-.PHONY : Shop.cpp.i
+src/RegenerationPowerup.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/RegenerationPowerup.cpp.i
+.PHONY : src/RegenerationPowerup.cpp.i
 
-Shop.s: Shop.cpp.s
+src/RegenerationPowerup.s: src/RegenerationPowerup.cpp.s
 
-.PHONY : Shop.s
+.PHONY : src/RegenerationPowerup.s
 
 # target to generate assembly for a file
-Shop.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Shop.cpp.s
-.PHONY : Shop.cpp.s
+src/RegenerationPowerup.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/RegenerationPowerup.cpp.s
+.PHONY : src/RegenerationPowerup.cpp.s
 
-Space.o: Space.cpp.o
+src/Shop.o: src/Shop.cpp.o
 
-.PHONY : Space.o
+.PHONY : src/Shop.o
 
 # target to build an object file
-Space.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Space.cpp.o
-.PHONY : Space.cpp.o
+src/Shop.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Shop.cpp.o
+.PHONY : src/Shop.cpp.o
 
-Space.i: Space.cpp.i
+src/Shop.i: src/Shop.cpp.i
 
-.PHONY : Space.i
+.PHONY : src/Shop.i
 
 # target to preprocess a source file
-Space.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Space.cpp.i
-.PHONY : Space.cpp.i
+src/Shop.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Shop.cpp.i
+.PHONY : src/Shop.cpp.i
 
-Space.s: Space.cpp.s
+src/Shop.s: src/Shop.cpp.s
 
-.PHONY : Space.s
+.PHONY : src/Shop.s
 
 # target to generate assembly for a file
-Space.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Space.cpp.s
-.PHONY : Space.cpp.s
+src/Shop.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Shop.cpp.s
+.PHONY : src/Shop.cpp.s
 
-TextObject.o: TextObject.cpp.o
+src/Snail.o: src/Snail.cpp.o
 
-.PHONY : TextObject.o
+.PHONY : src/Snail.o
 
 # target to build an object file
-TextObject.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/TextObject.cpp.o
-.PHONY : TextObject.cpp.o
+src/Snail.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Snail.cpp.o
+.PHONY : src/Snail.cpp.o
 
-TextObject.i: TextObject.cpp.i
+src/Snail.i: src/Snail.cpp.i
 
-.PHONY : TextObject.i
+.PHONY : src/Snail.i
 
 # target to preprocess a source file
-TextObject.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/TextObject.cpp.i
-.PHONY : TextObject.cpp.i
+src/Snail.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Snail.cpp.i
+.PHONY : src/Snail.cpp.i
 
-TextObject.s: TextObject.cpp.s
+src/Snail.s: src/Snail.cpp.s
 
-.PHONY : TextObject.s
+.PHONY : src/Snail.s
 
 # target to generate assembly for a file
-TextObject.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/TextObject.cpp.s
-.PHONY : TextObject.cpp.s
+src/Snail.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Snail.cpp.s
+.PHONY : src/Snail.cpp.s
 
-Texture.o: Texture.cpp.o
+src/Space.o: src/Space.cpp.o
 
-.PHONY : Texture.o
+.PHONY : src/Space.o
 
 # target to build an object file
-Texture.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Texture.cpp.o
-.PHONY : Texture.cpp.o
+src/Space.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Space.cpp.o
+.PHONY : src/Space.cpp.o
 
-Texture.i: Texture.cpp.i
+src/Space.i: src/Space.cpp.i
 
-.PHONY : Texture.i
+.PHONY : src/Space.i
 
 # target to preprocess a source file
-Texture.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Texture.cpp.i
-.PHONY : Texture.cpp.i
+src/Space.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Space.cpp.i
+.PHONY : src/Space.cpp.i
 
-Texture.s: Texture.cpp.s
+src/Space.s: src/Space.cpp.s
 
-.PHONY : Texture.s
+.PHONY : src/Space.s
 
 # target to generate assembly for a file
-Texture.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Texture.cpp.s
-.PHONY : Texture.cpp.s
+src/Space.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Space.cpp.s
+.PHONY : src/Space.cpp.s
 
-TitleScreen.o: TitleScreen.cpp.o
+src/TextObject.o: src/TextObject.cpp.o
 
-.PHONY : TitleScreen.o
+.PHONY : src/TextObject.o
 
 # target to build an object file
-TitleScreen.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/TitleScreen.cpp.o
-.PHONY : TitleScreen.cpp.o
+src/TextObject.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/TextObject.cpp.o
+.PHONY : src/TextObject.cpp.o
 
-TitleScreen.i: TitleScreen.cpp.i
+src/TextObject.i: src/TextObject.cpp.i
 
-.PHONY : TitleScreen.i
+.PHONY : src/TextObject.i
 
 # target to preprocess a source file
-TitleScreen.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/TitleScreen.cpp.i
-.PHONY : TitleScreen.cpp.i
+src/TextObject.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/TextObject.cpp.i
+.PHONY : src/TextObject.cpp.i
 
-TitleScreen.s: TitleScreen.cpp.s
+src/TextObject.s: src/TextObject.cpp.s
 
-.PHONY : TitleScreen.s
+.PHONY : src/TextObject.s
 
 # target to generate assembly for a file
-TitleScreen.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/TitleScreen.cpp.s
-.PHONY : TitleScreen.cpp.s
+src/TextObject.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/TextObject.cpp.s
+.PHONY : src/TextObject.cpp.s
 
-Turret.o: Turret.cpp.o
+src/Texture.o: src/Texture.cpp.o
 
-.PHONY : Turret.o
+.PHONY : src/Texture.o
 
 # target to build an object file
-Turret.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Turret.cpp.o
-.PHONY : Turret.cpp.o
+src/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Texture.cpp.o
+.PHONY : src/Texture.cpp.o
 
-Turret.i: Turret.cpp.i
+src/Texture.i: src/Texture.cpp.i
 
-.PHONY : Turret.i
+.PHONY : src/Texture.i
 
 # target to preprocess a source file
-Turret.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Turret.cpp.i
-.PHONY : Turret.cpp.i
+src/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Texture.cpp.i
+.PHONY : src/Texture.cpp.i
 
-Turret.s: Turret.cpp.s
+src/Texture.s: src/Texture.cpp.s
 
-.PHONY : Turret.s
+.PHONY : src/Texture.s
 
 # target to generate assembly for a file
-Turret.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Turret.cpp.s
-.PHONY : Turret.cpp.s
+src/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Texture.cpp.s
+.PHONY : src/Texture.cpp.s
 
-Upgrades.o: Upgrades.cpp.o
+src/TitleScreen.o: src/TitleScreen.cpp.o
 
-.PHONY : Upgrades.o
+.PHONY : src/TitleScreen.o
 
 # target to build an object file
-Upgrades.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Upgrades.cpp.o
-.PHONY : Upgrades.cpp.o
+src/TitleScreen.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/TitleScreen.cpp.o
+.PHONY : src/TitleScreen.cpp.o
 
-Upgrades.i: Upgrades.cpp.i
+src/TitleScreen.i: src/TitleScreen.cpp.i
 
-.PHONY : Upgrades.i
+.PHONY : src/TitleScreen.i
 
 # target to preprocess a source file
-Upgrades.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Upgrades.cpp.i
-.PHONY : Upgrades.cpp.i
+src/TitleScreen.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/TitleScreen.cpp.i
+.PHONY : src/TitleScreen.cpp.i
 
-Upgrades.s: Upgrades.cpp.s
+src/TitleScreen.s: src/TitleScreen.cpp.s
 
-.PHONY : Upgrades.s
+.PHONY : src/TitleScreen.s
 
 # target to generate assembly for a file
-Upgrades.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Upgrades.cpp.s
-.PHONY : Upgrades.cpp.s
+src/TitleScreen.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/TitleScreen.cpp.s
+.PHONY : src/TitleScreen.cpp.s
 
-Utilities.o: Utilities.cpp.o
+src/Turret.o: src/Turret.cpp.o
 
-.PHONY : Utilities.o
+.PHONY : src/Turret.o
 
 # target to build an object file
-Utilities.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Utilities.cpp.o
-.PHONY : Utilities.cpp.o
+src/Turret.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Turret.cpp.o
+.PHONY : src/Turret.cpp.o
 
-Utilities.i: Utilities.cpp.i
+src/Turret.i: src/Turret.cpp.i
 
-.PHONY : Utilities.i
+.PHONY : src/Turret.i
 
 # target to preprocess a source file
-Utilities.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Utilities.cpp.i
-.PHONY : Utilities.cpp.i
+src/Turret.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Turret.cpp.i
+.PHONY : src/Turret.cpp.i
 
-Utilities.s: Utilities.cpp.s
+src/Turret.s: src/Turret.cpp.s
 
-.PHONY : Utilities.s
+.PHONY : src/Turret.s
 
 # target to generate assembly for a file
-Utilities.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/Utilities.cpp.s
-.PHONY : Utilities.cpp.s
+src/Turret.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Turret.cpp.s
+.PHONY : src/Turret.cpp.s
 
-main.o: main.cpp.o
+src/Upgrades.o: src/Upgrades.cpp.o
 
-.PHONY : main.o
+.PHONY : src/Upgrades.o
 
 # target to build an object file
-main.cpp.o:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Upgrades.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Upgrades.cpp.o
+.PHONY : src/Upgrades.cpp.o
 
-main.i: main.cpp.i
+src/Upgrades.i: src/Upgrades.cpp.i
 
-.PHONY : main.i
+.PHONY : src/Upgrades.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Upgrades.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Upgrades.cpp.i
+.PHONY : src/Upgrades.cpp.i
 
-main.s: main.cpp.s
+src/Upgrades.s: src/Upgrades.cpp.s
 
-.PHONY : main.s
+.PHONY : src/Upgrades.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(MAKE) -f Margarita/CMakeFiles/Margarita.dir/build.make Margarita/CMakeFiles/Margarita.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Upgrades.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Upgrades.cpp.s
+.PHONY : src/Upgrades.cpp.s
+
+src/Utilities.o: src/Utilities.cpp.o
+
+.PHONY : src/Utilities.o
+
+# target to build an object file
+src/Utilities.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Utilities.cpp.o
+.PHONY : src/Utilities.cpp.o
+
+src/Utilities.i: src/Utilities.cpp.i
+
+.PHONY : src/Utilities.i
+
+# target to preprocess a source file
+src/Utilities.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Utilities.cpp.i
+.PHONY : src/Utilities.cpp.i
+
+src/Utilities.s: src/Utilities.cpp.s
+
+.PHONY : src/Utilities.s
+
+# target to generate assembly for a file
+src/Utilities.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/Utilities.cpp.s
+.PHONY : src/Utilities.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Margarita.dir/build.make CMakeFiles/Margarita.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -1133,117 +1159,120 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Margarita"
-	@echo "... AirStrike.o"
-	@echo "... AirStrike.i"
-	@echo "... AirStrike.s"
-	@echo "... Animation.o"
-	@echo "... Animation.i"
-	@echo "... Animation.s"
-	@echo "... Block.o"
-	@echo "... Block.i"
-	@echo "... Block.s"
-	@echo "... Bomb.o"
-	@echo "... Bomb.i"
-	@echo "... Bomb.s"
-	@echo "... BombAnimation.o"
-	@echo "... BombAnimation.i"
-	@echo "... BombAnimation.s"
-	@echo "... Coin.o"
-	@echo "... Coin.i"
-	@echo "... Coin.s"
-	@echo "... Comet.o"
-	@echo "... Comet.i"
-	@echo "... Comet.s"
-	@echo "... ControlManager.o"
-	@echo "... ControlManager.i"
-	@echo "... ControlManager.s"
-	@echo "... ControlsScreen.o"
-	@echo "... ControlsScreen.i"
-	@echo "... ControlsScreen.s"
-	@echo "... Crab.o"
-	@echo "... Crab.i"
-	@echo "... Crab.s"
-	@echo "... DeathScreen.o"
-	@echo "... DeathScreen.i"
-	@echo "... DeathScreen.s"
-	@echo "... Enemy.o"
-	@echo "... Enemy.i"
-	@echo "... Enemy.s"
-	@echo "... EnergyPowerup.o"
-	@echo "... EnergyPowerup.i"
-	@echo "... EnergyPowerup.s"
-	@echo "... Entity.o"
-	@echo "... Entity.i"
-	@echo "... Entity.s"
-	@echo "... EntityHealthChangeText.o"
-	@echo "... EntityHealthChangeText.i"
-	@echo "... EntityHealthChangeText.s"
-	@echo "... EventHandler.o"
-	@echo "... EventHandler.i"
-	@echo "... EventHandler.s"
-	@echo "... GUI.o"
-	@echo "... GUI.i"
-	@echo "... GUI.s"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
-	@echo "... Graphics.o"
-	@echo "... Graphics.i"
-	@echo "... Graphics.s"
-	@echo "... Item.o"
-	@echo "... Item.i"
-	@echo "... Item.s"
-	@echo "... Laser.o"
-	@echo "... Laser.i"
-	@echo "... Laser.s"
-	@echo "... Multiplayer.o"
-	@echo "... Multiplayer.i"
-	@echo "... Multiplayer.s"
-	@echo "... Orb.o"
-	@echo "... Orb.i"
-	@echo "... Orb.s"
-	@echo "... Particle.o"
-	@echo "... Particle.i"
-	@echo "... Particle.s"
-	@echo "... PauseScreen.o"
-	@echo "... PauseScreen.i"
-	@echo "... PauseScreen.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
-	@echo "... Powerup.o"
-	@echo "... Powerup.i"
-	@echo "... Powerup.s"
-	@echo "... RegenerationPowerup.o"
-	@echo "... RegenerationPowerup.i"
-	@echo "... RegenerationPowerup.s"
-	@echo "... Shop.o"
-	@echo "... Shop.i"
-	@echo "... Shop.s"
-	@echo "... Space.o"
-	@echo "... Space.i"
-	@echo "... Space.s"
-	@echo "... TextObject.o"
-	@echo "... TextObject.i"
-	@echo "... TextObject.s"
-	@echo "... Texture.o"
-	@echo "... Texture.i"
-	@echo "... Texture.s"
-	@echo "... TitleScreen.o"
-	@echo "... TitleScreen.i"
-	@echo "... TitleScreen.s"
-	@echo "... Turret.o"
-	@echo "... Turret.i"
-	@echo "... Turret.s"
-	@echo "... Upgrades.o"
-	@echo "... Upgrades.i"
-	@echo "... Upgrades.s"
-	@echo "... Utilities.o"
-	@echo "... Utilities.i"
-	@echo "... Utilities.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/AirStrike.o"
+	@echo "... src/AirStrike.i"
+	@echo "... src/AirStrike.s"
+	@echo "... src/Animation.o"
+	@echo "... src/Animation.i"
+	@echo "... src/Animation.s"
+	@echo "... src/Block.o"
+	@echo "... src/Block.i"
+	@echo "... src/Block.s"
+	@echo "... src/Bomb.o"
+	@echo "... src/Bomb.i"
+	@echo "... src/Bomb.s"
+	@echo "... src/BombAnimation.o"
+	@echo "... src/BombAnimation.i"
+	@echo "... src/BombAnimation.s"
+	@echo "... src/Coin.o"
+	@echo "... src/Coin.i"
+	@echo "... src/Coin.s"
+	@echo "... src/Comet.o"
+	@echo "... src/Comet.i"
+	@echo "... src/Comet.s"
+	@echo "... src/ControlManager.o"
+	@echo "... src/ControlManager.i"
+	@echo "... src/ControlManager.s"
+	@echo "... src/ControlsScreen.o"
+	@echo "... src/ControlsScreen.i"
+	@echo "... src/ControlsScreen.s"
+	@echo "... src/Crab.o"
+	@echo "... src/Crab.i"
+	@echo "... src/Crab.s"
+	@echo "... src/DeathScreen.o"
+	@echo "... src/DeathScreen.i"
+	@echo "... src/DeathScreen.s"
+	@echo "... src/Enemy.o"
+	@echo "... src/Enemy.i"
+	@echo "... src/Enemy.s"
+	@echo "... src/EnergyPowerup.o"
+	@echo "... src/EnergyPowerup.i"
+	@echo "... src/EnergyPowerup.s"
+	@echo "... src/Entity.o"
+	@echo "... src/Entity.i"
+	@echo "... src/Entity.s"
+	@echo "... src/EntityHealthChangeText.o"
+	@echo "... src/EntityHealthChangeText.i"
+	@echo "... src/EntityHealthChangeText.s"
+	@echo "... src/EventHandler.o"
+	@echo "... src/EventHandler.i"
+	@echo "... src/EventHandler.s"
+	@echo "... src/GUI.o"
+	@echo "... src/GUI.i"
+	@echo "... src/GUI.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/Graphics.o"
+	@echo "... src/Graphics.i"
+	@echo "... src/Graphics.s"
+	@echo "... src/Items/Item.o"
+	@echo "... src/Items/Item.i"
+	@echo "... src/Items/Item.s"
+	@echo "... src/Laser.o"
+	@echo "... src/Laser.i"
+	@echo "... src/Laser.s"
+	@echo "... src/Multiplayer.o"
+	@echo "... src/Multiplayer.i"
+	@echo "... src/Multiplayer.s"
+	@echo "... src/Orb.o"
+	@echo "... src/Orb.i"
+	@echo "... src/Orb.s"
+	@echo "... src/Particle.o"
+	@echo "... src/Particle.i"
+	@echo "... src/Particle.s"
+	@echo "... src/PauseScreen.o"
+	@echo "... src/PauseScreen.i"
+	@echo "... src/PauseScreen.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
+	@echo "... src/Powerup.o"
+	@echo "... src/Powerup.i"
+	@echo "... src/Powerup.s"
+	@echo "... src/RegenerationPowerup.o"
+	@echo "... src/RegenerationPowerup.i"
+	@echo "... src/RegenerationPowerup.s"
+	@echo "... src/Shop.o"
+	@echo "... src/Shop.i"
+	@echo "... src/Shop.s"
+	@echo "... src/Snail.o"
+	@echo "... src/Snail.i"
+	@echo "... src/Snail.s"
+	@echo "... src/Space.o"
+	@echo "... src/Space.i"
+	@echo "... src/Space.s"
+	@echo "... src/TextObject.o"
+	@echo "... src/TextObject.i"
+	@echo "... src/TextObject.s"
+	@echo "... src/Texture.o"
+	@echo "... src/Texture.i"
+	@echo "... src/Texture.s"
+	@echo "... src/TitleScreen.o"
+	@echo "... src/TitleScreen.i"
+	@echo "... src/TitleScreen.s"
+	@echo "... src/Turret.o"
+	@echo "... src/Turret.i"
+	@echo "... src/Turret.s"
+	@echo "... src/Upgrades.o"
+	@echo "... src/Upgrades.i"
+	@echo "... src/Upgrades.s"
+	@echo "... src/Utilities.o"
+	@echo "... src/Utilities.i"
+	@echo "... src/Utilities.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -1255,6 +1284,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/Users/Joel/Desktop/Margarita && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -P /mnt/c/Users/Joel/Desktop/Margarita/Margarita/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

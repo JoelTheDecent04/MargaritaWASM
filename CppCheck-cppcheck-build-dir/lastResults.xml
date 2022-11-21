@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.9"/>
+    <errors>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;size&amp;#039;." verbose="Non-pure function: &amp;#039;size&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="51"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Rect::left&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Rect::left&amp;#039; is not initialized in the constructor." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="83"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Rect::top&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Rect::top&amp;#039; is not initialized in the constructor." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="83"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Rect::right&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Rect::right&amp;#039; is not initialized in the constructor." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="83"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Rect::bottom&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Rect::bottom&amp;#039; is not initialized in the constructor." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="83"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &amp;#039;Iterator&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Struct &amp;#039;Iterator&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="13"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;a&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;a&amp;#039; can be declared as reference to const" cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="18"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;b&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;b&amp;#039; can be declared as reference to const" cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="18"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;a&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;a&amp;#039; can be declared as reference to const" cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="19"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;b&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;b&amp;#039; can be declared as reference to const" cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Utilities.h" line="19"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Texture&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Texture&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Texture.h" line="15"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;WidgetLabel&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;WidgetLabel&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="GUI.h" line="150"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;WidgetTextbox&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;WidgetTextbox&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="GUI.h" line="167"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;MultiplayerGameClient&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;MultiplayerGameClient&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Multiplayer.h" line="50"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;AirStrikeItem&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;AirStrikeItem&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="AirStrike.h" line="7"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Weapon&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Weapon&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Weapon.h" line="9"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="AirStrike.cpp" line="16"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;description&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;description&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="AirStrike.cpp" sinceDate="d/MM/yyyy">
+            <location file="Upgrades.h" line="40"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;BlockItem&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;BlockItem&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Block.cpp" sinceDate="d/MM/yyyy">
+            <location file="Block.h" line="15"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;BombAnimation&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;BombAnimation&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Bomb.cpp" sinceDate="d/MM/yyyy">
+            <location file="BombAnimation.h" line="16"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;control&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;control&amp;#039; can be declared as reference to const" cwe="398" file0="ControlManager.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlManager.cpp" line="33"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;control&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;control&amp;#039; can be declared as reference to const" cwe="398" file0="ControlManager.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlManager.cpp" line="37"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;control&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;control&amp;#039; can be declared as reference to const" cwe="398" file0="ControlManager.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlManager.cpp" line="47"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="ControlManager.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlManager.cpp" line="34"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="ControlManager.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlManager.cpp" line="38"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="ControlManager.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlManager.cpp" line="48"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;ControlsScreen::nButtonHover&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;ControlsScreen::nButtonHover&amp;#039; is not initialized in the constructor." cwe="398" file0="ControlsScreen.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlsScreen.cpp" line="91"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;ControlsScreen::keyToChange&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;ControlsScreen::keyToChange&amp;#039; is not initialized in the constructor." cwe="398" file0="ControlsScreen.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlsScreen.cpp" line="91"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;ControlChanger&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;ControlChanger&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="ControlsScreen.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlsScreen.cpp" line="42"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;button&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;button&amp;#039; can be declared as reference to const" cwe="398" file0="ControlsScreen.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlsScreen.cpp" line="117"/>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &amp;#039;ControlsScreen&amp;#039; defines member variable with name &amp;#039;gui&amp;#039; also defined in its parent class &amp;#039;Level&amp;#039;." verbose="The class &amp;#039;ControlsScreen&amp;#039; defines member variable with name &amp;#039;gui&amp;#039; also defined in its parent class &amp;#039;Level&amp;#039;." cwe="398" file0="ControlsScreen.cpp" sinceDate="d/MM/yyyy">
+            <location file="ControlsScreen.h" line="24" info="Derived variable &amp;#039;ControlsScreen::gui&amp;#039;"/>
+            <location file="Game.h" line="10" info="Parent variable &amp;#039;Level::gui&amp;#039;"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;Crab&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;Crab&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Crab.cpp" sinceDate="d/MM/yyyy">
+            <location file="Crab.h" line="12"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;player&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;player&amp;#039; can be declared as reference to const" cwe="398" file0="Enemy.cpp" sinceDate="d/MM/yyyy">
+            <location file="Enemy.cpp" line="43"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;EnergyPowerupItem&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;EnergyPowerupItem&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="EnergyPowerup.cpp" sinceDate="d/MM/yyyy">
+            <location file="EnergyPowerup.h" line="15"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;e&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;e&amp;#039; can be declared as reference to const" cwe="398" file0="Entity.cpp" sinceDate="d/MM/yyyy">
+            <location file="Entity.cpp" line="157"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;e&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;e&amp;#039; can be declared as reference to const" cwe="398" file0="Entity.cpp" sinceDate="d/MM/yyyy">
+            <location file="Entity.cpp" line="165"/>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &amp;#039;entity&amp;#039; can be declared as reference to const" verbose="Parameter &amp;#039;entity&amp;#039; can be declared as reference to const" cwe="398" file0="Entity.cpp" sinceDate="d/MM/yyyy">
+            <location file="Entity.cpp" line="173"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;objective&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;objective&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="EventHandler.cpp" sinceDate="d/MM/yyyy">
+            <location file="EventHandler.cpp" line="14"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;Reset&amp;#039; is never used." verbose="The function &amp;#039;Reset&amp;#039; is never used." cwe="561" sinceDate="d/MM/yyyy">
+            <location file="EventHandler.cpp" line="54"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Laser.cpp" sinceDate="d/MM/yyyy">
+            <location file="Laser.cpp" line="112"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Laser.cpp" sinceDate="d/MM/yyyy">
+            <location file="Laser.cpp" line="132"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;bCollided&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;bCollided&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Laser.cpp" sinceDate="d/MM/yyyy">
+            <location file="Laser.cpp" line="55"/>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &amp;#039;player&amp;#039; can be declared as reference to const" verbose="Variable &amp;#039;player&amp;#039; can be declared as reference to const" cwe="398" file0="Laser.cpp" sinceDate="d/MM/yyyy">
+            <location file="Laser.cpp" line="133"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;Fire&amp;#039; is never used." verbose="The function &amp;#039;Fire&amp;#039; is never used." cwe="561" sinceDate="d/MM/yyyy">
+            <location file="Laser.cpp" line="162"/>
+        </error>
+        <error id="preprocessorErrorDirective" severity="error" msg="failed to evaluate #elif condition" verbose="failed to evaluate #elif condition" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="2345"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="19121"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="19144"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="19167"/>
+        </error>
+        <error id="missingReturn" severity="error" msg="Found a exit path from function with non-void return type that has missing return statement" verbose="Found a exit path from function with non-void return type that has missing return statement" cwe="758" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="19190"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;byte_container_with_subtype&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;byte_container_with_subtype&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="4993"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;byte_container_with_subtype&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;byte_container_with_subtype&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="4998"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;wide_string_input_adapter&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;wide_string_input_adapter&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="5510"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;json_ref&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;json_ref&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="13093"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;json_ref&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;json_ref&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="13097"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;output_adapter&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;output_adapter&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="13288"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;output_adapter&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;output_adapter&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="13292"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;output_adapter&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;output_adapter&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="13296"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &amp;#039;ordered_map&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Struct &amp;#039;ordered_map&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="17069"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="17991"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="17999"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="18011"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="18025"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="18077"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;basic_json&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="18315"/>
+        </error>
+        <error id="compareValueOutOfTypeRangeError" severity="style" msg="Comparing expression of type &amp;#039;const unsigned char&amp;#039; against value 400. Condition is always true." verbose="Comparing expression of type &amp;#039;const unsigned char&amp;#039; against value 400. Condition is always true." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="16964"/>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &amp;#039;m_value.object-&amp;gt;emplace&amp;#039;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &amp;#039;m_value.object-&amp;gt;emplace&amp;#039;. The initialized value is overwritten before it is read." cwe="563" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="20167" info="m_value.object-&amp;gt;emplace is overwritten"/>
+            <location file="json.hpp" line="20167" info="m_value.object-&amp;gt;emplace is initialized"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &amp;#039;kAlpha &amp;gt;= -60&amp;#039; is always true." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="15533" info=""/>
+            <location file="json.hpp" line="15254" info="&amp;#039;kAlpha&amp;#039; is assigned value &amp;#039;-60&amp;#039; here."/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &amp;#039;kGamma &amp;lt;= -32&amp;#039; is always true." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="15534" info=""/>
+            <location file="json.hpp" line="15255" info="&amp;#039;kGamma&amp;#039; is assigned value &amp;#039;-32&amp;#039; here."/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &amp;#039;thousands_sep != &amp;#039;\0&amp;#039;&amp;#039; is always false because &amp;#039;thousands_sep&amp;#039; and &amp;#039;&amp;#039;\0&amp;#039;&amp;#039; represent the same value." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="16885" info=""/>
+            <location file="json.hpp" line="17013" info="&amp;#039;thousands_sep&amp;#039; is assigned value &amp;#039;&amp;#039;\0&amp;#039;&amp;#039; here."/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &amp;#039;decimal_point != &amp;#039;\0&amp;#039;&amp;#039; is always false because &amp;#039;decimal_point&amp;#039; and &amp;#039;&amp;#039;\0&amp;#039;&amp;#039; represent the same value." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="16895" info=""/>
+            <location file="json.hpp" line="17015" info="&amp;#039;decimal_point&amp;#039; is assigned value &amp;#039;&amp;#039;\0&amp;#039;&amp;#039; here."/>
+        </error>
+        <error id="unreachableCode" severity="style" msg="Statements following return, break, continue, goto or throw will never be executed." verbose="Statements following return, break, continue, goto or throw will never be executed." cwe="561" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="14236"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="5139"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="17758"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="17780"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;offset&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;offset&amp;#039; is assigned a value that is never used." cwe="563" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="17152"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;JSON_HAS_EXPERIMENTAL_FILESYSTEM;JSON_HAS_FILESYSTEM;_MSC_VER&amp;#039; since the value of &amp;#039;_MSC_VER&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;JSON_HAS_EXPERIMENTAL_FILESYSTEM;JSON_HAS_FILESYSTEM;_MSC_VER&amp;#039; since the value of &amp;#039;_MSC_VER&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="d/MM/yyyy">
+            <location file="json.hpp" line="17484"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;lPrevLevel&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;lPrevLevel&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="Multiplayer.cpp" line="68"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;widgetMultiplayerInfo&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;widgetMultiplayerInfo&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="Multiplayer.cpp" line="128"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="Multiplayer.cpp" line="37"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="Multiplayer.cpp" line="175"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398" file0="Multiplayer.cpp" sinceDate="d/MM/yyyy">
+            <location file="Multiplayer.cpp" line="195"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;OrbWeapon&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;OrbWeapon&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Orb.cpp" sinceDate="d/MM/yyyy">
+            <location file="Orb.h" line="18"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;lPrevLevel&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;lPrevLevel&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="PauseScreen.cpp" sinceDate="d/MM/yyyy">
+            <location file="PauseScreen.cpp" line="13"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;puCurrentPowerup&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;puCurrentPowerup&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Player.cpp" sinceDate="d/MM/yyyy">
+            <location file="Player.cpp" line="33"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;RegenerationPowerupItem&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;RegenerationPowerupItem&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="RegenerationPowerup.cpp" sinceDate="d/MM/yyyy">
+            <location file="RegenerationPowerup.h" line="16"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;GetPlayer&amp;#039;." verbose="Non-pure function: &amp;#039;GetPlayer&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="Shop.cpp" sinceDate="d/MM/yyyy">
+            <location file="Shop.cpp" line="41"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;Cost&amp;#039;." verbose="Non-pure function: &amp;#039;Cost&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="Shop.cpp" sinceDate="d/MM/yyyy">
+            <location file="Shop.cpp" line="41"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;upgrade&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;upgrade&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Shop.cpp" sinceDate="d/MM/yyyy">
+            <location file="Shop.cpp" line="76"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;widget_item_list&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;widget_item_list&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Shop.cpp" sinceDate="d/MM/yyyy">
+            <location file="Shop.cpp" line="104"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &amp;#039;widget_player_upgrades&amp;#039; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&amp;#039;t explicitly write them to the initialization list. You could avoid assigning &amp;#039;widget_player_upgrades&amp;#039; a value by passing the value to the constructor in the initialization list." cwe="398" file0="Shop.cpp" sinceDate="d/MM/yyyy">
+            <location file="Shop.cpp" line="105"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;SpaceGame::fFps&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;SpaceGame::fFps&amp;#039; is not initialized in the constructor." cwe="398" file0="Space.cpp" sinceDate="d/MM/yyyy">
+            <location file="Space.cpp" line="42"/>
+        </error>
+        <error id="noCopyConstructor" severity="warning" msg="Class &amp;#039;SpaceGame&amp;#039; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &amp;#039;SpaceGame&amp;#039; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="Space.cpp" sinceDate="d/MM/yyyy">
+            <location file="Space.cpp" line="44"/>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Class &amp;#039;SpaceGame&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Class &amp;#039;SpaceGame&amp;#039; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="Space.cpp" sinceDate="d/MM/yyyy">
+            <location file="Space.cpp" line="44"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="Space.cpp" sinceDate="d/MM/yyyy">
+            <location file="Space.cpp" line="386"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &amp;#039;TurretPlacer&amp;#039; has a constructor with 1 argument that is not explicit." verbose="Class &amp;#039;TurretPlacer&amp;#039; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="Space.cpp" sinceDate="d/MM/yyyy">
+            <location file="Turret.h" line="26"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;error&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;error&amp;#039; is assigned a value that is never used." cwe="563" file0="Texture.cpp" sinceDate="d/MM/yyyy">
+            <location file="Texture.cpp" line="8"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;r&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;r&amp;#039; is assigned a value that is never used." cwe="563" file0="Texture.cpp" sinceDate="d/MM/yyyy">
+            <location file="Texture.cpp" line="71"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;ret&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;ret&amp;#039; is assigned a value that is never used." cwe="563" file0="Texture.cpp" sinceDate="d/MM/yyyy">
+            <location file="Texture.cpp" line="101"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DrawPanorama&amp;#039; is never used." verbose="The function &amp;#039;DrawPanorama&amp;#039; is never used." cwe="561" sinceDate="d/MM/yyyy">
+            <location file="Texture.cpp" line="113"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;TitleScreen::fPeriod&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;TitleScreen::fPeriod&amp;#039; is not initialized in the constructor." cwe="398" file0="TitleScreen.cpp" sinceDate="d/MM/yyyy">
+            <location file="TitleScreen.cpp" line="45"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;Turret::weapon&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;Turret::weapon&amp;#039; is not initialized in the constructor." cwe="398" file0="Turret.cpp" sinceDate="d/MM/yyyy">
+            <location file="Turret.cpp" line="20"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;Click&amp;#039; is never used." verbose="The function &amp;#039;Click&amp;#039; is never used." cwe="561" sinceDate="d/MM/yyyy">
+            <location file="GUI.cpp" line="29"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;Close&amp;#039; is never used." verbose="The function &amp;#039;Close&amp;#039; is never used." cwe="561" sinceDate="d/MM/yyyy">
+            <location file="Graphics.cpp" line="58"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;DebugOut&amp;#039; is never used." verbose="The function &amp;#039;DebugOut&amp;#039; is never used." cwe="561" sinceDate="d/MM/yyyy">
+            <location file="Utilities.cpp" line="53"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;callback_func&amp;#039; is never used." verbose="The function &amp;#039;callback_func&amp;#039; is never used." cwe="561" sinceDate="d/MM/yyyy">
+            <location file="Game.cpp" line="49"/>
+        </error>
+    </errors>
+</results>

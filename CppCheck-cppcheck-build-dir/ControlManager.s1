@@ -1,0 +1,34 @@
+Description
+Primary
+Secondary
+SetPrimary
+SetSecondary
+GetAction
+AllControls
+Instance
+Iterator
+operator*
+operator.
+operator++
+operator++
+operator==
+operator!=
+List
+List
+Add call:[push_back] noreturn:[push_back]
+begin call:[Iterator] noreturn:[Iterator]
+end call:[Iterator,size] noreturn:[Iterator]
+operator[] call:[assert,size]
+size call:[size] noreturn:[size]
+RemoveAt call:[begin,erase] noreturn:[erase]
+Take call:[begin,erase]
+Append call:[begin,clear,end,insert,make_move_iterator] noreturn:[clear]
+Rect
+ControlManager call:[AddControl] noreturn:[AddControl]
+GetControl global:[unknown_control] call:[Primary,Secondary]
+GetControlFromAction call:[GetAction,assert] noreturn:[assert]
+IsControlActivated call:[KeyState,Primary,Secondary] noreturn:[KeyState]
+AddControl call:[Control,push_back] noreturn:[push_back]
+KeyText call:[SDL_GetKeyFromScancode,SDL_GetKeyName] noreturn:[SDL_GetKeyName]
+Control
+PrimaryKeyText call:[KeyText] noreturn:[KeyText]

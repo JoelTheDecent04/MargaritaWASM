@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1563789187779839281">
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;size&apos;." verbose="Non-pure function: &apos;size&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="51" column="18"/>
+            <symbol>size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::left&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::left&apos; is not initialized in the constructor." cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::left</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::top&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::top&apos; is not initialized in the constructor." cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::top</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::right&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::right&apos; is not initialized in the constructor." cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::right</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." verbose="Member variable &apos;Rect::bottom&apos; is not initialized in the constructor." cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="83" column="2"/>
+            <symbol>Rect::bottom</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Iterator&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="13" column="3"/>
+            <symbol>Iterator</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="18" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="18" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="19" column="36" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="ControlManager.cpp">
+            <location file="Utilities.h" line="19" column="49" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;control&apos; can be declared as reference to const" verbose="Variable &apos;control&apos; can be declared as reference to const" cwe="398" file0="ControlManager.cpp">
+            <location file="ControlManager.cpp" line="33" column="13" info="Variable &apos;control&apos; can be declared as reference to const"/>
+            <symbol>control</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;control&apos; can be declared as reference to const" verbose="Variable &apos;control&apos; can be declared as reference to const" cwe="398" file0="ControlManager.cpp">
+            <location file="ControlManager.cpp" line="37" column="13" info="Variable &apos;control&apos; can be declared as reference to const"/>
+            <symbol>control</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;control&apos; can be declared as reference to const" verbose="Variable &apos;control&apos; can be declared as reference to const" cwe="398" file0="ControlManager.cpp">
+            <location file="ControlManager.cpp" line="47" column="13" info="Variable &apos;control&apos; can be declared as reference to const"/>
+            <symbol>control</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="ControlManager.cpp">
+            <location file="ControlManager.cpp" line="34" column="0"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="ControlManager.cpp">
+            <location file="ControlManager.cpp" line="38" column="0"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="ControlManager.cpp">
+            <location file="ControlManager.cpp" line="48" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="ControlManager.h:33:2" call-funcname="Control" call-argnr="2" file="ControlManager.cpp" line="61" col="21" my-id="ControlManager.h:57:7" my-argnr="2"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="Control" file="ControlManager.h" line="4" col="1" hash="16107150594865053378"/>
+<class name="ControlManager" file="ControlManager.h" line="44" col="1" hash="7663207378445157039"/>
+<class name="List::Iterator" file="Utilities.h" line="10" col="2" hash="14372880026852542095"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="1" my-argname="a" file="Utilities.h" line="18" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:18:15" my-argnr="2" my-argname="b" file="Utilities.h" line="18" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="1" my-argname="a" file="Utilities.h" line="19" col="61" value="0"/>
+    <unsafe-usage my-id="Utilities.h:19:15" my-argnr="2" my-argname="b" file="Utilities.h" line="19" col="70" value="0"/>
+    <unsafe-usage my-id="Utilities.h:69:7" my-argnr="1" my-argname="other" file="Utilities.h" line="73" col="28" value="0"/>
+    <unsafe-usage my-id="ControlManager.h:66:14" my-argnr="1" my-argname="control" file="ControlManager.cpp" line="56" col="18" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GetControl" lineNumber="31"/>
+    <functiondecl functionName="GetControlFromAction" lineNumber="45"/>
+    <functiondecl functionName="IsControlActivated" lineNumber="54"/>
+    <functiondecl functionName="AddControl" lineNumber="59"/>
+    <functiondecl functionName="KeyText" lineNumber="64"/>
+    <functiondecl functionName="PrimaryKeyText" lineNumber="78"/>
+    <functioncall functionName="AddControl"/>
+    <functioncall functionName="Control"/>
+    <functioncall functionName="ControlManager"/>
+    <functioncall functionName="Down"/>
+    <functioncall functionName="GetAction"/>
+    <functioncall functionName="Iterator"/>
+    <functioncall functionName="Jump"/>
+    <functioncall functionName="KeyState"/>
+    <functioncall functionName="KeyText"/>
+    <functioncall functionName="Left"/>
+    <functioncall functionName="List"/>
+    <functioncall functionName="NextWave"/>
+    <functioncall functionName="None"/>
+    <functioncall functionName="OpenShop"/>
+    <functioncall functionName="Primary"/>
+    <functioncall functionName="Rect"/>
+    <functioncall functionName="Right"/>
+    <functioncall functionName="SDL_GetKeyFromScancode"/>
+    <functioncall functionName="SDL_GetKeyName"/>
+    <functioncall functionName="SDL_SCANCODE_1"/>
+    <functioncall functionName="SDL_SCANCODE_2"/>
+    <functioncall functionName="SDL_SCANCODE_3"/>
+    <functioncall functionName="SDL_SCANCODE_4"/>
+    <functioncall functionName="SDL_SCANCODE_5"/>
+    <functioncall functionName="SDL_SCANCODE_6"/>
+    <functioncall functionName="SDL_SCANCODE_7"/>
+    <functioncall functionName="SDL_SCANCODE_8"/>
+    <functioncall functionName="SDL_SCANCODE_A"/>
+    <functioncall functionName="SDL_SCANCODE_D"/>
+    <functioncall functionName="SDL_SCANCODE_E"/>
+    <functioncall functionName="SDL_SCANCODE_M"/>
+    <functioncall functionName="SDL_SCANCODE_R"/>
+    <functioncall functionName="SDL_SCANCODE_S"/>
+    <functioncall functionName="SDL_SCANCODE_SPACE"/>
+    <functioncall functionName="SDL_SCANCODE_W"/>
+    <functioncall functionName="SDL_Scancode"/>
+    <functioncall functionName="Secondary"/>
+    <functioncall functionName="ShowHideMap"/>
+    <functioncall functionName="Slot1"/>
+    <functioncall functionName="Slot2"/>
+    <functioncall functionName="Slot3"/>
+    <functioncall functionName="Slot4"/>
+    <functioncall functionName="Slot5"/>
+    <functioncall functionName="Slot6"/>
+    <functioncall functionName="Slot7"/>
+    <functioncall functionName="Slot8"/>
+    <functioncall functionName="T"/>
+    <functioncall functionName="action"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="bottom"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="controls"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="description"/>
+    <functioncall functionName="element"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="left"/>
+    <functioncall functionName="make_move_iterator"/>
+    <functioncall functionName="nKey"/>
+    <functioncall functionName="primary"/>
+    <functioncall functionName="ptr"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="right"/>
+    <functioncall functionName="secondary"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="top"/>
+    <functioncall functionName="typename"/>
+    <functioncall functionName="unique_ptr"/>
+    <functioncall functionName="vec"/>
+  </FileInfo>
+</analyzerinfo>
